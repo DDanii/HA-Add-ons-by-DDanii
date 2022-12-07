@@ -1,2 +1,2 @@
 ARG BUILD_FROM
-FROM ${BUILD_FROM}
+FROM ddanii/discordbot-self-radio
