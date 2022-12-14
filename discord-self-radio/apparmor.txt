@@ -1,3 +1,7 @@
+#include <tunables/global>
+
+profile addon_discord_self_radio flags=(attach_disconnected,mediate_deleted) {
+
 # S6-Overlay
   /init ix,
   /bin/** ix,
@@ -10,3 +14,4 @@
   /etc/cont-finish.d/** rwix,
   /run/{,**} rwk,
  # /dev/tty rw,
+}
