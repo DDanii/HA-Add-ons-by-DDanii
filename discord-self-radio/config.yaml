@@ -25,3 +25,4 @@ schema:
   DISCORDBOT_OWNER_ID : "str?"
   DISCORDBOT_JOIN_WEBHOOK : "str?"
 image: "docker.io/ddanii/discordbot-self-radio"
+apparmor: true
