@@ -8,6 +8,10 @@ profile addon_discord_self_radio flags=(attach_disconnected,mediate_deleted) {
   #include <abstractions/winbind>
   #include <abstractions/bash>
 
+  capability,
+  file,
+  signal (send) set=(kill,term,int,hup,cont),
+  
 # S6-Overlay
   /init ix,
   /bin/** ix,
