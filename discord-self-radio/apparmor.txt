@@ -1,6 +1,12 @@
 #include <tunables/global>
 
 profile addon_discord_self_radio flags=(attach_disconnected,mediate_deleted) {
+ #include <abstractions/base>
+  #include <abstractions/mdns>
+  #include <abstractions/samba>
+  #include <abstractions/smbpass>
+  #include <abstractions/winbind>
+  #include <abstractions/bash>
 
 # S6-Overlay
   /init ix,
