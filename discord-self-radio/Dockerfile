@@ -7,4 +7,3 @@ ENV \
     S6_CMD_WAIT_FOR_SERVICES=1
     
 COPY rootfs /
-RUN /etc/cont-init.d/env.sh
