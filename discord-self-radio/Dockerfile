@@ -6,6 +6,6 @@ ENV \
     S6_CMD_WAIT_FOR_SERVICES_MAXTIME=0 \
     S6_CMD_WAIT_FOR_SERVICES=1
     
-COPY rootfs /
+COPY rootfs/ /
 
 #RUN if [ -d /etc/cont-init.d ]; then chmod -R 755 /etc/cont-init.d; fi
