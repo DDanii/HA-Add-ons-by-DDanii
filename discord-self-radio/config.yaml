@@ -3,7 +3,7 @@ version: "1.2"
 slug: "discord_self_radio"
 description: A discord bot to play a radio stream if you are alone / no one else can hear the bot.
 url: "https://github.com/DDanii/HA-Add-ons-by-DDanii"
-#init: false
+init: false
 arch:
   - armhf
   - armv7
@@ -12,17 +12,17 @@ arch:
   - i386
 environment:
   DISCORDBOT_STREAM_LINK: ""
-  DISCORDBOT_TOKEN : ""
-  DISCORDBOT_OWNER_ID : ""
-  DISCORDBOT_JOIN_WEBHOOK : ""
+  DISCORDBOT_TOKEN: ""
+  DISCORDBOT_OWNER_ID: ""
+  DISCORDBOT_JOIN_WEBHOOK: ""
 options:
   DISCORDBOT_STREAM_LINK: ""
-  DISCORDBOT_TOKEN : ""
-  DISCORDBOT_OWNER_ID : ""
-  DISCORDBOT_JOIN_WEBHOOK : ""
+  DISCORDBOT_TOKEN: ""
+  DISCORDBOT_OWNER_ID: ""
+  DISCORDBOT_JOIN_WEBHOOK: ""
 schema:
   DISCORDBOT_STREAM_LINK: "str?"
-  DISCORDBOT_TOKEN : "str?"
-  DISCORDBOT_OWNER_ID : "str?"
-  DISCORDBOT_JOIN_WEBHOOK : "str?"
+  DISCORDBOT_TOKEN: "str?"
+  DISCORDBOT_OWNER_ID: "str?"
+  DISCORDBOT_JOIN_WEBHOOK: "str?"
 image: "docker.io/ddanii/discordbot-self-radio"
