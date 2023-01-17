@@ -16,7 +16,7 @@ RUN if [ -d /etc/cont-init.d ]; then chmod -R 755 /etc/cont-init.d; fi && \
     
 RUN mkdir -p /tmp/bashio && \
     curl -f -L -s -S "https://github.com/hassio-addons/bashio/archive/v0.14.3.tar.gz" | \
-    tar -xzf v0.14.3.tar.gz --strip 1 -C /tmp/bashio && \
+    tar -xzf - --strip 1 -C /tmp/bashio && \
     mv /tmp/bashio/lib /usr/lib/bashio && \
     ln -s /usr/lib/bashio/bashio /usr/bin/bashio && \
     rm -rf /tmp/bashio
