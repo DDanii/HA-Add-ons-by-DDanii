@@ -12,4 +12,11 @@ COPY rootfs/ /
 RUN if [ -d /etc/cont-init.d ]; then chmod -R 755 /etc/cont-init.d; fi && \
     if [ -d /etc/logrotate.d ]; then chmod -R 755 /etc/logrotate.d; fi
     
-RUN curl -f -L -s -S "https://github.com/hassio-addons/bashio/archive/v0.14.3.tar.gz" && tar -xzf v0.14.3.tar.gz --strip 1 -C /usr/lib/bashio
+    
+    
+RUN mkdir -p /tmp/bashio && \
+    curl -f -L -s -S "https://github.com/hassio-addons/bashio/archive/v0.14.3.tar.gz" && \
+    tar -xzf v0.14.3.tar.gz --strip 1 -C /tmp/bashio && \
+    mv /tmp/bashio/lib /usr/lib/bashio && \
+    ln -s /usr/lib/bashio/bashio /usr/bin/bashio && \
+    rm -rf /tmp/bashio
