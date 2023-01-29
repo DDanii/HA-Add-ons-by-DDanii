@@ -1,5 +1,5 @@
 ARG BUILD_FROM
-FROM ddanii/discordbot-self-radio
+FROM $BUILD_FROM
 
 ENV \
     S6_BEHAVIOUR_IF_STAGE2_FAILS=2 \
