@@ -1,12 +1,11 @@
 #!/usr/bin/bashio
 
-export DISCORDBOT_TOKEN
 export DISCORDBOT_OWNER_ID
   
 if ! bashio::config.has_value 'DISCORDBOT_TOKEN'; then
   bashio::exit.nok "Setting the discord token is required!"
 fi
-DISCORDBOT_TOKEN=$(bashio::config 'DISCORDBOT_TOKEN')
+export DISCORDBOT_TOKEN=$(bashio::config 'DISCORDBOT_TOKEN')
 bashio::log.info "token : $DISCORDBOT_TOKEN"
 
 if ! bashio::config.has_value 'DISCORDBOT_OWNER_ID'; then
