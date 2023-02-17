@@ -24,4 +24,4 @@ RUN mkdir -p /tmp/bashio && \
     \
     && curl -L -s -o /usr/bin/tempio \
         "https://github.com/home-assistant/tempio/releases/download/2021.09.0/tempio_${BUILD_ARCH}" \
-    && chmod a+x /usr/bin/tempio \
+    && chmod a+x /usr/bin/tempio
