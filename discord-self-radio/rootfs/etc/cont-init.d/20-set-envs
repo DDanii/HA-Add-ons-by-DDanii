@@ -1,5 +1,4 @@
-#!/bin/sh
-#/usr/bin/with-contenv bashio
+#!/usr/bin/bashio
 
 export DISCORDBOT_TOKEN
 export DISCORDBOT_OWNER_ID
