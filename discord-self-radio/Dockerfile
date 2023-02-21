@@ -24,5 +24,5 @@ RUN mkdir -p /tmp/bashio && \
     rm -rf /tmp/bashio \
     \
     && wget -q -O /usr/bin/tempio \
-        "https://github.com/home-assistant/tempio/releases/download/2021.09.0/tempio_${BUILD_ARCH}" \
+        "https://github.com/home-assistant/tempio/releases/download/2021.09.0/tempio_amd64" \
     && chmod a+x /usr/bin/tempio
