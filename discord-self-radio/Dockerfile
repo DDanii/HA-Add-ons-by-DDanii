@@ -14,7 +14,7 @@ RUN if [ -d /etc/cont-init.d ]; then chmod -R 755 /etc/cont-init.d; fi && \
     if [ -d /etc/logrotate.d ]; then chmod -R 755 /etc/logrotate.d; fi && \
     if [ -d /etc/cont-init.d/20-set-envs ]; then chmod -R 755 /etc/cont-init.d/20-set-envs; fi
     
-RUN apk add jq
+RUN apk add jq bash
     
 RUN mkdir -p /tmp/bashio && \
     wget -q -O - "https://github.com/hassio-addons/bashio/archive/v0.14.3.tar.gz" | \
