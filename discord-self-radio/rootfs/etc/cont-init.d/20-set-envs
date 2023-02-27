@@ -7,7 +7,9 @@ if ! bashio::config.has_value 'DISCORDBOT_TOKEN'; then
 fi
 DISCORDBOT_TOKEN=$(bashio::config 'DISCORDBOT_TOKEN')
 bashio::log.info "token : $DISCORDBOT_TOKEN"
-printf $DISCORDBOT_TOKEN > /var/run/s6/env-stage/DISCORDBOT_TOKEN
+printf $DISCORDBOT_TOKEN > /var/run/s6/env-stage1/DISCORDBOT_TOKEN
+printf $DISCORDBOT_TOKEN > /var/run/s6/env-stage2/DISCORDBOT_TOKEN
+printf $DISCORDBOT_TOKEN > /var/run/s6/env-stage3/DISCORDBOT_TOKEN
 
 if ! bashio::config.has_value 'DISCORDBOT_OWNER_ID'; then
   bashio::exit.nok "Setting the owner id is required!"
