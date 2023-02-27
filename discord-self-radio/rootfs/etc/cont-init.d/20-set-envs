@@ -1,4 +1,4 @@
-#!/usr/bin/bashio
+#!/usr/bin/with-contenv bashio
 
 export DISCORDBOT_OWNER_ID
   
