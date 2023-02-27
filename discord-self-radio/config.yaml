@@ -5,16 +5,7 @@ description: A discord bot to play a radio stream if you are alone / no one else
 url: "https://github.com/DDanii/HA-Add-ons-by-DDanii"
 init: false
 arch:
-  - armhf
-  - armv7
-  - aarch64
   - amd64
-  - i386
-environment:
-  DISCORDBOT_STREAM_LINK: ""
-  DISCORDBOT_TOKEN: ""
-  DISCORDBOT_OWNER_ID: ""
-  DISCORDBOT_JOIN_WEBHOOK: ""
 options:
   DISCORDBOT_STREAM_LINK: ""
   DISCORDBOT_TOKEN: ""
