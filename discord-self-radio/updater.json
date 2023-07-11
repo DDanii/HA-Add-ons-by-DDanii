@@ -3,5 +3,6 @@
   "slug": "discord_self_radio",
   "source": "github",
   "upstream_repo": "DDanii/discordbot-self-radio",
-  "fulltag": false
+  "fulltag": false,
+  "upstream_version": "2.2"
 }
