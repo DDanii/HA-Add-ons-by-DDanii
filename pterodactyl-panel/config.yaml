@@ -2,7 +2,7 @@
 name: pterodactyl Panel Gameserver - BETA
 version: 0.1
 slug: pterodactyl_panel
-image: ghcr.io/ddani/pterodactyl_panel-{arch}
+image: ghcr.io/ddanii/pterodactyl_panel-{arch}
 description: OpenSource Gameserver
 url: https://github.com/FaserF/hassio-addons/tree/master/pterodactyl
 arch:
