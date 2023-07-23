@@ -12,4 +12,4 @@ export DB_DATABASE=pterodactyl
 
 echo "[start] Starting Pterodactyl Panel"
 
-/sbin/tini -s /entrypoint.sh
+/sbin/tini -s /entrypoint.sh -- p:start
