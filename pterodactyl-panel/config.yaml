@@ -1,6 +1,6 @@
 ---
 name: pterodactyl Panel Gameserver - BETA
-version: 0.1.1
+version: 0.1.2
 slug: pterodactyl_panel
 image: ghcr.io/ddanii/pterodactyl_panel-{arch}
 description: OpenSource Gameserver
@@ -19,11 +19,13 @@ ingress: true
 init: false
 panel_icon: mdi:controller
 options:
+  PUID: 1
   password:
   ssl: true
   certfile: fullchain.pem
   keyfile: privkey.pem
 schema:
+  PUID: int
   password: password
   ssl: bool
   certfile: str
