@@ -1,0 +1,3 @@
+---
+build_from:
+  amd64: ccarney16/pterodactyl-panel:latest
