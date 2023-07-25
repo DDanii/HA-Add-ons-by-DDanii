@@ -1,6 +1,7 @@
 #!/usr/bin/bashio
 
-sed s_#!/bin/sh_#!/bin/sh/necho $(env)_ </entrypoint.sh >/entrypoint.sh
+sed 's_/bin/sh_/bin/sh/necho $(env)_' </entrypoint.sh >/tmp.sh
+mv /tmp.sh /entrypoint.sh
 
 export SSL_CERT=/ssl/$(bashio::config 'certfile')
 export SSL_CERT_KEY=/ssl/$(bashio::config 'keyfile')
