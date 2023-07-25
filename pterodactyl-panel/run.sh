@@ -1,5 +1,5 @@
 #!/usr/bin/bashio
-redis-server
+redis-server &
 sed 's_/bin/sh_/bin/sh\necho $(env)_' </entrypoint.sh >/tmp.sh
 cat /tmp.sh > /entrypoint.sh
 sed 's_/bin/sh_/bin/sh\necho $(env)_' </usr/local/bin/wait-for >/tmp.sh
