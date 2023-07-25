@@ -2,10 +2,10 @@
 ARG BUILD_FROM="ccarney16/pterodactyl-panel"
 ARG BUILD_ARCH
 # hadolint ignore=DL3006
-FROM $BUILD_FROM 
+FROM $BUILD_FROM
 
-RUN apk --update add jq bash curl wget
-    
+RUN apk --update add jq bash curl wget redis
+
 RUN mkdir -p /tmp/bashio && \
     wget -q -O - "https://github.com/hassio-addons/bashio/archive/v0.14.3.tar.gz" | \
     tar -xzf - --strip 1 -C /tmp/bashio && \
