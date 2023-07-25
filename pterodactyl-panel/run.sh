@@ -2,7 +2,9 @@
 
 sed 's_/bin/sh_/bin/sh\necho $(env)_' </entrypoint.sh >/tmp.sh
 cat /tmp.sh > /entrypoint.sh
-chmod 777 /entrypoint.sh
+sed 's_/bin/sh_/bin/sh\necho $(env)_' </usr/local/bin/wait-for >/tmp.sh
+cat /tmp.sh > /usr/local/bin/wait-for
+
 rm /tmp.sh
 
 export SSL_CERT=/ssl/$(bashio::config 'certfile')
