@@ -26,10 +26,10 @@ if bashio::config.true 'ssl'; then
 fi
 
 
-if [ $setup_user = "true" ]; then
-	echo "[setup] creating root user with password homeassistant..."
-    php artisan p:user:make --email=root@example.com --username=root --name-first=ro --name-last=ot --admin=1 --password=homeassistant
-fi
+# if [ $setup_user = "true" ]; then
+# 	echo "[setup] creating root user with password homeassistant..."
+#     php artisan p:user:make --email=root@example.com --username=root --name-first=ro --name-last=ot --admin=1 --password=homeassistant
+# fi
 
 echo "[start] Starting Pterodactyl Panel"
 
