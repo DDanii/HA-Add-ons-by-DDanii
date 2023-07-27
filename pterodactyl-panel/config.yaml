@@ -1,6 +1,6 @@
 ---
 name: pterodactyl Panel Gameserver - BETA
-version: 0.1.27
+version: 0.1.28
 slug: pterodactyl_panel
 image: ghcr.io/ddanii/pterodactyl_panel-{arch}
 description: OpenSource Gameserver
@@ -9,9 +9,6 @@ arch:
   - amd64
 services:
   - mysql:need
-startup: application
-boot: auto
-webui: "[PROTO:ssl]://[HOST]:[PORT:80]"
 map:
   - share:rw
   - ssl

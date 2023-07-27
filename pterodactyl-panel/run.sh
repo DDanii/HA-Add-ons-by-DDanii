@@ -18,7 +18,7 @@ if [ ! -d $directory ]; then
     setup_user=true
 fi
 
-ln -s $directory /data
+ln -s -f $directory /data
 
 if bashio::config.true 'ssl'; then
     export SSL_CERT=/ssl/$(bashio::config 'certfile')
