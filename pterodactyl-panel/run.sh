@@ -11,13 +11,14 @@ export DB_DATABASE=pterodactyl
 
 setup_user=false
 
-if [ ! -d /config/addons_configs/pterodactyl-panel ]; then
-    echo "Creating /config/addons_configs/pterodactyl-panel"
-    mkdir -p /config/addons_configs/pterodactyl-panel
+directory=/share/pterodactyl
+if [ ! -d $directory ]; then
+    echo "Creating ${directory}"
+    mkdir -p $directory
     setup_user=true
 fi
 
-ln -s /config/addons_configs/pterodactyl-panel /data/
+ln -s $directory /data
 
 if bashio::config.true 'ssl'; then
     export SSL_CERT=/ssl/$(bashio::config 'certfile')
