@@ -11,17 +11,6 @@ export DB_DATABASE=pterodactyl
 
 setup_user=false
 
-directory=/share/pterodactyl
-
-echo $directory
-
-if [ ! -d $directory ]; then
-    echo "Creating ${directory}"
-    mkdir -p $directory
-fi
-
-#ln -s -f $directory /data
-
 if bashio::config.true 'ssl'; then
     export SSL_CERT=/ssl/$(bashio::config 'certfile')
     export SSL_CERT_KEY=/ssl/$(bashio::config 'keyfile')
