@@ -8,8 +8,8 @@
   "arch": [
     "amd64"
   ],
-  "services": [{
-    "redis": "provide"
-  }],
+  "services": [
+    "redis: provide"
+  ],
   "init": false
 }
