@@ -4,7 +4,7 @@ ARG BUILD_ARCH
 # hadolint ignore=DL3006
 FROM $BUILD_FROM
 
-RUN apk --update add jq bash curl wget redis
+RUN microdnf install -y jq bash wget tar redis
 
 RUN mkdir -p /tmp/bashio && \
     wget -q -O - "https://github.com/hassio-addons/bashio/archive/v0.14.3.tar.gz" | \
@@ -14,10 +14,14 @@ RUN mkdir -p /tmp/bashio && \
     rm -rf /tmp/bashio \
     \
     && wget -q -O /usr/bin/tempio \
-        "https://github.com/home-assistant/tempio/releases/download/2021.09.0/tempio_amd64" \
+    "https://github.com/home-assistant/tempio/releases/download/2021.09.0/tempio_amd64" \
     && chmod a+x /usr/bin/tempio
 
-COPY run.sh /
+RUN rm /entrypoint.d/00-application-checks.sh
+#/entrypoint.d/10-application-checks.sh
+
+COPY ./root/ /
+
 RUN chmod a+x /run.sh
 
-CMD [ "/run.sh" ]
+ENTRYPOINT [ "/run.sh" ]

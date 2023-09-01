@@ -1,10 +1,10 @@
 ---
 name: pterodactyl Panel Gameserver - BETA
-version: 0.1.29
+version: 0.1.30
 slug: pterodactyl_panel
 image: ghcr.io/ddanii/pterodactyl_panel-{arch}
 description: OpenSource Gameserver
-url: https://github.com/FaserF/hassio-addons/tree/master/pterodactyl
+url: https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/pterodactyl
 arch:
   - amd64
 services:
@@ -12,18 +12,15 @@ services:
 map:
   - share:rw
   - ssl
-ingress: true
+ingress: false
 init: false
 panel_icon: mdi:controller
 options:
-  PUID: 1
   password:
-  ssl: true
+  ssl: false
   certfile: fullchain.pem
   keyfile: privkey.pem
 schema:
-  PUID: int
-  password: password
   ssl: bool
   certfile: str
   keyfile: str

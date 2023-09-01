@@ -1,0 +1,12 @@
+---
+name: redis - BETA
+version: 0.1
+slug: redis
+image: ghcr.io/ddanii/redis-{arch}
+description: in-memory data store
+url: https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/redis
+arch:
+  - amd64
+services:
+  - redis:provide
+init: false
