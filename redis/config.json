@@ -8,5 +8,6 @@
   "arch": [
     "amd64"
   ],
+  "startup": "services",
   "init": false
 }
