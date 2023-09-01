@@ -7,6 +7,4 @@ description: in-memory data store
 url: https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/redis
 arch:
   - amd64
-services:
-  - redis: provide
 init: false
