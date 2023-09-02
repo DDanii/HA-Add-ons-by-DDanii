@@ -23,7 +23,7 @@ options:
   keyfile: privkey.pem
 schema:
   REDIS_HOST: str
-  REDIS_PORT: number
+  REDIS_PORT: port
   ssl: bool
   certfile: str
   keyfile: str
