@@ -16,10 +16,14 @@ ingress: false
 init: false
 panel_icon: mdi:controller
 options:
+  REDIS_HOST: 57fef649-redis
+  REDIS_PORT: 6379
   ssl: false
   certfile: fullchain.pem
   keyfile: privkey.pem
 schema:
+  REDIS_HOST: str
+  REDIS_PORT: number
   ssl: bool
   certfile: str
   keyfile: str
