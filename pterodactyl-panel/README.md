@@ -18,6 +18,8 @@ Stop settling for less. Make game servers a first class citizen on your platform
 The installation of this add-on is pretty straightforward and not different in comparison to installing any other custom Home Assistant add-on.<br />
 Just click the link above or add my repo to the hassio addons repositorys: <https://github.com/DDanii/HA-Add-ons-by-DDanii>
 
+You also need to install the redis addon
+
 ## Configuration
 
 The MariaDB Integration is needed before installing this one!
