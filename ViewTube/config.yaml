@@ -2,9 +2,9 @@
 name: ViewTube - BETA
 version: 0.12.2-rebuild
 slug: ViewTube
-image: ghcr.io/ddanii/ViewTube-{arch}
+image: ghcr.io/ddanii/viewtube-{arch}
 description: Alternative YouTube frontend
-url: https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/ViewTube
+url: https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/viewtube
 arch:
   - amd64
 init: false
