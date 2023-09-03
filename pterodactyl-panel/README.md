@@ -60,21 +60,15 @@ E-Mail: <admin@example.com>
 Username: admin
 Password: homeassistant
 
-## Ingress
-
-This addon will support Homeassistant Ingress. Until now it is work in progress!
-
 ## Support
 
 Got questions or problems?
 
 You can [open an issue here][issue] GitHub.
-Please keep in mind, that this software is only tested on armv7 running on a Raspberry Pi 4.
 
 ## Authors & contributors
 
 The original program is from the pterodactyl Project. For more informatios please visit this page: <https://pterodactyl.io/>
-The hassio addon is brought to you by [FaserF].
 
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2022.svg
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg

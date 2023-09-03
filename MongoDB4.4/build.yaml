@@ -1,0 +1,3 @@
+---
+build_from:
+  amd64: mongo:4.4
