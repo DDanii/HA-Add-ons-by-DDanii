@@ -4,7 +4,7 @@ ARG BUILD_ARCH
 # hadolint ignore=DL3006
 FROM $BUILD_FROM
 
-RUN microdnf install -y jq bash wget tar redis
+RUN microdnf install -y jq bash wget tar
 
 RUN mkdir -p /tmp/bashio && \
     wget -q -O - "https://github.com/hassio-addons/bashio/archive/v0.14.3.tar.gz" | \

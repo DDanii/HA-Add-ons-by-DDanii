@@ -10,7 +10,7 @@ arch:
 init: false
 options:
   VIEWTUBE_REDIS_HOST: 57fef649-redis
-  VIEWTUBE_DATABASE_HOST: mongodb
+  VIEWTUBE_DATABASE_HOST: 57fef649-mongodb
 schema:
   VIEWTUBE_REDIS_HOST: str
   VIEWTUBE_DATABASE_HOST: str
