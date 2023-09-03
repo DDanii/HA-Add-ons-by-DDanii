@@ -2,7 +2,7 @@ ARG BUILD_FROM
 ARG BUILD_ARCH
 FROM $BUILD_FROM
 
-RUN apt-get install -y tar
+RUN apt-get install -y wget
 
 RUN mkdir -p /tmp/bashio && \
     wget -q -O - "https://github.com/hassio-addons/bashio/archive/v0.14.3.tar.gz" | \
@@ -19,4 +19,4 @@ COPY ./root/ /
 
 RUN chmod a+x /run.sh
 
-ENTRYPOINT [ "/run.sh" ]
+CMD [ "/run.sh" ]
