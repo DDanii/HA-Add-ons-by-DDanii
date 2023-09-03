@@ -1,6 +1,6 @@
 ---
 name: ViewTube - BETA
-version: 0.12.2
+version: 0.12.2-rebuild
 slug: ViewTube
 image: ghcr.io/ddanii/ViewTube-{arch}
 description: Alternative YouTube frontend

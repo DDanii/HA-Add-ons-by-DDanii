@@ -1,6 +1,6 @@
 {
   "name": "MongoDB 4.4 - BETA",
-  "version": "7.0.0",
+  "version": "7.0.0-rebuild",
   "slug": "mongodb4.4",
   "image": "ghcr.io/ddanii/mongodb4.4-{arch}",
   "description": "document-oriented database",
