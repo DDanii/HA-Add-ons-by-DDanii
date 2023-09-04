@@ -12,7 +12,6 @@ services:
 map:
   - share:rw
   - ssl
-ingress: false
 init: false
 panel_icon: mdi:controller
 options:

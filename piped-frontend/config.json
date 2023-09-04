@@ -1,0 +1,13 @@
+{
+  "name": "piped-frontend - BETA",
+  "version": "7.0.0",
+  "slug": "piped-frontend",
+  "image": "ghcr.io/ddanii/piped-frontend-{arch}",
+  "description": "document-oriented database",
+  "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/piped-frontend",
+  "arch": [
+    "amd64"
+  ],
+  "startup": "services",
+  "init": false
+}
