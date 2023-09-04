@@ -1,0 +1,20 @@
+{
+  "name": "Libreddit - BETA",
+  "version": "0.30.1",
+  "slug": "libreddit",
+  "image": "ghcr.io/ddanii/libreddit-{arch}",
+  "description": "private front-end for reddit",
+  "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/libreddit",
+  "arch": [
+    "amd64"
+  ],
+  "startup": "services",
+  "init": false,
+  "ports": {
+    "8080/tcp": 8080
+  },
+  "ports_description": {
+    "8080/tcp": "Web interface"
+  }
+
+}
