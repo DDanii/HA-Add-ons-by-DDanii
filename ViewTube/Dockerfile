@@ -4,7 +4,7 @@ FROM $BUILD_FROM
 
 RUN apt-get remove -y wget
 RUN apt-get update
-RUN apt-get install -y wget
+RUN apt-get install -y wget curl jq
 
 RUN mkdir -p /tmp/bashio && \
     wget -q -O - "https://github.com/hassio-addons/bashio/archive/v0.14.3.tar.gz" | \
