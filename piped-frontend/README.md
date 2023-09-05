@@ -2,7 +2,7 @@
 
 ![Supports amd64 Architecture][amd64-shield]
 
-mongodb for Homeassistant OS
+piped-frontend for Homeassistant OS
 
 ## About
 

@@ -1,12 +1,21 @@
 {
   "name": "piped - BETA",
-  "version": "7.0.0",
+  "version": "7.0.0-test3",
   "slug": "piped",
   "image": "ghcr.io/ddanii/piped-{arch}",
-  "description": "document-oriented database",
+  "description": "Alternative YouTube frontend",
   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/piped",
   "arch": [
     "amd64"
   ],
-  "init": false
+  "init": false,
+  "map": [
+    "config:rw"
+  ],
+  "ports": {
+    "8080/tcp": 8080
+  },
+  "ports_description": {
+    "8080/tcp": "Web interface"
+  }
 }
