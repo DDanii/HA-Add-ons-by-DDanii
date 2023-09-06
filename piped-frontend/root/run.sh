@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/bashio
 
 export BACKEND_HOSTNAME=$(bashio::config 'BACKEND_HOSTNAME')
 
