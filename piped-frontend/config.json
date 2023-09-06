@@ -1,6 +1,6 @@
 {
   "name": "piped-frontend - BETA",
-  "version": "7.0.0-test3",
+  "version": "7.0.0-test4",
   "slug": "piped-frontend",
   "image": "ghcr.io/ddanii/piped-frontend-{arch}",
   "description": "Alternative YouTube frontend",
@@ -8,6 +8,12 @@
   "arch": [
     "amd64"
   ],
+  "options": {
+    "BACKEND_HOSTNAME": "pipedapi.kavin.rocks"
+  },
+  "schema": {
+    "BACKEND_HOSTNAME": "str"
+  },
   "init": false,
   "ports": {
     "80/tcp": 80
