@@ -1,6 +1,6 @@
 {
   "name": "piped-frontend - BETA",
-  "version": "7.0.0-test6",
+  "version": "7.0.0-test7",
   "slug": "piped-frontend",
   "image": "ghcr.io/ddanii/piped-frontend-{arch}",
   "description": "Alternative YouTube frontend",
