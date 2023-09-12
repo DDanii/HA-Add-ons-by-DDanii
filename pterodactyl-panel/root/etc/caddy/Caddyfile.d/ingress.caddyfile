@@ -12,6 +12,8 @@
                 -X-Powered-By
                 Referrer-Policy "unsafe-url"
                 X-Content-Type-Options "nosniff"
+                Transfer-Encoding "chunked"
+                Connection "keep-alive"
         }
 
         encode gzip zstd
