@@ -10,8 +10,7 @@
         header {
                 -Server
                 -X-Powered-By
-                Referrer-Policy "same-origin"
-                X-XSS-Protection "1; mode=block"
+                Referrer-Policy "unsafe-url"
                 X-Content-Type-Options "nosniff"
         }
 
