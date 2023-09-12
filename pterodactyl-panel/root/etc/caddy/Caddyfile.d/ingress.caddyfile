@@ -1,0 +1,23 @@
+:8099 {
+        @denied not remote_ip 172.30.32.2
+        abort @denied
+
+        root * /var/www/html/public
+        file_server
+
+        {$CADDY_TLS_OPTIONS}
+
+        header {
+                -Server
+                -X-Powered-By
+                Referrer-Policy "same-origin"
+                X-XSS-Protection "1; mode=block"
+                X-Content-Type-Options "nosniff"
+        }
+
+        encode gzip zstd
+
+        php_fastcgi unix//var/lib/caddy/php/php-fpm.sock
+
+        try_files {path} {path}/ /index.php?{query}
+}
