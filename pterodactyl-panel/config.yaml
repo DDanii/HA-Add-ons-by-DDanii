@@ -13,9 +13,7 @@ map:
   - share:rw
   - ssl
 init: false
-ingress: true
-ingress_stream: true
-panel_icon: mdi:controller
+webui: http://[HOST]:[PORT:80]
 options:
   REDIS_HOST: 57fef649-redis
   REDIS_PORT: 6379
