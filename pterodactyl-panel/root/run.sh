@@ -49,6 +49,6 @@ fi
 # tempio \
 #     -template /etc/nginx/templates/ingress.gtpl \
 #     -out /etc/nginx/servers/ingress.conf
-
+/usr/bin/tini /entrypoint.sh p:worker &
 /usr/bin/tini /entrypoint.sh p:cron &
 /usr/bin/tini /entrypoint.sh start-web
