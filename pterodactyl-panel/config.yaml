@@ -1,6 +1,6 @@
 ---
 name: pterodactyl Panel Gameserver - BETA
-version: v1.11.3-test19
+version: v1.11.3-test20
 slug: pterodactyl_panel
 image: ghcr.io/ddanii/pterodactyl_panel-{arch}
 description: OpenSource Gameserver
@@ -31,4 +31,4 @@ ports_description:
   80/tcp: Web interface http
 environment:
   CADDY_APP_URL: ":80"
-webui: "[PROTO:ssl]://[HOST]:[PORT:80]""
+webui: "[PROTO:ssl]://[HOST]:[PORT:80]"
