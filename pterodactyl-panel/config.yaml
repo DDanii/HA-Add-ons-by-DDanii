@@ -1,6 +1,6 @@
 ---
 name: pterodactyl Panel Gameserver - BETA
-version: v1.11.3-test15
+version: v1.11.3-test16
 slug: pterodactyl_panel
 image: ghcr.io/ddanii/pterodactyl_panel-{arch}
 description: OpenSource Gameserver
@@ -27,6 +27,8 @@ schema:
   keyfile: str
   reset_database: bool?
 ports:
-  "443": 443
+  80/tcp: 80
 ports_description:
   80/tcp: Web interface http
+environment:
+  CADDY_APP_URL: ":80"
