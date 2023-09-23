@@ -28,10 +28,6 @@ bashio::log.info 'Creating database if not existing'
 echo "CREATE DATABASE IF NOT EXISTS ${DB_DATABASE};" |
     mysql -h "${DB_HOST}" -P "${DB_PORT}" -u "${DB_USERNAME}" -p"${DB_PASSWORD}"
 
-# bashio::log.info 'Granting database privileges'
-# echo "GRANT ALL PRIVILEGES ON ${DB_DATABASE}.* TO '${DB_USERNAME}' WITH GRANT OPTION;" |
-#     mysql -h "${DB_HOST}" -P "${DB_PORT}" -u "${DB_USERNAME}" -p"${DB_PASSWORD}"
-
 if [ $setup_user = "true" ]; then
     bashio::log.info 'Seeding database'
     php artisan migrate --seed --no-interaction --force
@@ -39,16 +35,6 @@ if [ $setup_user = "true" ]; then
     php artisan p:user:make --email=admin@example.com --username=admin --name-first=admin --name-last=admin --admin=1 --password=homeassistant || true
 fi
 
-# bashio::var.json \
-#     interface "$(bashio::addon.ip_address)" \
-#     port "^$(bashio::addon.ingress_port)" \
-#     protocol "http" \
-#     certfile "$(bashio::config 'certfile')" \
-#     keyfile "$(bashio::config 'keyfile')" \
-#     ssl "^$(bashio::config 'ssl')" |
-# tempio \
-#     -template /etc/nginx/templates/ingress.gtpl \
-#     -out /etc/nginx/servers/ingress.conf
 /usr/bin/tini /entrypoint.sh p:worker &
 /usr/bin/tini /entrypoint.sh p:cron &
 /usr/bin/tini /entrypoint.sh start-web

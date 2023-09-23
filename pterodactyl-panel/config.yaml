@@ -1,6 +1,6 @@
 ---
 name: pterodactyl Panel Gameserver - BETA
-version: v1.11.3-test9
+version: v1.11.3-test10
 slug: pterodactyl_panel
 image: ghcr.io/ddanii/pterodactyl_panel-{arch}
 description: OpenSource Gameserver
@@ -10,10 +10,9 @@ arch:
 services:
   - mysql:need
 map:
-  - share:rw
   - ssl
 init: false
-webui: http://[HOST]:[PORT:80]
+webui: [PROTO:ssl]://[HOST]:[PORT:80]
 options:
   REDIS_HOST: 57fef649-redis
   REDIS_PORT: 6379
@@ -28,8 +27,8 @@ schema:
   keyfile: str
   reset_database: bool?
 ports:
-  "443": 443
   80/tcp: 80
 ports_description:
   80/tcp: Web interface http
-  443/tcp: SSL Web interface
+environment:
+  CADDY_APP_URL: ":80"
