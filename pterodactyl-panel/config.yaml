@@ -1,6 +1,6 @@
 ---
 name: pterodactyl Panel Gameserver - BETA
-version: v1.11.3-test21
+version: v1.11.3-test22
 slug: pterodactyl_panel
 image: ghcr.io/ddanii/pterodactyl_panel-{arch}
 description: OpenSource Gameserver
@@ -27,8 +27,8 @@ schema:
   reset_database: bool?
 ports:
   80/tcp: 80
-  443: 443
+  443/tcp: 443
 ports_description:
   80/tcp: Web interface http
-  443: ssl interface
+  443/tcp: ssl interface
 webui: "[PROTO:ssl]://[HOST]:[PORT:80]"
