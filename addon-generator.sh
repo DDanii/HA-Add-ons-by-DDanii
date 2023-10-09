@@ -22,7 +22,7 @@ cp -r .template "$slug"
 
 cd "$slug" || return 1
 
-mv c.yaml config.yaml
+mv c.json config.json
 mv u.json updater.json
 
 version=$(date +%Y.%W)
@@ -32,7 +32,7 @@ get_input "version"
 short_description=""
 get_input "short_description"
 
-files="config.yaml README.md updater.json"
+files="config.json README.md updater.json"
 variables="slug name version image short_description"
 
 for file in $files; do
@@ -51,8 +51,10 @@ get_input "arches"
 for arch_number in $arches; do
     arch=$(echo $arch_list | cut -d , -f "$arch_number")
     echo "  $arch: $image" >> build.yaml
-    echo "  - $arch" >> config.yaml
+    echo '      '"$arch"'"' >> config.json
 done
+echo "   ]" >> config.json
+echo "}" >> config.json
 
 
 

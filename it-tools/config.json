@@ -1,0 +1,21 @@
+{
+   "name": "it-tools - DEVELOPMENT",
+   "version": "2023.41-test3",
+   "slug": "it-tools",
+   "image": "ghcr.io/ddanii/it-tools-{arch}",
+   "description": "Collection of handy online tools for developers",
+   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/it-tools",
+   "init": false,
+   "ports": {
+      "80/tcp": 80
+   },
+   "ports_description": {
+      "80/tcp": "Web interface http"
+   },
+   "ingress": true,
+   "ingress_port": 80,
+   "ingress_stream": true,
+   "arch": [
+      "amd64"
+   ]
+}
