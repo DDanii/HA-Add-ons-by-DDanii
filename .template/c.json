@@ -29,7 +29,3 @@
    "ingress_port": 80,
    "ingress_stream": true,
    "arch": [
-    
-   ]
-   }
-}

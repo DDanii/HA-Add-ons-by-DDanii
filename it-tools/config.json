@@ -1,6 +1,6 @@
 {
    "name": "it-tools - DEVELOPMENT",
-   "version": "2023.41-test3",
+   "version": "2023.41-test4",
    "slug": "it-tools",
    "image": "ghcr.io/ddanii/it-tools-{arch}",
    "description": "Collection of handy online tools for developers",
@@ -12,9 +12,7 @@
    "ports_description": {
       "80/tcp": "Web interface http"
    },
-   "ingress": true,
-   "ingress_port": 80,
-   "ingress_stream": true,
+   "webui": "http://[HOST]:[PORT:80]",
    "arch": [
       "amd64"
    ]
