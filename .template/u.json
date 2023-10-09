@@ -2,6 +2,5 @@
   "repository": "DDanii/HA-Add-ons-by-DDanii",
   "slug": "_slug_",
   "source": "dockerhub",
-  "upstream_repo": "_image_",
-  "upstream_version": "_version_"
+  "upstream_repo": "_image_"
 }

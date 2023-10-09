@@ -1,5 +1,5 @@
 name: it-tools - DEVELOPMENT
-version: 2023.41
+version: 2023.41-test2
 slug: it-tools
 image: ghcr.io/ddanii/it-tools-{arch}
 description: Collection of handy online tools for developers
@@ -9,6 +9,8 @@ ports:
   80/tcp: 80
 ports_description:
   80/tcp: Web interface http
-webui: "http://[HOST]:[PORT:80]"
+#webui: "http://[HOST]:[PORT:80]"
+ingress: true
+ingress_port: 80
 arch:
   - amd64
