@@ -2,5 +2,7 @@
   "repository": "DDanii/HA-Add-ons-by-DDanii",
   "slug": "it-tools",
   "source": "dockerhub",
-  "upstream_repo": "corentinth/it-tools"
+  "upstream_repo": "corentinth/it-tools",
+  "upstream_version": "2023.8.21-6f93cba",
+  "last_update": "09-10-2023"
 }
