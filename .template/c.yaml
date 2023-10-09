@@ -1,0 +1,23 @@
+name: _name_ - DEVELOPMENT
+version: _version_
+slug: _slug_
+image: ghcr.io/ddanii/_slug_-{arch}
+description: TODO
+url: https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/_slug_
+map:
+  - ssl
+init: false
+options:
+  ssl: false
+  certfile: fullchain.pem
+  keyfile: privkey.pem
+schema:
+  ssl: bool
+  certfile: str
+  keyfile: str
+ports:
+  80/tcp: 80
+ports_description:
+  80/tcp: Web interface http
+webui: "[PROTO:ssl]://[HOST]:[PORT:80]" # || ingress: true
+arch:
