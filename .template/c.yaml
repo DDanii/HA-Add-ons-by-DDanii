@@ -2,7 +2,7 @@ name: _name_ - DEVELOPMENT
 version: _version_
 slug: _slug_
 image: ghcr.io/ddanii/_slug_-{arch}
-description: TODO
+description: _short_description_
 url: https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/_slug_
 map:
   - ssl
@@ -19,5 +19,5 @@ ports:
   80/tcp: 80
 ports_description:
   80/tcp: Web interface http
-webui: "[PROTO:ssl]://[HOST]:[PORT:80]" # || ingress: true
+webui: "[PROTO:ssl]://[HOST]:[PORT:80]"
 arch:
