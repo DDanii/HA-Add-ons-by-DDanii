@@ -12,5 +12,6 @@ ports_description:
 #webui: "http://[HOST]:[PORT:80]"
 ingress: true
 ingress_port: 80
+ingress_stream: true
 arch:
   - amd64
