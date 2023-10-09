@@ -9,13 +9,7 @@
 
 ## About
 
-TODO
-
-## Configuration
-
-```yaml
-TODO: this too
-```
+Collection of handy online tools for developers, with great UX as a web app. [Github page](https://github.com/CorentinTh/it-tools)
 
 ## Support
 
