@@ -1,6 +1,6 @@
 {
   "name": "it-tools - DEVELOPMENT",
-  "version": "2023.8.21-6f93cba",
+  "version": "2023.11.2-7d94e11",
   "slug": "it-tools",
   "image": "ghcr.io/ddanii/it-tools-{arch}",
   "description": "Collection of handy online tools for developers",
