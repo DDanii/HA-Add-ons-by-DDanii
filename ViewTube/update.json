@@ -1,0 +1,6 @@
+{
+  "repository": "DDanii/HA-Add-ons-by-DDanii",
+  "slug": "ViewTube",
+  "source": "dockerhub",
+  "upstream_repo": "mauriceo/viewtube"
+}
