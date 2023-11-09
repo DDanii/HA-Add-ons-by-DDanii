@@ -1,12 +1,15 @@
 {
   "name": "MongoDB 4.4 - BETA",
-  "version": "4.4",
+  "version": "4.4-test1",
   "slug": "mongodb44",
   "image": "ghcr.io/ddanii/mongodb44-{arch}",
   "description": "document-oriented database",
   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/mongodb44",
   "arch": [
     "amd64"
+  ],
+  "map": [
+    "config:rw"
   ],
   "startup": "services",
   "init": false

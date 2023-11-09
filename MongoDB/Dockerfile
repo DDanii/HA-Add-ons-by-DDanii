@@ -1,3 +1,7 @@
 ARG BUILD_FROM
 ARG BUILD_ARCH
 FROM $BUILD_FROM
+
+COPY rootfs/ /
+
+ENTRYPOINT [ "run.sh" ]

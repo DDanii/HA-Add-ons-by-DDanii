@@ -1,12 +1,15 @@
 {
   "name": "MongoDB - BETA",
-  "version": "7.0.0",
+  "version": "7.0.0-test1",
   "slug": "mongodb",
   "image": "ghcr.io/ddanii/mongodb-{arch}",
   "description": "document-oriented database",
   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/mongodb",
   "arch": [
     "amd64"
+  ],
+  "map": [
+    "config:rw"
   ],
   "startup": "services",
   "init": false
