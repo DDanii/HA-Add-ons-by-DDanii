@@ -1,5 +1,5 @@
 {
-  "name": "it-tools - DEVELOPMENT",
+  "name": "it-tools",
   "version": "2023.11.2-7d94e11",
   "slug": "it-tools",
   "image": "ghcr.io/ddanii/it-tools-{arch}",
