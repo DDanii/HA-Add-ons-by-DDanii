@@ -4,4 +4,4 @@ FROM $BUILD_FROM
 
 COPY rootfs/ /
 
-ENTRYPOINT [ "run.sh" ]
+ENTRYPOINT [ "/run.sh" ]

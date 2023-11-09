@@ -1,6 +1,6 @@
 {
   "name": "MongoDB - BETA",
-  "version": "7.0.0-test1",
+  "version": "7.0.0-test2",
   "slug": "mongodb",
   "image": "ghcr.io/ddanii/mongodb-{arch}",
   "description": "document-oriented database",
