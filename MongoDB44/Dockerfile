@@ -2,8 +2,9 @@ ARG BUILD_FROM
 ARG BUILD_ARCH
 FROM $BUILD_FROM
 
-COPY rootfs/ /
+RUN mkdir -p /config/addons_config/mongodb44/db \
+    mkdir -p /config/addons_config/mongodb44/configdb \
+    chown -R mongodb:mongodb /config/addons_config/mongodb44/db /config/addons_config/mongodb44/configdb \
+    usermod -m -d /config/addons_config/mongodb44/db mongodb
 
-RUN chmod a+x /run.sh
-
-ENTRYPOINT [ "/run.sh" ]
+ENV HOME /config/addons_config/mongodb44/db
