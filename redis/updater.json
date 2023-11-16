@@ -1,9 +1,6 @@
 {
   "repository": "DDanii/HA-Add-ons-by-DDanii",
   "slug": "redis",
-  "source": "dockerhub",
-  "upstream_repo": "library/redis",
-  "dockerhub_by_date": "true",
-  "upstream_version": "bullseye-2023-06-13",
-  "last_update": "2023-06-13"
+  "source": "github",
+  "upstream_repo": "redis/redis"
 }

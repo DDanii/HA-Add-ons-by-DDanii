@@ -3,6 +3,5 @@
   "slug": "piped",
   "source": "dockerhub",
   "upstream_repo": "1337kavin/piped",
-  "upstream_version": "hotspot",
-  "last_update": "16-11-2023"
+  "dockerhub_by_date": "true"
 }
