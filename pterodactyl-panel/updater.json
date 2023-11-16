@@ -2,5 +2,7 @@
   "repository": "DDanii/HA-Add-ons-by-DDanii",
   "slug": "pterodactyl_panel",
   "source": "dockerhub",
-  "upstream_repo": "ccarney16/pterodactyl-panel"
+  "upstream_repo": "ccarney16/pterodactyl-panel",
+  "upstream_version": "v1.11.5",
+  "last_update": "16-11-2023"
 }
