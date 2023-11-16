@@ -9,4 +9,4 @@ usermod -d /config/addons/mongodb44/db mongodb
 
 export HOME=/config/addons/mongodb44/db
 
-/usr/local/bin/docker-entrypoint.sh mongod --dbpath /config/addons/mongodb44/db --configsvr dir /config/addons/mongodb44/configdb
+/usr/local/bin/docker-entrypoint.sh mongod --dbpath /config/addons/mongodb44/db
