@@ -3,6 +3,5 @@
   "slug": "redis",
   "source": "dockerhub",
   "upstream_repo": "library/redis",
-  "upstream_version": "bullseye",
-  "last_update": "16-11-2023"
+  "dockerhub_by_date": "true"
 }

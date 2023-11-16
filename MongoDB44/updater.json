@@ -1,8 +1,7 @@
 {
   "repository": "DDanii/HA-Add-ons-by-DDanii",
   "slug": "mongodb44",
-  "source": "dockerhub",
-  "upstream_repo": "library/mongo:4.4",
-  "upstream_version": "",
-  "last_update": "16-11-2023"
+  "source": "github",
+  "upstream_repo": "mongodb/mongo",
+  "github_tagfilter": "4.4"
 }

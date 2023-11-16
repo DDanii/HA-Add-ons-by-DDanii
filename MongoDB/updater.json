@@ -3,6 +3,5 @@
   "slug": "mongodb",
   "source": "dockerhub",
   "upstream_repo": "library/mongo",
-  "upstream_version": "windowsservercore-ltsc2022",
-  "last_update": "16-11-2023"
+  "dockerhub_by_date": "true"
 }
