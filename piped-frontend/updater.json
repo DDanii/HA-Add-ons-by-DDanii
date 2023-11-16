@@ -4,6 +4,7 @@
   "source": "dockerhub",
   "upstream_repo": "1337kavin/piped-frontend",
   "dockerhub_by_date": "true",
+  "paused": "true",
   "upstream_version": "-",
   "last_update": ""
 }
