@@ -1,6 +1,6 @@
 {
   "name": "Libreddit - BETA",
-  "version": "armv7",
+  "version": "0.30.1",
   "slug": "libreddit",
   "image": "ghcr.io/ddanii/libreddit-{arch}",
   "description": "private front-end for reddit",

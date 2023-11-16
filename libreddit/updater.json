@@ -2,5 +2,7 @@
   "repository": "DDanii/HA-Add-ons-by-DDanii",
   "slug": "libreddit",
   "source": "github",
-  "upstream_repo": "libreddit/libreddit"
+  "upstream_repo": "libreddit/libreddit",
+  "upstream_version": "0.30.1",
+  "last_update": "16-11-2023"
 }
