@@ -1,6 +1,6 @@
 {
   "name": "MongoDB - untested",
-  "version": "7.0.0-test4",
+  "version": "windowsservercore-ltsc2022",
   "slug": "mongodb",
   "image": "ghcr.io/ddanii/mongodb-{arch}",
   "description": "document-oriented database",

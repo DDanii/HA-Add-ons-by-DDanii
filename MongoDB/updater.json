@@ -2,5 +2,7 @@
   "repository": "DDanii/HA-Add-ons-by-DDanii",
   "slug": "mongodb",
   "source": "dockerhub",
-  "upstream_repo": "library/mongo"
+  "upstream_repo": "library/mongo",
+  "upstream_version": "windowsservercore-ltsc2022",
+  "last_update": "16-11-2023"
 }
