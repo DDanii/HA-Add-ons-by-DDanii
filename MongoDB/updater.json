@@ -3,5 +3,7 @@
   "slug": "mongodb",
   "source": "github",
   "upstream_repo": "mongodb/mongo",
-  "github_exclude": "rc"
+  "github_exclude": "rc",
+  "upstream_version": "7.0.4",
+  "last_update": "16-11-2023"
 }
