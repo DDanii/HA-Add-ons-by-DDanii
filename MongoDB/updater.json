@@ -1,0 +1,6 @@
+{
+  "repository": "DDanii/HA-Add-ons-by-DDanii",
+  "slug": "mongodb",
+  "source": "dockerhub",
+  "upstream_repo": "library/mongo"
+}

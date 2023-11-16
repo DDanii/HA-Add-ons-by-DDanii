@@ -1,0 +1,43 @@
+{
+   "name": "pterodactyl Panel Gameserver - BETA",
+   "version": "v1.11.3-test22",
+   "slug": "pterodactyl_panel",
+   "image": "ghcr.io/ddanii/pterodactyl_panel-{arch}",
+   "description": "OpenSource Gameserver",
+   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/pterodactyl-panel",
+   "arch": [
+      "amd64"
+   ],
+   "services": [
+      "mysql:need"
+   ],
+   "map": [
+      "ssl"
+   ],
+   "init": false,
+   "options": {
+      "REDIS_HOST": "57fef649-redis",
+      "REDIS_PORT": 6379,
+      "ssl": false,
+      "certfile": "fullchain.pem",
+      "keyfile": "privkey.pem"
+   },
+   "schema": {
+      "REDIS_HOST": "str",
+      "REDIS_PORT": "port",
+      "ssl": "bool",
+      "certfile": "str",
+      "keyfile": "str",
+      "reset_database": "bool?"
+   },
+   "ports": {
+      "80/tcp": 80,
+      "443/tcp": 443
+   },
+   "ports_description": {
+      "80/tcp": "Web interface http",
+      "443/tcp": "ssl interface"
+   },
+   "webui": "[PROTO:ssl]://[HOST]:[PORT:80]"
+}
+

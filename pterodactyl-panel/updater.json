@@ -1,0 +1,6 @@
+{
+  "repository": "DDanii/HA-Add-ons-by-DDanii",
+  "slug": "pterodactyl_panel",
+  "source": "dockerhub",
+  "upstream_repo": "ccarney16/pterodactyl-panel"
+}
