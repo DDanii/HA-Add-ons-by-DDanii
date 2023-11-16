@@ -2,5 +2,7 @@
   "repository": "DDanii/HA-Add-ons-by-DDanii",
   "slug": "redis",
   "source": "github",
-  "upstream_repo": "redis/redis"
+  "upstream_repo": "redis/redis",
+  "upstream_version": "7.2.3",
+  "last_update": "16-11-2023"
 }

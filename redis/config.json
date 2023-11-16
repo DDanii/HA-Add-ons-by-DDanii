@@ -1,6 +1,6 @@
 {
   "name": "redis - BETA",
-  "version": "bullseye-2023-06-13",
+  "version": "7.2.3",
   "slug": "redis",
   "image": "ghcr.io/ddanii/redis-{arch}",
   "description": "in-memory data store",
