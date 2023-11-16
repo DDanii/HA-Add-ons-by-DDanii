@@ -2,5 +2,7 @@
   "repository": "DDanii/HA-Add-ons-by-DDanii",
   "slug": "piped",
   "source": "dockerhub",
-  "upstream_repo": "1337kavin/piped"
+  "upstream_repo": "1337kavin/piped",
+  "upstream_version": "hotspot",
+  "last_update": "16-11-2023"
 }
