@@ -2,5 +2,7 @@
   "repository": "DDanii/HA-Add-ons-by-DDanii",
   "slug": "libreddit",
   "source": "dockerhub",
-  "upstream_repo": "libreddit/libreddit"
+  "upstream_repo": "libreddit/libreddit",
+  "upstream_version": "armv7",
+  "last_update": "16-11-2023"
 }

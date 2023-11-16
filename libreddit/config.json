@@ -1,6 +1,6 @@
 {
   "name": "Libreddit - BETA",
-  "version": "0.30.1",
+  "version": "armv7",
   "slug": "libreddit",
   "image": "ghcr.io/ddanii/libreddit-{arch}",
   "description": "private front-end for reddit",
@@ -16,5 +16,4 @@
   "ports_description": {
     "8080/tcp": "Web interface"
   }
-
 }
