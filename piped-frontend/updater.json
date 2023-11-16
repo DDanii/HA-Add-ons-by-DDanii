@@ -2,5 +2,7 @@
   "repository": "DDanii/HA-Add-ons-by-DDanii",
   "slug": "piped-frontend",
   "source": "dockerhub",
-  "upstream_repo": "1337kavin/piped-frontend:latest"
+  "upstream_repo": "1337kavin/piped-frontend:latest",
+  "upstream_version": "",
+  "last_update": "16-11-2023"
 }
