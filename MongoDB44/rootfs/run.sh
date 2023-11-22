@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bashio
 
 mkdir -p /config/db
 chown -R mongodb:mongodb /config/db
