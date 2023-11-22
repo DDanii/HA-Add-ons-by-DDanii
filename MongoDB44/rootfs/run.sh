@@ -1,9 +1,15 @@
 #!/bin/bash
 
-mkdir -p /config/addons/mongodb44/db
-chown -R mongodb:mongodb /config/addons/mongodb44/db
-usermod -d /config/addons/mongodb44/db mongodb
+mkdir -p /config/db
+chown -R mongodb:mongodb /config/db
+usermod -d /config/db mongodb
 
-export HOME=/config/addons/mongodb44/db
+export HOME=/config/db
 
-/usr/local/bin/docker-entrypoint.sh mongod --dbpath /config/addons/mongodb44/db
+args="--dbpath /config/db"
+
+if bashio::config.true 'smallfiles'; then
+    args="${args} --smallfiles"
+fi
+
+/usr/local/bin/docker-entrypoint.sh mongod "${args}"

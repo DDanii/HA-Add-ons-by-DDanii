@@ -1,6 +1,6 @@
 {
   "name": "MongoDB 4.4 - BETA",
-  "version": "4.4.26",
+  "version": "4.4.26-test1",
   "slug": "mongodb44",
   "image": "ghcr.io/ddanii/mongodb44-{arch}",
   "description": "document-oriented database",
@@ -9,8 +9,18 @@
     "amd64"
   ],
   "map": [
-    "config:rw"
+    "addon_configs:rw"
   ],
   "startup": "services",
-  "init": false
+  "init": false,
+  "backup": "cold",
+  "backup_exclude": [
+    "/config/db/journal"
+  ],
+  "options": {
+    "smallfiles": false
+  },
+  "schema": {
+    "smallfiles": "bool"
+  }
 }

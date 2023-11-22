@@ -1,9 +1,7 @@
 #!/usr/bin/bash
 
-mkdir -p /config/addons_config/piped
+cp -rnf /templates/config.properties /config/
 
-cp -rnf /templates/config.properties /config/addons_config/piped/
-
-ln -s /config/addons_config/piped /app/config.properties
+ln -s /config /app
 
 /hotspot-entrypoint.sh

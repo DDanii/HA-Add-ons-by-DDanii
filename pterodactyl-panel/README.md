@@ -42,9 +42,11 @@ keyfile: itdoesntmatter_as_ssl_is_set_to_false
 
 ### Option: `ssl`
 
+Not supported yet.
+
 Enables/Disables SSL (HTTPS) on the web interface.
 
-If you need a self-signed certificate, have a look at my openssl addon: <https://github.com/FaserF/hassio-addons/tree/master/openssl>
+If you need a self-signed certificate, have a look at FaserF's openssl addon: <https://github.com/FaserF/hassio-addons/tree/master/openssl>
 
 **Note**: _The files MUST be stored in `/ssl/`, which is the default_
 

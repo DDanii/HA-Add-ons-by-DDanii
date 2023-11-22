@@ -1,0 +1,2 @@
+## 4.4.26-test1 (22-11-2023)
+- You need to manually move the files from /config/addons/mongodb44 to /addon_configs/57fef649_mongodb
