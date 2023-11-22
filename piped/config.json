@@ -1,6 +1,6 @@
 {
   "name": "piped - DEVELOPMENT",
-  "version": "hotspot-2023-11-16-configmove",
+  "version": "hotspot-2023-11-16-configmove2",
   "slug": "piped",
   "image": "ghcr.io/ddanii/piped-{arch}",
   "description": "Alternative YouTube frontend",
@@ -10,7 +10,7 @@
   ],
   "init": false,
   "map": [
-    "addon_configs:rw"
+    "addon_config:rw"
   ],
   "ports": {
     "8080/tcp": 8080
