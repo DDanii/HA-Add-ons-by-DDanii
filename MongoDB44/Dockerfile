@@ -23,4 +23,4 @@ RUN chmod a+x /run.sh
 
 ENV HOME=/config/db
 
-CMD [ "mongod", "dbpath=/config/db" ]
+CMD [ "mongod dbpath=/config/db" ]
