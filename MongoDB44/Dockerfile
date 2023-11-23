@@ -21,4 +21,6 @@ COPY rootfs/ /
 
 RUN chmod a+x /run.sh
 
-ENTRYPOINT [ "/run.sh" ]
+ENV HOME=/config/db
+
+CMD [ "mongod" "dbpath=/config/db" ]
