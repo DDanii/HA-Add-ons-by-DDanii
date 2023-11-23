@@ -28,6 +28,12 @@ mv u.json updater.json
 version=$(date +%Y.%W)
 get_input "version"
 
+keep_rootfs=0
+get_input "keep_rootfs"
+
+if [ $keep_rootfs -eq 0 ]; then
+    rm -r rootfs
+fi
 
 short_description=""
 get_input "short_description"
