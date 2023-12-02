@@ -1,4 +1,7 @@
 
+## hotspot-2023-11-30 (2023-11-30)
+- Update to latest version from 1337kavin/piped
+
 ## hotspot-2023-11-24 (2023-11-24)
 - Update to latest version from 1337kavin/piped
 ## hotspot-2023-11-16-configmove (22-11-2023)
