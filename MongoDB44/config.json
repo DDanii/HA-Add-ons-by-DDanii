@@ -1,6 +1,6 @@
 {
   "name": "MongoDB 4.4 - BETA",
-  "version": "4.4.26-test13",
+  "version": "4.4.26-test14",
   "slug": "mongodb44",
   "image": "ghcr.io/ddanii/mongodb44-{arch}",
   "description": "document-oriented database",
@@ -20,7 +20,7 @@
     "/mnt/data/supervisor/addon_configs/db/journal"
   ],
   "options": {
-    "journal_path": null
+    "journal_path": ""
   },
   "schema": {
     "journal_path": "str?"
