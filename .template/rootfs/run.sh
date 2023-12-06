@@ -19,3 +19,5 @@ RUN mkdir -p /tmp/bashio && \
 COPY rootfs/ /
 
 RUN chmod a+x /run.sh
+
+CMD /run.sh

@@ -1,6 +1,6 @@
 {
   "name": "redis - BETA",
-  "version": "7.2.3",
+  "version": "7.2.3-test1",
   "slug": "redis",
   "image": "ghcr.io/ddanii/redis-{arch}",
   "description": "in-memory data store",
@@ -9,5 +9,11 @@
     "amd64"
   ],
   "startup": "services",
-  "init": false
+  "init": false,
+  "options": {
+    "save": "3600 1 300 100 60 10000"
+  },
+  "schema": {
+    "save": "str"
+  }
 }

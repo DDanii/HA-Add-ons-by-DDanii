@@ -11,17 +11,16 @@ mongodb for Homeassistant OS
 Example add-on configuration:
 
 ```yaml
-samllfiles: false
+journal_path: /media/mongodb44/journal
 ```
 
 <br />
 
-### Option: `smallfiles`
+### Option: `journal_path`
 
-Enables a mode where MongoDB uses a smaller default file size. Specifically, --smallfiles reduces the initial size for data files and limits them to 512 megabytes. --smallfiles also reduces the size of each journal files from 1 gigabyte to 128 megabytes.
+Journal files are only needed if mongodb is shutted down unexpectedly. To reduce the size of the backup you can move these files to folders what you not backing up (media, share).
+Leave it empty for default behaviour.
 
-Use --smallfiles if you have a large number of databases that each holds a small quantity of data. --smallfiles can lead your mongod to create a large number of files, which may affect performance for larger databases.
 
-
-(docs) [https://www.mongodb.com/docs/v2.2/reference/mongod/#cmdoption-mongod-smallfiles]
+Custom configs can be setted in /addon_configs/57fef649_mongodb44/mongod.conf
 
