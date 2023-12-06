@@ -4,7 +4,7 @@ mkdir -p /config/db
 chown -R mongodb:mongodb /config/db
 usermod -d /config/db mongodb
 
-args="--dbpath /config/db --config /config/mongod.conf"
+args="--dbpath /config/db" # --config /config/mongod.conf"
 
 journal_path="$(bashio::config 'journal_path')"
 
