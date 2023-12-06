@@ -12,4 +12,6 @@ if bashio::config.has_value 'journal_path'; then
     ln -s "$journal_path" /config/db/journal
 fi
 
+touch /config/mongod.conf
+
 /usr/local/bin/docker-entrypoint.sh mongod --dbpath /config/db --config /config/mongod.conf
