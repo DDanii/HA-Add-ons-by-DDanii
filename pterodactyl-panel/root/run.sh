@@ -16,6 +16,10 @@ if bashio::config.true 'ssl'; then
     export SSL_CERT_KEY=/ssl/$(bashio::config 'keyfile')
 fi
 
+if bashio::config.has_value 'TZ'; then
+    export TZ=$(bahio::config 'TZ')
+fi
+
 if bashio::config.true 'reset_database'; then
     bashio::log.warning 'Droping database'
     echo "DROP DATABASE IF EXISTS ${DB_DATABASE};" |

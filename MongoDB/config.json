@@ -1,6 +1,6 @@
 {
   "name": "MongoDB - untested",
-  "version": "7.1.1",
+  "version": "7.1.1-update1",
   "slug": "mongodb",
   "image": "ghcr.io/ddanii/mongodb-{arch}",
   "description": "document-oriented database",
@@ -9,8 +9,17 @@
     "amd64"
   ],
   "map": [
-    "config:rw"
+    "addon_config:rw",
+    "media:rw",
+    "share:rw"
   ],
   "startup": "services",
-  "init": false
+  "init": false,
+  "backup": "cold",
+  "options": {
+    "journal_path": ""
+  },
+  "schema": {
+    "journal_path": "str?"
+  }
 }

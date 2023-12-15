@@ -1,9 +1,18 @@
-#!/bin/bash
+#!/usr/bin/bashio
 
-mkdir -p /config/addons/mongodb/db
-chown -R mongodb:mongodb /config/addons/mongodb/db
-usermod -d /config/addons/mongodb/db mongodb
+mkdir -p /config/db
+chown -R mongodb:mongodb /config/db
+usermod -d /config/db mongodb
 
-export HOME=/config/addons/mongodb/db
+journal_path="$(bashio::config 'journal_path')"
 
-/usr/local/bin/docker-entrypoint.sh mongod --dbpath /config/addons/mongodb/db
+if bashio::config.has_value 'journal_path'; then
+    rm -rf /config/db/journal
+    mkdir -p "$journal_path"
+    chown -R mongodb:mongodb "$journal_path"
+    ln -s "$journal_path" /config/db/journal
+fi
+
+touch /config/mongod.conf
+
+/usr/local/bin/docker-entrypoint.sh mongod --dbpath /config/db --config /config/mongod.conf

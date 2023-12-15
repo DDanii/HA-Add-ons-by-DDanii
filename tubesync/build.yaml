@@ -1,0 +1,3 @@
+build_from:
+  amd64: ghcr.io/meeb/tubesync
+  aarch64: ghcr.io/meeb/tubesync

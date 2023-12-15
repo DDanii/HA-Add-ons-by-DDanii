@@ -1,0 +1,36 @@
+{
+   "name": "TubeSync - DEVELOPMENT",
+   "version": "2023.50",
+   "slug": "tubesync",
+   "image": "ghcr.io/ddanii/tubesync-{arch}",
+   "description": "TubeSync is a PVR (personal video recorder) for YouTube",
+   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/tubesync",
+   "map": [
+      "media:rw",
+      "share:rw",
+      "addon_config:rw"
+   ],
+   "init": false,
+   "options": {
+      "downloadFolder": "/media/tubesync"
+   },
+   "schema": {
+      "TZ": "str?",
+      "downloadFolder": "str",
+      "HTTP_USER": "str?",
+      "HTTP_PASS": "str?"
+   },
+   "ports": {
+      "4848/tcp": 4848
+   },
+   "ports_description": {
+      "4848/tcp": "Web interface http"
+   },
+   "ingress": true,
+   "ingress_port": 4848,
+   "ingress_stream": true,
+   "arch": [
+      "amd64",
+      "aarch64"
+   ]
+}

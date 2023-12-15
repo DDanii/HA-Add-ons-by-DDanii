@@ -2,7 +2,7 @@
 
 ![Supports amd64 Architecture][amd64-shield]
 
-mongodb for Homeassistant OS
+mongodb version 4.4 for Homeassistant OS
 
 ## About
 
@@ -19,8 +19,11 @@ journal_path: /media/mongodb44/journal
 ### Option: `journal_path`
 
 Journal files are only needed if mongodb is shutted down unexpectedly. To reduce the size of the backup you can move these files to folders what you not backing up (media, share).
-Leave it empty for default behaviour.
-
+Leave it empty for default behaviour. You can futher decrease backup size by disabling logging by adding this to the custom config:
+```yaml
+setParameter:
+  diagnosticDataCollectionEnabled: false
+```
 
 Custom configs can be setted in /addon_configs/57fef649_mongodb44/mongod.conf
 

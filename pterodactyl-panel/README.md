@@ -36,6 +36,8 @@ Example add-on configuration:
 ssl: false #currently ssl is not supported
 certfile: itdoesntmatter_as_ssl_is_set_to_false
 keyfile: itdoesntmatter_as_ssl_is_set_to_false
+TZ: CEST #timezone
+reset_database: false
 ```
 
 <br />
@@ -55,8 +57,6 @@ If you need a self-signed certificate, have a look at FaserF's openssl addon: <h
 Enables it to reset the database files for pterodactyl. Please not this action can not be undone! Use it with care. Also losing wings data. All wings will need new config file.
 
 ## Default Login Credential
-
-todo fix make settable
 
 E-Mail: <admin@example.com>
 Username: admin

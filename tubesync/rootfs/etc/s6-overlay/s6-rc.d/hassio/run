@@ -1,0 +1,14 @@
+#!/command/with-contenv /usr/bin/bashio
+
+if bashio::config.has_value 'TZ'; then
+    export TZ=$(bahio::config 'TZ')
+fi
+
+if bashio::config.has_value 'HTTP_USER'; then
+    export HTTP_USER=$(bahio::config 'HTTP_USER')
+    export HTTP_PASS=$(bahio::config 'HTTP_PASS')
+fi
+
+mkdir -p $(bahio::config 'downloadFolder')
+rm -rf /downloads
+ln -s $(bahio::config 'downloadFolder') /downloads
