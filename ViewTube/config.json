@@ -1,26 +1,26 @@
 {
-    "name": "ViewTube - BETA",
-    "version": "0.13.1",
-    "slug": "ViewTube",
-    "image": "ghcr.io/ddanii/viewtube-{arch}",
-    "description": "Alternative YouTube frontend",
-    "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/viewtube",
-    "arch": [
-       "amd64"
-    ],
-    "init": false,
-    "options": {
-       "VIEWTUBE_REDIS_HOST": "57fef649-redis",
-       "VIEWTUBE_DATABASE_HOST": "57fef649-mongodb"
-    },
-    "schema": {
-       "VIEWTUBE_REDIS_HOST": "str",
-       "VIEWTUBE_DATABASE_HOST": "str"
-    },
-    "ports": {
-       "8066": 8066
-    },
-    "ports_description": {
-       "8066/tcp": "Web interface http"
-    }
- }
+  "name": "ViewTube - BETA",
+  "version": "0.14.1",
+  "slug": "ViewTube",
+  "image": "ghcr.io/ddanii/viewtube-{arch}",
+  "description": "Alternative YouTube frontend",
+  "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/viewtube",
+  "arch": [
+    "amd64"
+  ],
+  "init": false,
+  "options": {
+    "VIEWTUBE_REDIS_HOST": "57fef649-redis",
+    "VIEWTUBE_DATABASE_HOST": "57fef649-mongodb"
+  },
+  "schema": {
+    "VIEWTUBE_REDIS_HOST": "str",
+    "VIEWTUBE_DATABASE_HOST": "str"
+  },
+  "ports": {
+    "8066": 8066
+  },
+  "ports_description": {
+    "8066/tcp": "Web interface http"
+  }
+}

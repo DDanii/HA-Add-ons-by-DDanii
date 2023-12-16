@@ -3,6 +3,6 @@
   "slug": "ViewTube",
   "source": "dockerhub",
   "upstream_repo": "mauriceo/viewtube",
-  "upstream_version": "0.13.1",
-  "last_update": "06-11-2023"
+  "upstream_version": "0.14.1",
+  "last_update": "16-12-2023"
 }
