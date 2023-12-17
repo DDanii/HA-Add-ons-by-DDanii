@@ -9,6 +9,7 @@ if bashio::config.has_value 'HTTP_USER'; then
     export HTTP_PASS=$(bashio::config 'HTTP_PASS')
 fi
 
-mkdir -p $(bashio::config 'downloadFolder')
+mkdir -p $(bashio::config 'downloadFolder')/video
+mkdir -p $(bashio::config 'downloadFolder')/audio
 rm -rf /downloads
-ln -s $(bashio::config 'downloadFolder') /downloads
+ln -s $(bashio::config 'downloadFolder')/* /downloads/
