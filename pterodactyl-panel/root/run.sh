@@ -40,6 +40,6 @@ if [ $setup_user = "true" ]; then
     php artisan p:user:make --email=admin@example.com --username=admin --name-first=admin --name-last=admin --admin=1 --password=homeassistant || true
 fi
 
-/usr/bin/tini /entrypoint.sh p:worker &
-/usr/bin/tini /entrypoint.sh p:cron &
-/usr/bin/tini /entrypoint.sh start-web
+/usr/bin/tini -s /entrypoint.sh p:worker &
+/usr/bin/tini -s /entrypoint.sh p:cron &
+/usr/bin/tini -s /entrypoint.sh start-web

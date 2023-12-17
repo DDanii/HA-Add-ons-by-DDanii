@@ -19,7 +19,7 @@ RUN mkdir -p /tmp/bashio && \
     "https://github.com/home-assistant/tempio/releases/download/2021.09.0/tempio_amd64" \
     && chmod a+x /usr/bin/tempio
 
-RUN echo "hassio" | tee -a /etc/s6-overlay/s6-rc.d/*/dependancies
+RUN echo "hassio" >> /etc/s6-overlay/s6-rc.d/tubesync-init/dependencies
 
 COPY rootfs/ /
 
