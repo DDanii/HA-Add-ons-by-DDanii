@@ -11,5 +11,6 @@ fi
 
 mkdir -p $(bashio::config 'downloadFolder')/video
 mkdir -p $(bashio::config 'downloadFolder')/audio
-rm -rf /downloads
+rm -rf /downloads/video
+rm -rf /downloads/audio
 ln -s $(bashio::config 'downloadFolder')/* /downloads/
