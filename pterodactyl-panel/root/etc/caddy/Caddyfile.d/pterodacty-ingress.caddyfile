@@ -2,11 +2,6 @@
         root * /var/www/html/public
         file_server
 
-        proxy_protocol {
-            timeout 2s
-            allow 172.30.32.2
-        }
-
         {$CADDY_TLS_OPTIONS}
 
         header {

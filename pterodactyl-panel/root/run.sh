@@ -18,7 +18,7 @@ if bashio::config.true 'ssl'; then
 fi
 
 if bashio::config.has_value 'TZ'; then
-    export TZ=$(bahio::config 'TZ')
+    export TZ=$(bashio::config 'TZ')
 fi
 
 if bashio::config.true 'reset_database'; then
