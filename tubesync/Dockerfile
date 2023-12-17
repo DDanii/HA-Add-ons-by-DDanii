@@ -23,6 +23,8 @@ RUN echo "hassio" | tee -a /etc/s6-overlay/s6-rc.d/*/dependancies
 
 COPY rootfs/ /
 
+RUN chmod a+x /etc/s6-overlay/s6-rc.d/hassio/*
+
 LABEL \
     io.hass.arch="${BUILD_ARCH}" \
     io.hass.type="addon" \
