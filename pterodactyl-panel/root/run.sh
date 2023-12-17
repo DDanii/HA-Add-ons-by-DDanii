@@ -14,6 +14,7 @@ setup_user=false
 if bashio::config.true 'ssl'; then
     export SSL_CERT=/ssl/$(bashio::config 'certfile')
     export SSL_CERT_KEY=/ssl/$(bashio::config 'keyfile')
+    export APP_URL=$(bahio::config 'APP_URL')
 fi
 
 if bashio::config.has_value 'TZ'; then
