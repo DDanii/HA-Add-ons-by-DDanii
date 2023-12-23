@@ -3,6 +3,6 @@
   "slug": "it-tools",
   "source": "dockerhub",
   "upstream_repo": "corentinth/it-tools",
-  "upstream_version": "2023.11.2-7d94e11",
-  "last_update": "06-11-2023"
+  "upstream_version": "2023.12.21-5ed3693",
+  "last_update": "23-12-2023"
 }
