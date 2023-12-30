@@ -1,16 +1,21 @@
 #!/command/with-contenv /usr/bin/bashio
 
 if bashio::config.has_value 'TZ'; then
-    export TZ=$(bashio::config 'TZ')
+    (bashio::config 'TZ') > /var/run/s6/container_environment/TZ
+
+
 fi
 
 if bashio::config.has_value 'HTTP_USER'; then
-    export HTTP_USER=$(bashio::config 'HTTP_USER')
-    export HTTP_PASS=$(bashio::config 'HTTP_PASS')
+    (bashio::config 'HTTP_USER') > /var/run/s6/container_environment/HTTP_USER
+    (bashio::config 'HTTP_PASS') > /var/run/s6/container_environment/HTTP_PASS
 fi
 
-mkdir -p $(bashio::config 'downloadFolder')/video
-mkdir -p $(bashio::config 'downloadFolder')/audio
+dlf="$(bashio::config 'downloadFolder')"
+
+mkdir -p "$dlf"/video
+mkdir -p "$dlf"/audio
 rm -rf /downloads/video
 rm -rf /downloads/audio
-ln -s $(bashio::config 'downloadFolder')/* /downloads/
+chown -R 911 "$dlf"/*
+ln -s "$dlf"/* /downloads/

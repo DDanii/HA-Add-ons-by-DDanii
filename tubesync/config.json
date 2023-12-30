@@ -1,6 +1,6 @@
 {
   "name": "TubeSync - DEVELOPMENT",
-  "version": "0.13.3-test6",
+  "version": "0.13.3-test7",
   "slug": "tubesync",
   "image": "ghcr.io/ddanii/tubesync-{arch}",
   "description": "TubeSync is a PVR (personal video recorder) for YouTube",
@@ -18,7 +18,7 @@
     "TZ": "str?",
     "downloadFolder": "str",
     "HTTP_USER": "str?",
-    "HTTP_PASS": "str?"
+    "HTTP_PASS": "password?"
   },
   "ports": {
     "4848/tcp": 4848
