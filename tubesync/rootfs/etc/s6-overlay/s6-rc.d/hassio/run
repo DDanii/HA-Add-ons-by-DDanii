@@ -1,7 +1,7 @@
 #!/command/with-contenv /usr/bin/bashio
 
 if bashio::config.has_value 'TZ'; then
-    bashio::config 'TZ' > /var/run/s6/container_environment/TZ
+    echo "$(bashio::config 'TZ')" > /var/run/s6/container_environment/TZ
 
 
 fi
