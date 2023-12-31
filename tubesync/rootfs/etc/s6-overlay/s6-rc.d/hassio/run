@@ -2,14 +2,12 @@
 
 if bashio::config.has_value 'TZ'; then
     echo "$(bashio::config 'TZ')" > /var/run/s6/container_environment/TZ
-
-
 fi
 
-# if bashio::config.has_value 'HTTP_USER'; then
-#     (bashio::config 'HTTP_USER') > /var/run/s6/container_environment/HTTP_USER
-#     (bashio::config 'HTTP_PASS') > /var/run/s6/container_environment/HTTP_PASS
-# fi
+if bashio::config.has_value 'HTTP_USER'; then
+    echo "$(bashio::config 'HTTP_USER')" > /var/run/s6/container_environment/HTTP_USER
+    echo "$(bashio::config 'HTTP_PASS')" > /var/run/s6/container_environment/HTTP_PASS
+fi
 
 dlf="$(bashio::config 'downloadFolder')"
 

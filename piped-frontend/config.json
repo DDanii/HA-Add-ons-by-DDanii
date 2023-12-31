@@ -1,6 +1,6 @@
 {
   "name": "piped-frontend - BETA",
-  "version": "hotspot-2023-12-19",
+  "version": "hotspot-2023-12-19-test1",
   "slug": "piped-frontend",
   "image": "ghcr.io/ddanii/piped-frontend-{arch}",
   "description": "Alternative YouTube frontend",
@@ -9,7 +9,7 @@
     "amd64"
   ],
   "options": {
-    "BACKEND_HOSTNAME": "pipedapi.kavin.rocks"
+    "BACKEND_HOSTNAME": "https://pipedapi.kavin.rocks"
   },
   "schema": {
     "BACKEND_HOSTNAME": "str"
