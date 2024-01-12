@@ -1,0 +1,6 @@
+{
+  "repository": "DDanii/HA-Add-ons-by-DDanii",
+  "slug": "piped-proxy",
+  "source": "dockerhub",
+  "upstream_repo": "1337kavin/piped-proxy"
+}

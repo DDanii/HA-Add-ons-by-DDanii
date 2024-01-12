@@ -1,0 +1,3 @@
+build_from:
+  amd64: 1337kavin/piped-proxy
+  aarch64: 1337kavin/piped-proxy
