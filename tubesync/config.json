@@ -1,5 +1,5 @@
 {
-  "name": "TubeSync - DEVELOPMENT",
+  "name": "TubeSync - BETA",
   "version": "0.13.3-test10",
   "slug": "tubesync",
   "image": "ghcr.io/ddanii/tubesync-{arch}",

@@ -1,0 +1,4 @@
+build_from:
+  armv7: osixia/openldap
+  aarch64: osixia/openldap
+  amd64: osixia/openldap

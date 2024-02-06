@@ -54,10 +54,15 @@ echo "example input: '145' for armhf,amd64 and i386"
 arches=4
 get_input "arches"
 
-for arch_number in $arches; do
+for (( i=0; i<${#arches}; i++ )); do
+    arch_number="${arches:$i:1}"
     arch=$(echo $arch_list | cut -d , -f "$arch_number")
     echo "  $arch: $image" >> build.yaml
-    echo '      '"$arch"'"' >> config.json
+    conf_line='      "'"$arch"'"'
+    if [ "$arch_number" -ne "${arches:0-1}" ]; then
+        conf_line="$conf_line,"
+    fi
+    echo "$conf_line" >> config.json
 done
 echo "   ]" >> config.json
 echo "}" >> config.json

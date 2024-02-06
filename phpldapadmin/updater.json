@@ -1,0 +1,6 @@
+{
+  "repository": "DDanii/HA-Add-ons-by-DDanii",
+  "slug": "phpldapadmin",
+  "source": "github",
+  "upstream_repo": "osixia/docker-phpLDAPadmin"
+}

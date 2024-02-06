@@ -1,0 +1,4 @@
+build_from:
+  armv7: osixia/phpldapadmin
+  aarch64: osixia/phpldapadmin
+  amd64: osixia/phpldapadmin

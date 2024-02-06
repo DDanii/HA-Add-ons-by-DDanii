@@ -1,5 +1,5 @@
 {
-  "name": "piped - DEVELOPMENT",
+  "name": "piped - BETA",
   "version": "hotspot-2024-02-02",
   "slug": "piped",
   "image": "ghcr.io/ddanii/piped-{arch}",

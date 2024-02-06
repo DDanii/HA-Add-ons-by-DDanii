@@ -1,0 +1,36 @@
+{
+   "name": "phpldapadmin - DEVELOPMENT",
+   "version": "2024.06",
+   "slug": "phpldapadmin",
+   "image": "ghcr.io/ddanii/phpldapadmin-{arch}",
+   "description": "phpLDAPadmin for gui management of OpenLDAP",
+   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/phpldapadmin",
+   "map": [
+      "ssl"
+   ],
+   "init": false,
+   "options": {
+      "ssl": false,
+      "certfile": "fullchain.pem",
+      "keyfile": "privkey.pem"
+   },
+   "schema": {
+      "ssl": "bool",
+      "certfile": "str",
+      "keyfile": "str"
+   },
+   "ports": {
+      "6443/tcp": 6443
+   },
+   "ports_description": {
+      "6443/tcp": "Web interface http"
+   },
+   "ingress": true,
+   "ingress_port": 80,
+   "ingress_stream": true,
+   "arch": [
+      "armv7",
+      "aarch64",
+      "amd64"
+   ]
+}
