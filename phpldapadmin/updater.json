@@ -2,5 +2,7 @@
   "repository": "DDanii/HA-Add-ons-by-DDanii",
   "slug": "phpldapadmin",
   "source": "github",
-  "upstream_repo": "osixia/docker-phpLDAPadmin"
+  "upstream_repo": "osixia/docker-phpLDAPadmin",
+  "upstream_version": "0.9.0",
+  "last_update": "06-02-2024"
 }
