@@ -5,7 +5,7 @@ ARG BUILD_VERSION
 
 FROM $BUILD_FROM
 
-RUN sed -i '/if \[ ! -S \/dev\/log ]; then rm -f \/dev\/log; fi/d' /container/run/startup/:syslog-ng-core
+RUN sed -i '/if \[ ! -S \/dev\/log ]; then rm -f \/dev\/log; fi/d' /container/:syslog-ng-core/startup.sh
 
 LABEL \
     io.hass.arch="${BUILD_ARCH}" \
