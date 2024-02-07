@@ -1,6 +1,6 @@
 {
   "name": "phpldapadmin - DEVELOPMENT",
-  "version": "0.9.0-test1",
+  "version": "0.9.0-test2",
   "slug": "phpldapadmin",
   "image": "ghcr.io/ddanii/phpldapadmin-{arch}",
   "description": "phpLDAPadmin for gui management of OpenLDAP",
@@ -8,9 +8,6 @@
   "map": [
     "ssl"
   ],
-  "environment": {
-    "loglevel": "none"
-  },
   "init": false,
   "options": {
     "ssl": false,
