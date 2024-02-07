@@ -8,9 +8,9 @@
   "map": [
     "ssl"
   ],
-  "environment": [
+  "environment": {
     "loglevel": "none"
-  ],
+  },
   "init": false,
   "options": {
     "ssl": false,
