@@ -15,8 +15,10 @@ touch "$ENV_FILE"
 JSONSOURCE="/data/options.json"
 mapfile -t arr < <(jq -r 'keys[]' "${JSONSOURCE}")
 for KEY in "${arr[@]}"; do
-    VALUE=$(bashio::config "$KEY")
-    echo "$KEY: $VALUE" >> "$ENV_FILE"
+    if ! bashio::config.has_value "$KEY"; then
+        VALUE=$(bashio::config "$KEY")
+        echo "$KEY: $VALUE" >> "$ENV_FILE"
+    fi
 done
 
 /container/tool/run2
