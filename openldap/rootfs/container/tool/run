@@ -8,6 +8,8 @@ ln -s /config/slapd.d /etc/ldap/
 
 ENV_FILE=/container/environment/50-homeassistant/config.yaml
 
+mkdir -p /container/environment/50-homeassistant
+
 rm -f "$ENV_FILE"
 touch "$ENV_FILE"
 JSONSOURCE="/data/options.json"
