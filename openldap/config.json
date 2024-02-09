@@ -1,6 +1,6 @@
 {
   "name": "openldap - DEVELOPMENT",
-  "version": "1.5.0-test5",
+  "version": "1.5.0-test6",
   "slug": "openldap",
   "image": "ghcr.io/ddanii/openldap-{arch}",
   "description": "OpenLDAP based on osixia container",
@@ -30,7 +30,7 @@
     "LDAP_CONFIG_PASSWORD": "password",
     "LDAP_READONLY_USER": "bool",
     "LDAP_READONLY_USER_USERNAME": "str",
-    "LDAP_READONLY_USER_PASSWORD": "str"
+    "LDAP_READONLY_USER_PASSWORD": "password"
   },
   "ports": {
     "389/tcp": 389,
