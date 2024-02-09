@@ -19,4 +19,4 @@ for KEY in "${arr[@]}"; do
     echo "$KEY: $VALUE" >> "$ENV_FILE"
 done
 
-./run2
+/container/tool/run2
