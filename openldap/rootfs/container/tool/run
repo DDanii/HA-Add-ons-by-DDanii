@@ -1,0 +1,20 @@
+#!/usr/bin/bashio
+
+mkdir -p /config/ldap
+mkdir -p /config/slapd.d
+
+ln -s /config/ldap /var/lib/
+ln -s /config/slapd.d /etc/ldap/
+
+ENV_FILE=/container/environment/50-homeassistant/config.yaml
+
+rm -f "$ENV_FILE"
+touch "$ENV_FILE"
+JSONSOURCE="/data/options.json"
+mapfile -t arr < <(jq -r 'keys[]' "${JSONSOURCE}")
+for KEY in "${arr[@]}"; do
+    VALUE=$(bashio::config "$KEY")
+    echo "$KEY: $VALUE" >> "$ENV_FILE"
+done
+
+./run2

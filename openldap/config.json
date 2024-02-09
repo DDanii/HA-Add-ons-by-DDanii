@@ -1,23 +1,30 @@
 {
   "name": "openldap - DEVELOPMENT",
-  "version": "1.5.0",
+  "version": "1.5.0-test1",
   "slug": "openldap",
   "image": "ghcr.io/ddanii/openldap-{arch}",
   "description": "OpenLDAP based on osixia container",
   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/openldap",
   "map": [
-    "ssl"
+    "ssl",
+    "addon_config:rw"
   ],
   "init": false,
   "options": {
-    "ssl": false,
-    "certfile": "fullchain.pem",
-    "keyfile": "privkey.pem"
+    "LDAP_TLS": false,
+    "LDAP_TLS_CRT_FILENAME": "fullchain.pem",
+    "LDAP_TLS_KEY_FILENAME": "privkey.pem",
+    "LDAP_ORGANISATION": "My Company",
+    "LDAP_DOMAIN": "my-company.com",
+    "LDAP_ADMIN_PASSWORD": "admin"
   },
   "schema": {
-    "ssl": "bool",
-    "certfile": "str",
-    "keyfile": "str"
+    "LDAP_TLS": "bool",
+    "LDAP_TLS_CRT_FILENAME": "str",
+    "LDAP_TLS_KEY_FILENAME": "str",
+    "LDAP_ORGANISATION": "str",
+    "LDAP_DOMAIN": "str",
+    "LDAP_ADMIN_PASSWORD": "password"
   },
   "ports": {
     "389/tcp": 389,
