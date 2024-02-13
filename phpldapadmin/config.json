@@ -1,6 +1,6 @@
 {
   "name": "phpldapadmin - DEVELOPMENT",
-  "version": "0.9.0-test11",
+  "version": "0.9.0-test12",
   "slug": "phpldapadmin",
   "image": "ghcr.io/ddanii/phpldapadmin-{arch}",
   "description": "phpLDAPadmin for gui management of OpenLDAP",
@@ -13,7 +13,7 @@
     "PHPLDAPADMIN_HTTPS": false,
     "PHPLDAPADMIN_HTTPS_CRT_FILENAME": "fullchain.pem",
     "PHPLDAPADMIN_HTTPS_KEY_FILENAME": "privkey.pem",
-    "PHPLDAPADMIN_LDAP_HOSTS": "57fef649_openldap"
+    "PHPLDAPADMIN_LDAP_HOSTS": "ldap://homeassistant.local"
   },
   "schema": {
     "PHPLDAPADMIN_HTTPS": "bool",
@@ -29,7 +29,6 @@
   },
   "ingress": true,
   "ingress_port": 80,
-  "ingress_stream": true,
   "arch": [
     "armv7",
     "aarch64",

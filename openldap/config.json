@@ -1,6 +1,6 @@
 {
   "name": "openldap - DEVELOPMENT",
-  "version": "1.5.0-test6",
+  "version": "1.5.0-test7",
   "slug": "openldap",
   "image": "ghcr.io/ddanii/openldap-{arch}",
   "description": "OpenLDAP based on osixia container",

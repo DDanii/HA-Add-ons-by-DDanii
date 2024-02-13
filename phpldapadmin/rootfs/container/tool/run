@@ -11,6 +11,9 @@ mapfile -t arr < <(jq -r 'keys[]' "${JSONSOURCE}")
 for KEY in "${arr[@]}"; do
     VALUE=$(bashio::config "$KEY")
     echo "$KEY: $VALUE" >> "$ENV_FILE"
+    if "$KEY" -eq "PHPLDAPADMIN_HTTPS_CRT_FILENAME" or "$KEY" -eq "PHPLDAPADMIN_HTTPS_KEY_FILENAME"; then
+        ln -s "/ssl/$KEY" "/container/service/phpldapadmin/assets/apache2/certs/$KEY"
+    fi
 done
 
 /container/tool/run2
