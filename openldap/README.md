@@ -15,7 +15,12 @@ TODO
 
 ```yaml
 TODO: this too
+
+LDAP_TLS_CRT_FILENAME: fullchain.pem
+LDAP_TLS_KEY_FILENAME: privkey.pem
 ```
+
+LDAP_TLS : if set to true once can't be disabled.
 
 ## Support
 

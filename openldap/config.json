@@ -1,6 +1,6 @@
 {
   "name": "openldap - DEVELOPMENT",
-  "version": "1.5.0-test9",
+  "version": "1.5.0-test10",
   "slug": "openldap",
   "image": "ghcr.io/ddanii/openldap-{arch}",
   "description": "OpenLDAP based on osixia container",
@@ -12,8 +12,6 @@
   "init": false,
   "options": {
     "LDAP_TLS": false,
-    "LDAP_TLS_CRT_FILENAME": "fullchain.pem",
-    "LDAP_TLS_KEY_FILENAME": "privkey.pem",
     "LDAP_ORGANISATION": "My Company",
     "LDAP_DOMAIN": "my-company.com",
     "LDAP_ADMIN_PASSWORD": null,
@@ -22,8 +20,10 @@
   },
   "schema": {
     "LDAP_TLS": "bool",
-    "LDAP_TLS_CRT_FILENAME": "str",
-    "LDAP_TLS_KEY_FILENAME": "str",
+    "LDAP_TLS_CRT_FILENAME": "str?",
+    "LDAP_TLS_KEY_FILENAME": "str?",
+    "LDAP_TLS_CA_CRT_FILENAME": "str?",
+    "LDAP_TLS_VERIFY_CLIENT": "str?",
     "LDAP_ORGANISATION": "str",
     "LDAP_DOMAIN": "str",
     "LDAP_ADMIN_PASSWORD": "password",
