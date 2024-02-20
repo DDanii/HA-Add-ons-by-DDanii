@@ -6,7 +6,8 @@
    "description": "_short_description_",
    "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/_slug_",
    "map": [
-      "ssl"
+      "ssl",
+      "addon_config:rw"
    ],
    "init": false,
    "options": {

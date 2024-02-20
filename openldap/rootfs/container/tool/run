@@ -17,10 +17,12 @@ mapfile -t arr < <(jq -r 'keys[]' "${JSONSOURCE}")
 for KEY in "${arr[@]}"; do
     if bashio::config.has_value "$KEY"; then
         VALUE=$(bashio::config "$KEY")
-        echo "$KEY: $VALUE" >> "$ENV_FILE"
-        if [ "$KEY" = "LDAP_TLS_CRT_FILENAME" ] || [ "$KEY" = "LDAP_TLS_KEY_FILENAME" ] ; then
-            ln -s "/ssl/$VALUE" "/container/service/slapd/assets/certs/$VALUE"
+        if [ "$KEY" = "LDAP_TLS_CRT_FILENAME" ] || [ "$KEY" = "LDAP_TLS_KEY_FILENAME" ] || [ "$KEY" = "LDAP_TLS_CA_CRT_FILENAME" ]; then
+            LN_PATH="$VALUE"
+            VALUE=$(basename "$VALUE")
+            ln -s "$LN_PATH" "/container/service/slapd/assets/certs/$VALUE"
         fi
+        echo "$KEY: $VALUE" >> "$ENV_FILE"
     fi
 done
 

@@ -1,0 +1,2 @@
+build_from:
+  amd64: lscr.io/linuxserver/orcaslicer
