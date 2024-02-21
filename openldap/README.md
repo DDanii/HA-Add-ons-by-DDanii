@@ -14,13 +14,20 @@ TODO
 ## Configuration
 
 ```yaml
-TODO: this too
-
-LDAP_TLS_CRT_FILENAME: fullchain.pem
-LDAP_TLS_KEY_FILENAME: privkey.pem
+LDAP_TLS: false,
+LDAP_ORGANISATION: "My Company",
+LDAP_DOMAIN: "my-company.com",
+LDAP_ADMIN_PASSWORD: "test",
+LDAP_CONFIG_PASSWORD": "example",
+LDAP_READONLY_USER": false,
+LDAP_TLS_CRT_FILENAME: "/ssl/fullchain.pem",
+LDAP_TLS_KEY_FILENAME: "/ssl/privkey.pem",
+LDAP_TLS_CA_CRT_FILENAME: "/ssl/ca.crt"
 ```
 
-LDAP_TLS : if set to true once can't be disabled.
+LDAP_TLS : If set to true once can't be disabled.
+
+
 
 ## Support
 

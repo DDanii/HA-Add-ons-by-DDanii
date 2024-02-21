@@ -11,6 +11,8 @@
 
 TODO
 
+https://github.com/osixia/docker-phpLDAPadmin
+
 ## Configuration
 
 ```yaml

@@ -12,11 +12,11 @@ get_input () {
 image="corentinth/it-tools"  #todo delete
 get_input "image"
 
-name=$(echo "$image" | rev | cut -d / -f -1 | rev)
-get_input "name"
-
-slug=$(echo "$name" | awk '{print tolower($0)}')
+slug=$(echo "$image" | rev | cut -d / -f -1 | rev | awk '{print tolower($0)}')
 get_input "slug"
+
+name="$slug"
+get_input "name"
 
 cp -r .template "$slug"
 
