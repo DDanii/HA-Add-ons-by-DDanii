@@ -1,6 +1,6 @@
 {
   "repository": "DDanii/HA-Add-ons-by-DDanii",
   "slug": "orcaslicer",
-  "source": "dockerhub",
-  "upstream_repo": "lscr.io/linuxserver/orcaslicer"
+  "source": "github",
+  "upstream_repo": "linuxserver/docker-orcaslicer"
 }
