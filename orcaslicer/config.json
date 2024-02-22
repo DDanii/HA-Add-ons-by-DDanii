@@ -1,12 +1,13 @@
 {
    "name": "Orca Slicer - DEVELOPMENT",
-   "version": "2024.08-test2",
+   "version": "2024.08-test3",
    "slug": "orcaslicer",
    "image": "ghcr.io/ddanii/orcaslicer-{arch}",
    "description": "Orca Slicer is an open source slicer for FDM printers.",
    "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/orcaslicer",
    "map": [
-      "ssl"
+      "addon_config:rw"
+
    ],
    "devices": [
       "/dev/dri",
@@ -22,31 +23,26 @@
       "/dev/video15",
       "/dev/video16"
    ],
-   "environmetn": {
-      "CUSTOM_HTTPS_PORT": 3000
-   },
+   "privileged": [
+    "SYS_ADMIN",
+    "DAC_READ_SEARCH"
+  ],
    "init": false,
-   "options": {
-      "ssl": false,
-      "certfile": "fullchain.pem",
-      "keyfile": "privkey.pem"
-   },
    "schema": {
       "DRINODE": "list(/dev/dri/card0|/dev/dri/card1|/dev/dri/card2|/dev/dri/renderD128|/dev/dri/renderD129|)?",
-      "CUSTOM_USER": "str",
-      "PASSWORD": "password?",
-      "ssl": "bool",
-      "certfile": "str",
-      "keyfile": "str"
+      "CUSTOM_USER": "str?",
+      "PASSWORD": "password?"
    },
    "ports": {
-      "3000/tcp": 3000
+      "3000/tcp": 3000,
+      "3001/tcp": 3001
    },
    "ports_description": {
-      "3000/tcp": "Web interface http"
+      "3000/tcp": "Web interface http",
+      "3001/tcp": "Web interface https"
    },
    "ingress": true,
-   "ingress_port": 80,
+   "ingress_port": 3001,
    "ingress_stream": true,
    "arch": [
       "amd64"
