@@ -2,5 +2,7 @@
   "repository": "DDanii/HA-Add-ons-by-DDanii",
   "slug": "orcaslicer",
   "source": "github",
-  "upstream_repo": "linuxserver/docker-orcaslicer"
+  "upstream_repo": "linuxserver/docker-orcaslicer",
+  "upstream_version": "1.9.1",
+  "last_update": "24-02-2024"
 }
