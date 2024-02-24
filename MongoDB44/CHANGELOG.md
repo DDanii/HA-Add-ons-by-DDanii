@@ -1,4 +1,7 @@
 
+## 4.4.29 (24-02-2024)
+- Update to latest version from mongodb/mongo
+
 ## 4.4.28 (13-01-2024)
 - Update to latest version from mongodb/mongo
 
