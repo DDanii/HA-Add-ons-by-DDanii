@@ -1,0 +1,9 @@
+#!/usr/bin/bashio
+
+mkdir -p /config/profiles
+rm -r /profiles
+ln -s /config/profiles /
+
+mkdir -p /data/opt
+rm -r /opt
+ln -s /data/opt /

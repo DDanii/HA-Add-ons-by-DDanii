@@ -27,3 +27,5 @@ setParameter:
 
 Custom configs can be setted in /addon_configs/57fef649_mongodb44/mongod.conf
 
+If mongodb cannot start try deleting the journal files.
+
