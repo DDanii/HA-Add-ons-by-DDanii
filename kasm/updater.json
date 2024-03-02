@@ -1,0 +1,6 @@
+{
+  "repository": "DDanii/HA-Add-ons-by-DDanii",
+  "slug": "kasm",
+  "source": "dockerhub",
+  "upstream_repo": "lscr.io/linuxserver/kasm"
+}
