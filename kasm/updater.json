@@ -2,5 +2,7 @@
   "repository": "DDanii/HA-Add-ons-by-DDanii",
   "slug": "kasm",
   "source": "github",
-  "upstream_repo": "linuxserver/docker-kasm"
+  "upstream_repo": "linuxserver/docker-kasm",
+  "upstream_version": "1.15.0",
+  "last_update": "02-03-2024"
 }
