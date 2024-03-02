@@ -10,19 +10,24 @@
       "addon_config:rw"
    ],
    "environment": {
-      "KASM_PORT": 35489
+      "KASM_PORT": "35489"
    },
+   "docker_api": true,
    "init": false,
-   "options": {
-      "ssl": false,
-      "certfile": "fullchain.pem",
-      "keyfile": "privkey.pem"
-   },
-   "schema": {
-      "ssl": "bool",
-      "certfile": "str",
-      "keyfile": "str"
-   },
+   "devices": [
+      "/dev/dri",
+      "/dev/dri/card0",
+      "/dev/dri/card1",
+      "/dev/dri/renderD128",
+      "/dev/vchiq",
+      "/dev/video10",
+      "/dev/video11",
+      "/dev/video12",
+      "/dev/video13",
+      "/dev/video14",
+      "/dev/video15",
+      "/dev/video16"
+   ],
    "ports": {
       "3000/tcp": 3000,
       "35489/tcp": 35489
