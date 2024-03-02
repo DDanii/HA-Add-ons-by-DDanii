@@ -1,6 +1,6 @@
 {
    "name": "Kasm Workspaces - DEVELOPMENT",
-   "version": "1.15.0-test1",
+   "version": "1.15.0-test2",
    "slug": "kasm",
    "image": "ghcr.io/ddanii/kasm-{arch}",
    "description": "Browser-based access to desktops, applications, and web services",
@@ -23,6 +23,7 @@
       "DAC_READ_SEARCH",
       "SYS_RESOURCE"
    ],
+   "full_access": true,
    "kernel_modules": true,
    "docker_api": true,
    "init": false,
