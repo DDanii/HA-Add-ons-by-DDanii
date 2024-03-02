@@ -1,6 +1,6 @@
 {
    "name": "Kasm Workspaces - DEVELOPMENT",
-   "version": "2024.09",
+   "version": "2024.09-test1",
    "slug": "kasm",
    "image": "ghcr.io/ddanii/kasm-{arch}",
    "description": "Browser-based access to desktops, applications, and web services",
