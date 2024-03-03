@@ -1,6 +1,6 @@
 {
    "name": "AzuraCast - DEVELOPMENT",
-   "version": "2024.09-test1",
+   "version": "2024.09-test2",
    "slug": "azuracast",
    "image": "ghcr.io/ddanii/azuracast-{arch}",
    "description": "self-hosted, all-in-one web radio management suite",
@@ -11,11 +11,13 @@
    ],
    "init": false,
    "options": {
+      "MARIADB_ROOT_PASSWORD": "secret",
       "ssl": false,
       "certfile": "fullchain.pem",
       "keyfile": "privkey.pem"
    },
    "schema": {
+      "MARIADB_ROOT_PASSWORD": "password",
       "ssl": "bool",
       "certfile": "str",
       "keyfile": "str"
