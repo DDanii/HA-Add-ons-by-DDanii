@@ -1,6 +1,6 @@
 {
    "name": "Kasm Workspaces - DEVELOPMENT",
-   "version": "1.15.0-test2",
+   "version": "1.15.0-test3",
    "slug": "kasm",
    "image": "ghcr.io/ddanii/kasm-{arch}",
    "description": "Browser-based access to desktops, applications, and web services",
@@ -13,7 +13,8 @@
    },
    "backup_exclude": [
       "opt"
-    ],
+   ],
+   "tmpfs": true,
    "privileged": [
       "SYS_ADMIN",
       "DAC_READ_SEARCH",
