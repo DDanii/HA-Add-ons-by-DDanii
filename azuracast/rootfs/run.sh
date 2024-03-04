@@ -27,4 +27,4 @@ done
 # mkdir -p /data/storage
 # ln -s /data/storage /var/azuracast/
 
-/usr/bin/tini /usr/local/bin/my_init --no-main-command
+/usr/bin/tini /usr/local/bin/my_init
