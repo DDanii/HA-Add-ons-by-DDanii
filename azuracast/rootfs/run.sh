@@ -11,6 +11,7 @@ for KEY in "${arr[@]}"; do
     fi
 done
 
+env
 # mkdir -p /config/mysql
 # rm -r /var/lib/mysql
 # ln -s /config/mysl /var/lib/

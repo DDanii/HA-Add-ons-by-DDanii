@@ -1,6 +1,6 @@
 {
    "name": "AzuraCast - DEVELOPMENT",
-   "version": "2024.09-test6",
+   "version": "2024.09-test7",
    "slug": "azuracast",
    "image": "ghcr.io/ddanii/azuracast-{arch}",
    "description": "self-hosted, all-in-one web radio management suite",
@@ -9,6 +9,14 @@
       "ssl",
       "addon_config:rw"
    ],
+   "environment": {
+      "APPLICATION_ENV": "production",
+      "COMPOSER_PLUGIN_MODE": "false",
+      "AUTO_ASSIGN_PORT_MIN": "8000",
+      "AUTO_ASSIGN_PORT_MAX": "8499",
+      "SHOW_DETAILED_ERRORS": "true",
+      "MYSQL_PASSWORD": "azur4c457"
+   },
    "init": false,
    "options": {
       "MARIADB_ROOT_PASSWORD": "secret",
