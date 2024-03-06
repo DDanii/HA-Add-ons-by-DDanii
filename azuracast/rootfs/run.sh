@@ -28,4 +28,4 @@ env
 # mkdir -p /data/storage
 # ln -s /data/storage /var/azuracast/
 
-/usr/bin/tini -s /usr/local/bin/my_init -- --no-main-command
+exec /usr/bin/tini -s /usr/local/bin/my_init -- --no-main-command

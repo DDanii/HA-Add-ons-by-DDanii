@@ -1,29 +1,18 @@
 {
    "name": "AzuraCast - DEVELOPMENT",
-   "version": "2024.09-test8",
+   "version": "2024.09-test9",
    "slug": "azuracast",
    "image": "ghcr.io/ddanii/azuracast-{arch}",
    "description": "self-hosted, all-in-one web radio management suite",
    "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/azuracast",
    "map": [
       "ssl",
-      "addon_config:rw"
+      "addon_config:rw",
+      "media",
+      "share"
    ],
    "environment": {
-      "APPLICATION_ENV": "production",
-      "COMPOSER_PLUGIN_MODE": "false",
-      "AUTO_ASSIGN_PORT_MIN": "8000",
-      "AUTO_ASSIGN_PORT_MAX": "8499",
-      "SHOW_DETAILED_ERRORS": "true",
-      "MYSQL_PASSWORD": "azur4c457",
-      "MARIADB_ROOT_PASSWORD": "secret",
-      "COMPOSE_PROJECT_NAME": "azuracast",
-      "AZURACAST_HTTP_PORT": "80",
-      "AZURACAST_HTTPS_PORT": "443",
-      "AZURACAST_SFTP_PORT": "2022",
-      "AZURACAST_PUID": "1000",
-      "AZURACAST_PGID": "1000",
-      "NGINX_TIMEOUT": "1800"
+      "MARIADB_ROOT_PASSWORD": "secret"
    },
    "init": false,
    "options": {
@@ -52,7 +41,6 @@
    },
    "ingress": true,
    "ingress_port": 80,
-   "ingress_stream": true,
    "arch": [
       "aarch64",
       "amd64"
