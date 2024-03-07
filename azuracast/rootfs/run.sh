@@ -16,6 +16,8 @@ export MYSQL_PORT=$(bashio::services "mysql" "port")
 export MYSQL_USER=$(bashio::services "mysql" "username")
 export MYSQL_PASSWORD=$(bashio::services "mysql" "password")
 
+env
+
 # mkdir -p /config/mysql
 # rm -r /var/lib/mysql
 # ln -s /config/mysl /var/lib/

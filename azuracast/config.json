@@ -1,6 +1,6 @@
 {
    "name": "AzuraCast - DEVELOPMENT",
-   "version": "2024.09-test10",
+   "version": "2024.09-test11",
    "slug": "azuracast",
    "image": "ghcr.io/ddanii/azuracast-{arch}",
    "description": "self-hosted, all-in-one web radio management suite",
@@ -11,6 +11,9 @@
       "media",
       "share"
    ],
+   "services": [
+      "mysql:need"
+    ],
    "environment": {
       "AZURACAST_STATION_PORTS": "8000,8005,8006,8010"
    },
@@ -39,8 +42,7 @@
       "2022/tcp": "sftp port",
       "8000/tcp": "8000"
    },
-   "ingress": true,
-   "ingress_port": 80,
+   "webui": "http://[HOST]:[PORT:80]",
    "arch": [
       "aarch64",
       "amd64"
