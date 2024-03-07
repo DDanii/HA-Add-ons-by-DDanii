@@ -1,6 +1,6 @@
 {
    "name": "AzuraCast - DEVELOPMENT",
-   "version": "2024.09-test13",
+   "version": "2024.09-test14",
    "slug": "azuracast",
    "image": "ghcr.io/ddanii/azuracast-{arch}",
    "description": "self-hosted, all-in-one web radio management suite",
@@ -38,9 +38,9 @@
       "443/tcp": 443,
       "2022/tcp": 2022,
       "8000/tcp": 8000,
-      "8005/tcp": 8005,
-      "8006/tcp": 8006,
-      "8010/tcp": 8010
+      "8005/tcp": null,
+      "8006/tcp": null,
+      "8010/tcp": null
    },
    "ports_description": {
       "80/tcp": "Web interface http",

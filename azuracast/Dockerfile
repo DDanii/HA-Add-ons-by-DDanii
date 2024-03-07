@@ -6,7 +6,7 @@ ARG BUILD_VERSION
 FROM $BUILD_FROM
 
 RUN apt-get update; \
-    apt-get install -y jq bash wget tar curl mysql
+    apt-get install -y jq bash wget tar curl default-mysql-client
 
 RUN mkdir -p /tmp/bashio && \
     wget -q -O - "https://github.com/hassio-addons/bashio/archive/v0.14.3.tar.gz" | \
