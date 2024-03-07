@@ -1,6 +1,6 @@
 {
    "name": "AzuraCast - DEVELOPMENT",
-   "version": "2024.09-test9",
+   "version": "2024.09-test10",
    "slug": "azuracast",
    "image": "ghcr.io/ddanii/azuracast-{arch}",
    "description": "self-hosted, all-in-one web radio management suite",
@@ -12,7 +12,7 @@
       "share"
    ],
    "environment": {
-      "MARIADB_ROOT_PASSWORD": "secret"
+      "AZURACAST_STATION_PORTS": "8000,8005,8006,8010"
    },
    "init": false,
    "options": {

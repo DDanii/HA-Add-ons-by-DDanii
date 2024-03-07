@@ -4,7 +4,6 @@ export DB_HOST=$(bashio::services "mysql" "host")
 export DB_PASSWORD=$(bashio::services "mysql" "password")
 export DB_PORT=$(bashio::services "mysql" "port")
 export DB_USERNAME=$(bashio::services "mysql" "username")
-export DB_PORT=3306
 export DB_DATABASE=pterodactyl
 export REDIS_HOST=$(bashio::config 'REDIS_HOST')
 export REDIS_PORT=$(bashio::config 'REDIS_PORT')

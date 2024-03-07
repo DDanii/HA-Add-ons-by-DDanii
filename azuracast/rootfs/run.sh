@@ -11,7 +11,11 @@ for KEY in "${arr[@]}"; do
     fi
 done
 
-env
+export MYSQL_HOST=$(bashio::services "mysql" "host")
+export MYSQL_PORT=$(bashio::services "mysql" "port")
+export MYSQL_USER=$(bashio::services "mysql" "username")
+export MYSQL_PASSWORD=$(bashio::services "mysql" "password")
+
 # mkdir -p /config/mysql
 # rm -r /var/lib/mysql
 # ln -s /config/mysl /var/lib/
