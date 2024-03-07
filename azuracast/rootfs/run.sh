@@ -31,6 +31,6 @@ fi
 echo "CREATE DATABASE IF NOT EXISTS azuracast;" \
     | mysql -h "${MYSQL_HOST}" -P "${MYSQL_PORT}" -u "${MYSQL_USER}" -p"${MYSQL_PASSWORD}"
 
-chown azuracast /config
+chmod 777 /config
 
 exec /usr/bin/tini -s /usr/local/bin/my_init -- --no-main-command
