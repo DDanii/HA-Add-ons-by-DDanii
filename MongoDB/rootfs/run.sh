@@ -15,4 +15,4 @@ fi
 
 touch /config/mongod.conf
 
-/usr/local/bin/docker-entrypoint.sh mongod --dbpath /config/db --config /config/mongod.conf
+exec /usr/local/bin/docker-entrypoint.sh mongod --dbpath /config/db --config /config/mongod.conf

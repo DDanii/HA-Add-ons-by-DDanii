@@ -22,13 +22,10 @@ You also need to install the redis addon
 
 ## Configuration
 
-The MariaDB Integration is needed before installing this one!
+The MariaDB Addon is needed before installing this one!
 
 Todo rewrite todo add posibility for different user
 
-Create database pterodactyl and add homeassistant as user with full permissions on it.
-
-**Note**: _Remember to restart the add-on when the configuration is changed._
 
 Example add-on configuration:
 

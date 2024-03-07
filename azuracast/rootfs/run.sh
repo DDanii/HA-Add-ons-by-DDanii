@@ -18,20 +18,19 @@ export MYSQL_PASSWORD=$(bashio::services "mysql" "password")
 
 env
 
-# mkdir -p /config/mysql
-# rm -r /var/lib/mysql
-# ln -s /config/mysl /var/lib/
+if bashio::config.true 'reset_database'; then
+    bashio::log.warning 'Recreating database'
+    echo "DROP DATABASE IF EXISTS azuracast;" \
+    | mysql -h "${MYSQL_HOST}" -P "${MYSQL_PORT}" -u "${MYSQL_USER}" -p"${MYSQL_PASSWORD}"
 
-# rm -r /var/azuracast/backups
-# mkdir -p /config/backups
-# ln -s /config/backups /var/azuracast/
+    #Remove reset_database option
+    bashio::addon.option 'reset_database'
+fi
 
-# rm -r /var/azuracast/stations
-# mkdir -p /config/stations
-# ln -s /config/stations /var/azuracast/
+# Create database if not exists
+echo "CREATE DATABASE IF NOT EXISTS azuracast;" \
+    | mysql -h "${MYSQL_HOST}" -P "${MYSQL_PORT}" -u "${MYSQL_USER}" -p"${MYSQL_PASSWORD}"
 
-# rm -r /var/azuracast/storage
-# mkdir -p /data/storage
-# ln -s /data/storage /var/azuracast/
+chown azuracast /config
 
 exec /usr/bin/tini -s /usr/local/bin/my_init -- --no-main-command

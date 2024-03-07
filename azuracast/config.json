@@ -1,6 +1,6 @@
 {
    "name": "AzuraCast - DEVELOPMENT",
-   "version": "2024.09-test11",
+   "version": "2024.09-test12",
    "slug": "azuracast",
    "image": "ghcr.io/ddanii/azuracast-{arch}",
    "description": "self-hosted, all-in-one web radio management suite",
@@ -19,16 +19,19 @@
    },
    "init": false,
    "options": {
-      "MARIADB_ROOT_PASSWORD": "secret",
       "ssl": false,
       "certfile": "fullchain.pem",
-      "keyfile": "privkey.pem"
+      "keyfile": "privkey.pem",
+      "REDIS_HOST": "localhost",
+      "REDIS_PORT": 6379
    },
    "schema": {
-      "MARIADB_ROOT_PASSWORD": "password",
       "ssl": "bool",
       "certfile": "str",
-      "keyfile": "str"
+      "keyfile": "str",
+      "reset_database": "bool?",
+      "REDIS_HOST": "str",
+      "REDIS_PORT": "port"
    },
    "ports": {
       "80/tcp": 80,

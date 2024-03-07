@@ -11,6 +11,14 @@
 
 TODO
 
+The MariaDB Addon is needed before installing this one!
+
+When setting up station set their location in /config later you can add music folder from /media or /share too.
+
+This addon has built in reddis, but if you already using the reddis addon you can point azuracast to it and it will disable the internal one.
+
+It needs much more system resources than the [Icecast](https://github.com/mohankumargupta/ha-addons/tree/master/icecast) and [MPD](https://github.com/Poeschl/Hassio-Addons/tree/main/mpd) addons so I personally use those.
+
 ## Configuration
 
 ```yaml
