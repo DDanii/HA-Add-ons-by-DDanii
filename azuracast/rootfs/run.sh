@@ -21,15 +21,15 @@ env
 if bashio::config.true 'reset_database'; then
     bashio::log.warning 'Recreating database'
     echo "DROP DATABASE IF EXISTS azuracast;" \
-    | mysql -h "${MYSQL_HOST}" -P "${MYSQL_PORT}" -u "${MYSQL_USER}" -p"${MYSQL_PASSWORD}"
+    | mariadb -h "${MYSQL_HOST}" -P "${MYSQL_PORT}" -u "${MYSQL_USER}" -p"${MYSQL_PASSWORD}"
 
     #Remove reset_database option
     bashio::addon.option 'reset_database'
 fi
 
 # Create database if not exists
-#echo "CREATE DATABASE IF NOT EXISTS azuracast;" \
- #   | mysql -h "${MYSQL_HOST}" -P "${MYSQL_PORT}" -u "${MYSQL_USER}" -p"${MYSQL_PASSWORD}"
+echo "CREATE DATABASE IF NOT EXISTS azuracast;" \
+    | mariadb -h "${MYSQL_HOST}" -P "${MYSQL_PORT}" -u "${MYSQL_USER}" -p"${MYSQL_PASSWORD}"
 
 chmod 777 /config
 
