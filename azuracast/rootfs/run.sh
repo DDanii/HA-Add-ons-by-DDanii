@@ -28,8 +28,8 @@ if bashio::config.true 'reset_database'; then
 fi
 
 # Create database if not exists
-echo "CREATE DATABASE IF NOT EXISTS azuracast;" \
-    | mysql -h "${MYSQL_HOST}" -P "${MYSQL_PORT}" -u "${MYSQL_USER}" -p"${MYSQL_PASSWORD}"
+#echo "CREATE DATABASE IF NOT EXISTS azuracast;" \
+ #   | mysql -h "${MYSQL_HOST}" -P "${MYSQL_PORT}" -u "${MYSQL_USER}" -p"${MYSQL_PASSWORD}"
 
 chmod 777 /config
 
