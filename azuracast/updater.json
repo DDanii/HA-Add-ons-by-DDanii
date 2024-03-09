@@ -2,5 +2,7 @@
   "repository": "DDanii/HA-Add-ons-by-DDanii",
   "slug": "azuracast",
   "source": "github",
-  "upstream_repo": "azuracast/azuracast"
+  "upstream_repo": "azuracast/azuracast",
+  "upstream_version": "0.19.5",
+  "last_update": "09-03-2024"
 }
