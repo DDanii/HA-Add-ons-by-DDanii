@@ -1,50 +1,50 @@
 {
-   "name": "Orca Slicer - DEVELOPMENT",
-   "version": "1.9.1-test3",
-   "slug": "orcaslicer",
-   "image": "ghcr.io/ddanii/orcaslicer-{arch}",
-   "description": "Orca Slicer is an open source slicer for FDM printers",
-   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/orcaslicer",
-   "map": [
-      "addon_config:rw"
-   ],
-   "devices": [
-      "/dev/dri",
-      "/dev/dri/card0",
-      "/dev/dri/card1",
-      "/dev/dri/renderD128",
-      "/dev/vchiq",
-      "/dev/video10",
-      "/dev/video11",
-      "/dev/video12",
-      "/dev/video13",
-      "/dev/video14",
-      "/dev/video15",
-      "/dev/video16"
-   ],
-   "privileged": [
+  "name": "Orca Slicer - DEVELOPMENT",
+  "version": "2.0.0",
+  "slug": "orcaslicer",
+  "image": "ghcr.io/ddanii/orcaslicer-{arch}",
+  "description": "Orca Slicer is an open source slicer for FDM printers",
+  "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/orcaslicer",
+  "map": [
+    "addon_config:rw"
+  ],
+  "devices": [
+    "/dev/dri",
+    "/dev/dri/card0",
+    "/dev/dri/card1",
+    "/dev/dri/renderD128",
+    "/dev/vchiq",
+    "/dev/video10",
+    "/dev/video11",
+    "/dev/video12",
+    "/dev/video13",
+    "/dev/video14",
+    "/dev/video15",
+    "/dev/video16"
+  ],
+  "privileged": [
     "SYS_ADMIN",
     "DAC_READ_SEARCH",
     "SYS_MODULE",
     "SYS_RESOURCE"
   ],
-   "init": false,
-   "schema": {
-      "DRINODE": "list(/dev/dri/card0|/dev/dri/card1|/dev/dri/card2|/dev/dri/renderD128|/dev/dri/renderD129|)?",
-      "CUSTOM_USER": "str?",
-      "PASSWORD": "password?"
-   },
-   "ports": {
-      "3000/tcp": 3000,
-      "3001/tcp": 3001
-   },
-   "ports_description": {
-      "3000/tcp": "Web interface http",
-      "3001/tcp": "Web interface https"
-   },
-   "ingress": true,
-   "ingress_port": 3000,
-   "arch": [
-      "amd64"
-   ]
+  "init": false,
+  "schema": {
+    "DRINODE": "list(/dev/dri/card0|/dev/dri/card1|/dev/dri/card2|/dev/dri/renderD128|/dev/dri/renderD129|)?",
+    "CUSTOM_USER": "str?",
+    "PASSWORD": "password?"
+  },
+  "ports": {
+    "3000/tcp": 3000,
+    "3001/tcp": 3001
+  },
+  "ports_description": {
+    "3000/tcp": "Web interface http",
+    "3001/tcp": "Web interface https"
+  },
+  "ingress": true,
+  "ingress_port": 3000,
+  "arch": [
+    "amd64"
+  ]
 }
