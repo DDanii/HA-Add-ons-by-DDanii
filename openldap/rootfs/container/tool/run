@@ -3,6 +3,9 @@
 mkdir -p /config/ldap
 mkdir -p /config/slapd.d
 
+rm -rf /var/lib/ldap
+rm -rf /etc/ldap/slapd.d
+
 ln -s /config/ldap /var/lib/
 ln -s /config/slapd.d /etc/ldap/
 
@@ -28,4 +31,4 @@ done
 
 
 
-/container/tool/run2
+exec /container/tool/run2
