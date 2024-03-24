@@ -1,15 +1,34 @@
-how to wings on home assistant os with portainer
+# wings on home assistant os with portainer
 todo scratch for final doc
 
-ports 2022 8088 can be diferent setted in the panel need to be the same for in and out
+image: ccarney16/pterodactyl-daemon
 
-working dir /var/lib/pterodactyl
+ports: 2022 8088\
+can be diferent but must mach everywhere
 
-volumes all binds
-/var/run/docker.sock /var/run/docker.sock
-/mnt/data/supervisor/share /mnt/data/supervisor/share
-/etc/pterodactyl/config.yml /mnt/data/supervisor/share/addons_config/pterodactyl/config.yml
+working dir: /var/lib/pterodactyl
 
-runtime -> privileged mode
+![image](./pictures/step1.png)
 
-after config created modifing the path in it
+
+volumes tab: all binds\
+/var/run/docker.sock -> /var/run/docker.sock
+\
+/mnt/data/supervisor/share -> /mnt/data/supervisor/share
+\
+/etc/pterodactyl/config.yml -> /mnt/data/supervisor/share/addons_config/pterodactyl/config.yml
+\
+you can place the configfile elsewhere ofcourse
+
+
+![image](./pictures/volumes.png)
+
+## runtime tab turn on privileged mode
+
+![image](./pictures/priviledge.png)
+
+## if you want it to start automaticly choose unless stopped on restart policy tab
+
+![image](./pictures/restart.png)
+
+after you create the config you have to modify the path in it
