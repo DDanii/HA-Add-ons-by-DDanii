@@ -1,6 +1,6 @@
 {
   "name": "AzuraCast - DEVELOPMENT",
-  "version": "0.19.5-test5",
+  "version": "0.19.5-test6",
   "slug": "azuracast",
   "image": "ghcr.io/ddanii/azuracast-{arch}",
   "description": "self-hosted, all-in-one web radio management suite",

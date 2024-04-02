@@ -33,4 +33,4 @@ echo "CREATE DATABASE IF NOT EXISTS azuracast;" \
 
 chmod 777 /config
 
-su azuracast -c exec /usr/bin/tini -s /usr/local/bin/my_init -- --no-main-command
+exec /usr/bin/tini -s /usr/local/bin/my_init -- --no-main-command
