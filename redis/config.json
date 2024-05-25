@@ -1,6 +1,6 @@
 {
   "name": "redis - BETA",
-  "version": "7.2.4",
+  "version": "7.2.5",
   "slug": "redis",
   "image": "ghcr.io/ddanii/redis-{arch}",
   "description": "in-memory data store",
