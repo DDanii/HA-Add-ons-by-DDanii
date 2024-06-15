@@ -4,6 +4,6 @@
   "source": "dockerhub",
   "upstream_repo": "1337kavin/piped",
   "dockerhub_by_date": "true",
-  "upstream_version": "hotspot-2024-04-26",
-  "last_update": "2024-04-26"
+  "upstream_version": "hotspot-2024-06-14",
+  "last_update": "2024-06-14"
 }
