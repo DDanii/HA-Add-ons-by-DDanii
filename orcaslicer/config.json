@@ -22,12 +22,6 @@
     "/dev/video15",
     "/dev/video16"
   ],
-  "privileged": [
-    "SYS_ADMIN",
-    "DAC_READ_SEARCH",
-    "SYS_MODULE",
-    "SYS_RESOURCE"
-  ],
   "init": false,
   "schema": {
     "DRINODE": "list(/dev/dri/card0|/dev/dri/card1|/dev/dri/card2|/dev/dri/renderD128|/dev/dri/renderD129|)?",

@@ -3,6 +3,7 @@
   "slug": "orcaslicer",
   "source": "github",
   "upstream_repo": "linuxserver/docker-orcaslicer",
+  "fulltag": "true",
   "upstream_version": "2.0.0",
   "last_update": "16-03-2024"
 }
