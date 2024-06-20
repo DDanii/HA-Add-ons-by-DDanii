@@ -1,6 +1,6 @@
 {
   "name": "Orca Slicer - DEVELOPMENT",
-  "version": "2.0.0-test2",
+  "version": "2.0.0-test3",
   "slug": "orcaslicer",
   "image": "ghcr.io/ddanii/orcaslicer-{arch}",
   "description": "Orca Slicer is an open source slicer for FDM printers",
@@ -22,6 +22,20 @@
     "/dev/video15",
     "/dev/video16"
   ],
+  "audio": true,
+  "environment": {
+    "PGID": "0",
+    "PUID": "0",
+    "START_DOCKER": "false"
+  },
+  "host_dbus": true,
+  "privileged": [
+    "SYS_ADMIN",
+    "DAC_READ_SEARCH"
+  ],
+  "tmpfs": true,
+  "udev": true,
+  "video": true,
   "init": false,
   "schema": {
     "DRINODE": "list(/dev/dri/card0|/dev/dri/card1|/dev/dri/card2|/dev/dri/renderD128|/dev/dri/renderD129|)?",
