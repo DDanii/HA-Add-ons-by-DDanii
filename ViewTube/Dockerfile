@@ -2,7 +2,6 @@ ARG BUILD_FROM
 ARG BUILD_ARCH
 FROM $BUILD_FROM
 
-RUN apt-get remove -y wget
 RUN apt-get update
 RUN apt-get install -y wget curl jq
 

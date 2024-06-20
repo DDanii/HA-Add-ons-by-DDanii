@@ -1,6 +1,6 @@
 {
   "name": "Orca Slicer - DEVELOPMENT",
-  "version": "2.0.0",
+  "version": "2.0.0-test2",
   "slug": "orcaslicer",
   "image": "ghcr.io/ddanii/orcaslicer-{arch}",
   "description": "Orca Slicer is an open source slicer for FDM printers",
