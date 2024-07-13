@@ -1,6 +1,6 @@
 {
   "name": "piped-proxy - BETA",
-  "version": "hotspot-2024-06-14",
+  "version": "hotspot-2024-07-11",
   "slug": "piped-proxy",
   "image": "ghcr.io/ddanii/piped-proxy-{arch}",
   "description": "piped proxy",
