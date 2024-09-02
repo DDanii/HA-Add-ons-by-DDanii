@@ -1,4 +1,7 @@
 
+## 0.17.0 (02-09-2024)
+- Update to latest version from mauriceo/viewtube
+
 ## 0.16.2 (20-06-2024)
 - Update to latest version from mauriceo/viewtube
 
