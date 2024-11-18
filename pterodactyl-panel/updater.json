@@ -3,6 +3,6 @@
   "slug": "pterodactyl_panel",
   "source": "dockerhub",
   "upstream_repo": "ccarney16/pterodactyl-panel",
-  "upstream_version": "v1.11.9",
-  "last_update": "28-10-2024"
+  "upstream_version": "v1.11.10",
+  "last_update": "18-11-2024"
 }
