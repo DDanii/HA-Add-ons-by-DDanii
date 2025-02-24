@@ -1,6 +1,6 @@
 {
   "name": "piped-proxy - BETA",
-  "version": "-",
+  "version": "2025-02-24",
   "slug": "piped-proxy",
   "image": "ghcr.io/ddanii/piped-proxy-{arch}",
   "description": "piped proxy",
