@@ -1,8 +1,8 @@
 {
   "repository": "DDanii/HA-Add-ons-by-DDanii",
-  "slug": "piped",
+  "slug": "piped-proxy",
   "source": "dockerhub",
-  "upstream_repo": "1337kavin/piped",
+  "upstream_repo": "1337kavin/piped-proxy",
   "dockerhub_by_date": "true",
   "upstream_version": "hotspot-2025-01-22",
   "last_update": "2025-01-22"
