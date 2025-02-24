@@ -2,7 +2,7 @@ ARG BUILD_FROM
 ARG BUILD_ARCH
 FROM $BUILD_FROM
 
-RUN apk add jq bash curl
+RUN sudo apk add jq bash curl
 
 RUN mkdir -p /tmp/bashio && \
     wget -q -O - "https://github.com/hassio-addons/bashio/archive/v0.14.3.tar.gz" | \
