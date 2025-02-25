@@ -1,0 +1,19 @@
+{
+   "name": "bg-helper-server - DEVELOPMENT",
+   "version": "2025.08",
+   "slug": "bg-helper-server",
+   "image": "ghcr.io/ddanii/bg-helper-server-{arch}",
+   "description": "Generates PoTokens for use with Piped-Backend.",
+   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/bg-helper-server",
+   "init": false,
+   "ports": {
+      "3000/tcp": 3000
+   },
+   "ports_description": {
+      "3000/tcp": "Web interface http"
+   },
+   "arch": [
+      "aarch64",
+      "amd64"
+   ]
+}

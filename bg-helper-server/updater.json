@@ -1,0 +1,7 @@
+{
+  "repository": "DDanii/HA-Add-ons-by-DDanii",
+  "slug": "bg-helper-server",
+  "source": "dockerhub",
+  "upstream_repo": "1337kavin/piped",
+  "dockerhub_by_date": "true"
+}
