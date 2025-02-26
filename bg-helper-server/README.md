@@ -11,6 +11,15 @@
 
 This is a server that can be used to generate PoTokens for use with Piped-Backend.
 
+Add this to piped config.properties if not present:
+
+```
+# BG Helper URL for supplying PoTokens
+BG_HELPER_URL:INSERT_HERE
+```
+
+Then replace INSERT_HERE with this addons url
+
 ## Support
 
 Create an issue on github](https://github.com/DDanii/HA-Add-ons-by-DDanii/issues/new)

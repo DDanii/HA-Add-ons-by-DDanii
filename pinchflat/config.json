@@ -1,0 +1,39 @@
+{
+   "name": "pinchflat - DEVELOPMENT",
+   "version": "2025.08",
+   "slug": "pinchflat",
+   "image": "ghcr.io/ddanii/pinchflat-{arch}",
+   "description": "YouTube media manager",
+   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/pinchflat",
+   "map": [
+      {
+         "type": "addon_config",
+         "read_only": false,
+         "path": "/config"
+      },
+      "media",
+      "share"
+   ],
+   "init": false,
+   "options": {
+      "dl_path": "/media/pinchflat"
+   },
+   "schema": {
+      "dl_path": "str",
+      "BASIC_AUTH_USERNAME": "str?",
+      "BASIC_AUTH_PASSWORD": "password?"
+   },
+   "ports": {
+      "8945/tcp": 8945
+   },
+   "ports_description": {
+      "8945/tcp": "Web interface http"
+   },
+   "ingress": true,
+   "ingress_port": 8945,
+   "ingress_stream": true,
+   "arch": [
+      "aarch64",
+      "amd64"
+   ]
+}
