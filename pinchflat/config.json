@@ -11,8 +11,8 @@
          "read_only": false,
          "path": "/config"
       },
-      "media",
-      "share"
+      "media:rw",
+      "share:rw"
    ],
    "init": false,
    "options": {
