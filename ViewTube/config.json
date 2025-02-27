@@ -1,5 +1,5 @@
 {
-  "name": "ViewTube - BETA",
+  "name": "ViewTube - untested",
   "version": "0.17.0",
   "slug": "ViewTube",
   "image": "ghcr.io/ddanii/viewtube-{arch}",

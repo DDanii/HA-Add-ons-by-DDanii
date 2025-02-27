@@ -1,5 +1,5 @@
 {
-   "name": "bg-helper-server - DEVELOPMENT",
+   "name": "bg-helper-server",
    "version": "2025.08",
    "slug": "bg-helper-server",
    "image": "ghcr.io/ddanii/bg-helper-server-{arch}",

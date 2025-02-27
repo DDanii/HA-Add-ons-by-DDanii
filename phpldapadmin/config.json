@@ -1,5 +1,5 @@
 {
-  "name": "phpldapadmin - DEVELOPMENT",
+  "name": "phpldapadmin",
   "version": "0.9.0-test15",
   "slug": "phpldapadmin",
   "image": "ghcr.io/ddanii/phpldapadmin-{arch}",

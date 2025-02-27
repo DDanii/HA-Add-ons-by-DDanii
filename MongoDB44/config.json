@@ -1,5 +1,5 @@
 {
-  "name": "MongoDB 4.4 - BETA",
+  "name": "MongoDB 4.4",
   "version": "4.4.29-test1",
   "slug": "mongodb44",
   "image": "ghcr.io/ddanii/mongodb44-{arch}",

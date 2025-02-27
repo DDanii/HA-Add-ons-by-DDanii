@@ -1,5 +1,5 @@
 {
-  "name": "pterodactyl Panel Gameserver - BETA",
+  "name": "pterodactyl Panel",
   "version": "v1.11.10",
   "slug": "pterodactyl_panel",
   "image": "ghcr.io/ddanii/pterodactyl_panel-{arch}",

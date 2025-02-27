@@ -1,5 +1,5 @@
 {
-  "name": "redis - BETA",
+  "name": "redis",
   "version": "8.0",
   "slug": "redis",
   "image": "ghcr.io/ddanii/redis-{arch}",

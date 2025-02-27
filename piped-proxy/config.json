@@ -1,5 +1,5 @@
 {
-  "name": "piped-proxy - BETA",
+  "name": "piped-proxy",
   "version": "2025-02-24",
   "slug": "piped-proxy",
   "image": "ghcr.io/ddanii/piped-proxy-{arch}",
