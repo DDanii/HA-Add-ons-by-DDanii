@@ -2,5 +2,7 @@
   "repository": "DDanii/HA-Add-ons-by-DDanii",
   "slug": "pinchflat",
   "source": "github",
-  "upstream_repo": "kieraneglin/pinchflat"
+  "upstream_repo": "kieraneglin/pinchflat",
+  "upstream_version": "2025.2.20",
+  "last_update": "03-03-2025"
 }
