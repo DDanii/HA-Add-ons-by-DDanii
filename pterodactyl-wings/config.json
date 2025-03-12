@@ -1,0 +1,49 @@
+{
+   "name": "pterodactyl-wings - DEVELOPMENT",
+   "version": "2025.08",
+   "slug": "pterodactyl-wings",
+   "image": "ghcr.io/ddanii/pterodactyl-wings-{arch}",
+   "description": "Wings is the server control plane from Pterodacty",
+   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/pterodactyl-wings",
+   "map": [
+      {
+         "type": "addon_config",
+         "read_only": false,
+         "path": "/usr/share/hassio/addon_config/57fef649_pterodactyl-wings"
+      },
+      {
+         "type": "share",
+         "read_only": false,
+         "path": "/usr/share/hassio/share"
+      },
+      {
+         "type": "media",
+         "read_only": false,
+         "path": "/usr/share/hassio/media"
+      },
+      {
+         "type": "config",
+         "read_only": false,
+         "path": "/usr/share/hassio/homeassistant"
+      }
+   ],
+   "init": false,
+   "options": {
+      "config_location": null
+   },
+   "schema": {
+      "config_location": "str"
+   },
+   "ports": {
+      "2022/tcp": 2022,
+      "8080/tcp": 8080
+   },
+   "ports_description": {
+      "2022/tcp": "Do not change",
+      "8080/tcp": "Do not change"
+   },
+   "docker_api": true,
+   "arch": [
+      "amd64"
+   ]
+}
