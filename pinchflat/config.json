@@ -1,6 +1,6 @@
 {
    "name": "pinchflat - DEVELOPMENT",
-   "version": "2025.3.6-1",
+   "version": "2025.3.6-2",
    "slug": "pinchflat",
    "image": "ghcr.io/ddanii/pinchflat-{arch}",
    "description": "YouTube media manager",
@@ -11,8 +11,18 @@
          "read_only": false,
          "path": "/config"
       },
-      "media:rw",
-      "share:rw"
+      {
+         "type": "media",
+         "read_only": false
+      },
+      {
+         "type": "share",
+         "read_only": false
+      },
+      {
+         "type": "config",
+         "read_only": false
+      }
    ],
    "init": false,
    "options": {
