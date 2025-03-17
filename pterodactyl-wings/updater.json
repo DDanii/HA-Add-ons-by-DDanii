@@ -2,5 +2,7 @@
   "repository": "DDanii/HA-Add-ons-by-DDanii",
   "slug": "pterodactyl-wings",
   "source": "dockerhub",
-  "upstream_repo": "ccarney16/pterodactyl-daemon"
+  "upstream_repo": "ccarney16/pterodactyl-daemon",
+  "upstream_version": "v1.11.13",
+  "last_update": "17-03-2025"
 }
