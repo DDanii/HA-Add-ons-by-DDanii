@@ -16,4 +16,4 @@ if [ -f /data/config.toml ]; then
 fi
 
 echo "[INFO] Launching Perplexica..."
-exec /home/perplexica/entrypoint.sh
+exec /usr/local/bin/docker-entrypoint.sh
