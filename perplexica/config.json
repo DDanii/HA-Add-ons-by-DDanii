@@ -1,0 +1,28 @@
+{
+  "name": "Perplexica Search AI - Development",
+  "version": "1.0.0",
+  "slug": "perplexica",
+  "description": "Self‑hosted AI‑powered search engine (open‑source alternative to Perplexity AI) integrated as a Home Assistant add‑on.",
+  "url": "https://github.com/ItzCrazyKns/Perplexica",
+  "startup": "services",
+  "boot": "auto",
+  "panel_icon": "mdi:magnify",
+  "ingress": true,
+  "ingress_port": 3000,
+  "ingress_entry": "/",
+  "ingress_stream": false,
+  "host_network": false,
+  "arch": [ "amd64", "aarch64", "armv7" ],
+  "ports": {
+    "3000/tcp": 3000
+  },
+  "map": [ "share:rw" ],
+  "options": {
+    "ollama_url": "http://host.docker.internal:11434",
+    "openai_api_key": ""
+  },
+  "schema": {
+    "ollama_url": "str?",
+    "openai_api_key": "str?"
+  }
+}
