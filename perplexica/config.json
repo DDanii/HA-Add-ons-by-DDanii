@@ -1,6 +1,6 @@
 {
   "name": "Perplexica Search AI - Development",
-  "version": "1.0.0",
+  "version": "1.0.0-1",
   "slug": "perplexica",
   "description": "Self‑hosted AI‑powered search engine (open‑source alternative to Perplexity AI) integrated as a Home Assistant add‑on.",
   "url": "https://github.com/ItzCrazyKns/Perplexica",
