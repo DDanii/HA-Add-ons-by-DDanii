@@ -1,6 +1,6 @@
 {
   "name": "pinchflat - DEVELOPMENT",
-  "version": "2025.3.17-1",
+  "version": "2025.6.6",
   "slug": "pinchflat",
   "image": "ghcr.io/ddanii/pinchflat-{arch}",
   "description": "YouTube media manager",
