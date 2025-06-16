@@ -1,6 +1,6 @@
 {
   "name": "piped",
-  "version": "hotspot-2025-05-31",
+  "version": "hotspot-2025-06-14",
   "slug": "piped",
   "image": "ghcr.io/ddanii/piped-{arch}",
   "description": "Alternative YouTube frontend",
