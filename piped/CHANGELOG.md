@@ -1,4 +1,7 @@
 
+## hotspot-2025-06-18 (2025-06-18)
+- Update to latest version from 1337kavin/piped
+
 ## hotspot-2025-06-14 (2025-06-14)
 - Update to latest version from 1337kavin/piped
 
