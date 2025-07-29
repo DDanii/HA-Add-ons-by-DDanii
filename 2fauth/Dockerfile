@@ -5,6 +5,8 @@ ARG BUILD_VERSION
 
 FROM $BUILD_FROM
 
+USER root
+
 RUN apk add jq bash curl
 
 RUN mkdir -p /tmp/bashio && \
@@ -21,6 +23,8 @@ RUN mkdir -p /tmp/bashio && \
 COPY rootfs/ /
 
 RUN chmod a+x /run.sh
+
+USER 1000:1000
 
 ENTRYPOINT /run.sh
 
