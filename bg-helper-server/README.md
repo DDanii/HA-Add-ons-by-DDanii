@@ -22,4 +22,4 @@ Then replace INSERT_HERE with this addons url
 
 ## Support
 
-Create an issue on github](https://github.com/DDanii/HA-Add-ons-by-DDanii/issues/new)
+Create an issue on [github](https://github.com/DDanii/HA-Add-ons-by-DDanii/issues/new)

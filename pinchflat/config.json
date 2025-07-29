@@ -1,5 +1,5 @@
 {
-  "name": "pinchflat - DEVELOPMENT",
+  "name": "pinchflat",
   "version": "2025.6.6",
   "slug": "pinchflat",
   "image": "ghcr.io/ddanii/pinchflat-{arch}",
@@ -35,8 +35,6 @@
   "ports_description": {
     "8945/tcp": "Web interface http"
   },
-  "ingress": true,
-  "ingress_port": 8945,
   "arch": [
     "aarch64",
     "amd64"

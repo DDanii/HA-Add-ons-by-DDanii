@@ -16,8 +16,9 @@ TODO
 ```yaml
 TODO: this too
 ```
+
 https://docs.linuxserver.io/images/docker-orcaslicer/
 
 ## Support
 
-Create an issue on github](https://github.com/DDanii/HA-Add-ons-by-DDanii/issues/new)
+Create an issue on [github](https://github.com/DDanii/HA-Add-ons-by-DDanii/issues/new)

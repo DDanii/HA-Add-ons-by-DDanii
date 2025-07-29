@@ -1,0 +1,50 @@
+{
+   "name": "2fauth - DEVELOPMENT",
+   "version": "2025.30",
+   "slug": "2fauth",
+   "image": "ghcr.io/ddanii/2fauth-{arch}",
+   "description": "A Web app to manage your Two-Factor Authentication (2FA) accounts",
+   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/2fauth",
+   "env": {
+      "DB_DATABASE": "/data/database.sqlite"
+   },
+   "init": false,
+   "options": {
+      "APP_KEY": "SomeRandomStringOf32CharsExactly",
+      "REDIS_HOST": "57fef649-redis",
+      "REDIS_PORT": 6379
+   },
+   "schema": {
+      "APP_KEY": "password",
+      "REDIS_HOST": "str",
+      "REDIS_PORT": "port",
+      "REDIS_PASSWORD": "str?",
+      "APP_DEBUG": "bool?",
+      "APP_NAME": "str?",
+      "SITE_OWNER": "str?",
+      "APP_URL": "str?",
+      "LOG_LEVEL": "list(debug|info|notice|warning|error|critical|alert|emergency)?",
+      "AUTHENTICATION_GUARD": "list(web-guard|reverse-proxy-guard)",
+      "AUTHENTICATION_LOG_RETENTION": "number?",
+      "AUTH_PROXY_HEADER_FOR_USER": "str?",
+      "AUTH_PROXY_HEADER_FOR_EMAIL": "str?",
+      "WEBAUTHN_USER_VERIFICATION": "list(required|preferred|discouraged)?",
+      "TRUSTED_PROXIES": "str?",
+      "APP_TIMEZONE": "str?"
+   },
+   "ports": {
+      "8000/tcp": 8000
+   },
+   "ports_description": {
+      "8000/tcp": "Web interface http"
+   },
+   "ingress": true,
+   "ingress_port": 8000,
+   "ingress_stream": true,
+   "arch": [
+      "armv7",
+      "aarch64",
+      "amd64",
+      "i386"
+   ]
+}

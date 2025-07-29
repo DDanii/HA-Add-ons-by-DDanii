@@ -1,17 +1,9 @@
-#!/usr/bin/bashio
+#############
+ARG BUILD_FROM
+ARG BUILD_ARCH
+ARG BUILD_VERSION
 
-JSONSOURCE="/data/options.json"
-mapfile -t arr < <(jq -r 'keys[]' "${JSONSOURCE}")
-for KEY in "${arr[@]}"; do
-    if bashio::config.has_value "$KEY"; then
-        VALUE=$(bashio::config "$KEY")
-        export "$KEY=$VALUE"
-    fi
-done
-
-exec todo
-
-ADDTO DOCKERFILE
+FROM $BUILD_FROM
 
 RUN apt-get update; \
     apt-get install -y jq bash wget tar curl
@@ -32,3 +24,8 @@ COPY rootfs/ /
 RUN chmod a+x /run.sh
 
 ENTRYPOINT /run.sh
+
+LABEL \
+    io.hass.arch="${BUILD_ARCH}" \
+    io.hass.type="addon" \
+    io.hass.version=${BUILD_VERSION}

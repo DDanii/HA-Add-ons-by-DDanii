@@ -1,0 +1,5 @@
+build_from:
+  armv7: 2fauth/2fauth
+  aarch64: 2fauth/2fauth
+  amd64: 2fauth/2fauth
+  i386: 2fauth/2fauth

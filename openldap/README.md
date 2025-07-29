@@ -27,8 +27,6 @@ LDAP_TLS_CA_CRT_FILENAME: "/ssl/ca.crt"
 
 LDAP_TLS : If set to true once can't be disabled.
 
-
-
 ## Support
 
-Create an issue on github](https://github.com/DDanii/HA-Add-ons-by-DDanii/issues/new)
+Create an issue on [github](https://github.com/DDanii/HA-Add-ons-by-DDanii/issues/new)
