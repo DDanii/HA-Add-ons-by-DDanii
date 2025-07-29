@@ -1,6 +1,6 @@
 {
    "name": "2fauth - DEVELOPMENT",
-   "version": "2025.30",
+   "version": "2025.30 - 2",
    "slug": "2fauth",
    "image": "ghcr.io/ddanii/2fauth-{arch}",
    "description": "A Web app to manage your Two-Factor Authentication (2FA) accounts",
@@ -25,7 +25,7 @@
       "APP_URL": "str?",
       "LOG_LEVEL": "list(debug|info|notice|warning|error|critical|alert|emergency)?",
       "AUTHENTICATION_GUARD": "list(web-guard|reverse-proxy-guard)",
-      "AUTHENTICATION_LOG_RETENTION": "number?",
+      "AUTHENTICATION_LOG_RETENTION": "int?",
       "AUTH_PROXY_HEADER_FOR_USER": "str?",
       "AUTH_PROXY_HEADER_FOR_EMAIL": "str?",
       "WEBAUTHN_USER_VERIFICATION": "list(required|preferred|discouraged)?",
