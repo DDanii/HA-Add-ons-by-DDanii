@@ -24,6 +24,8 @@ COPY rootfs/ /
 
 RUN chmod a+x /run.sh
 
+USER 1000:1000
+
 ENTRYPOINT /run.sh
 
 LABEL \

@@ -1,7 +1,8 @@
 #!/usr/bin/bashio
 
-JSONSOURCE="/data/options.json"
+echo "Started hassio setup"
 
+JSONSOURCE="/data/options.json"
 mapfile -t arr < <(jq -r 'keys[]' "${JSONSOURCE}")
 for KEY in "${arr[@]}"; do
     if bashio::config.has_value "$KEY"; then
