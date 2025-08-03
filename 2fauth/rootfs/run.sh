@@ -1,7 +1,7 @@
 #!/usr/bin/bashio
 
 echo "Started hassio setup"
-
+cat /data/options.json
 JSONSOURCE="/data/options.json"
 mapfile -t arr < <(jq -r 'keys[]' "${JSONSOURCE}")
 for KEY in "${arr[@]}"; do
@@ -11,4 +11,4 @@ for KEY in "${arr[@]}"; do
     fi
 done
 
-sudo -u \#1000 exec /usr/local/bin/entrypoint.sh
+sudo -g \#1000 -u \#1000 exec /usr/local/bin/entrypoint.sh
