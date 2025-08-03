@@ -11,4 +11,4 @@ for KEY in "${arr[@]}"; do
     fi
 done
 
-exec /usr/local/bin/entrypoint.sh
+sudo -u \#1000 exec /usr/local/bin/entrypoint.sh
