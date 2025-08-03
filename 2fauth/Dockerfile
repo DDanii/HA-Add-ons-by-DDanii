@@ -10,7 +10,7 @@ USER root
 RUN apk add jq bash curl sudo
 
 RUN mkdir -p /tmp/bashio && \
-    wget -q -O - "https://github.com/hassio-addons/bashio/archive/v0.14.3.tar.gz" | \
+    wget -q -O - "https://github.com/hassio-addons/bashio/archive/v0.17.1.tar.gz" | \
     tar -xzf - --strip 1 -C /tmp/bashio && \
     mv /tmp/bashio/lib /usr/lib/bashio && \
     ln -s /usr/lib/bashio/bashio /usr/bin/bashio && \
