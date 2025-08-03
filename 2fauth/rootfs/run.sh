@@ -1,7 +1,7 @@
 #!/usr/bin/bashio
 
 echo "Started hassio setup"
-cat /data/options.json
+echo "$(cat /data/options.json)"
 JSONSOURCE="/data/options.json"
 mapfile -t arr < <(jq -r 'keys[]' "${JSONSOURCE}")
 for KEY in "${arr[@]}"; do
