@@ -1,11 +1,11 @@
 {
    "name": "2fauth - DEVELOPMENT",
-   "version": "2025.30-11",
+   "version": "2025.30-12",
    "slug": "2fauth",
    "image": "ghcr.io/ddanii/2fauth-{arch}",
    "description": "A Web app to manage your Two-Factor Authentication (2FA) accounts",
    "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/2fauth",
-   "env": {
+   "environment": {
       "DB_DATABASE": "/data/database.sqlite"
    },
    "init": false,
