@@ -2,8 +2,6 @@
 
 echo "Started hassio setup"
 
-bashio::log.level 1
-
 JSONSOURCE="/data/options.json"
 echo "${JSONSOURCE}"
 mapfile -t arr < <(jq -r 'keys[]' "${JSONSOURCE}")
