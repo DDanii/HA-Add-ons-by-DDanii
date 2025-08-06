@@ -3,13 +3,14 @@
 echo "Started hassio setup"
 
 JSONSOURCE="/data/options.json"
-echo "${JSONSOURCE}"
+
 mapfile -t arr < <(jq -r 'keys[]' "${JSONSOURCE}")
-echo "${arr[0]}"
 for KEY in "${arr[@]}"; do
     echo "$KEY"
     if bashio::config.has_value "$KEY"; then
+        echo "has value"
         VALUE=$(bashio::config "$KEY")
+        echo "$VALUE"
         export "$KEY=$VALUE"
     fi
 done
