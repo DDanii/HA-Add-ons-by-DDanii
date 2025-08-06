@@ -5,8 +5,11 @@ echo "Started hassio setup"
 bashio::log.level 1
 
 JSONSOURCE="/data/options.json"
+echo "${JSONSOURCE}"
 mapfile -t arr < <(jq -r 'keys[]' "${JSONSOURCE}")
+echo "${arr[0]}"
 for KEY in "${arr[@]}"; do
+    echo "$KEY"
     if bashio::config.has_value "$KEY"; then
         VALUE=$(bashio::config "$KEY")
         export "$KEY=$VALUE"
