@@ -1,6 +1,6 @@
 {
   "name": "2fauth - DEVELOPMENT",
-  "version": "23",
+  "version": "24",
   "slug": "2fauth",
   "image": "ghcr.io/ddanii/2fauth-{arch}",
   "description": "A Web app to manage your Two-Factor Authentication (2FA) accounts",
@@ -12,7 +12,8 @@
   "options": {
     "APP_KEY": "SomeRandomStringOf32CharsExactly",
     "REDIS_HOST": "57fef649-redis",
-    "REDIS_PORT": 6379
+    "REDIS_PORT": 6379,
+    "LOG_LEVEL": "notice"
   },
   "schema": {
     "APP_KEY": "password",
@@ -23,6 +24,7 @@
     "APP_NAME": "str?",
     "SITE_OWNER": "str?",
     "APP_URL": "str?",
+    "LOG_LEVEL": "list(debug|info|notice|warning|error|critical|alert|emergency)",
     "AUTHENTICATION_GUARD": "list(web-guard|reverse-proxy-guard)",
     "AUTHENTICATION_LOG_RETENTION": "int?",
     "AUTH_PROXY_HEADER_FOR_USER": "str?",

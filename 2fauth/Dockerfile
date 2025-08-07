@@ -7,6 +7,8 @@ FROM $BUILD_FROM
 
 USER root
 
+RUN unset LOG_LEVEL
+
 RUN apk add jq bash curl sudo
 
 RUN mkdir -p /tmp/bashio && \
