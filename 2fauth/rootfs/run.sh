@@ -14,5 +14,5 @@ echo "Started hassio setup"
 #         export "$KEY=$VALUE"
 #     fi
 # done
-
-sudo -g \#1000 -u \#1000 exec /usr/local/bin/entrypoint.sh
+#sudo -g \#1000 -u \#1000
+exec /usr/local/bin/entrypoint.sh
