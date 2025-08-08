@@ -7,8 +7,6 @@ FROM $BUILD_FROM
 
 USER root
 
-RUN unset LOG_LEVEL
-
 RUN apk add jq bash curl sudo
 
 RUN mkdir -p /tmp/bashio && \
@@ -25,6 +23,7 @@ RUN mkdir -p /tmp/bashio && \
 COPY rootfs/ /
 
 RUN chmod a+x /run.sh
+RUN chmod a+x /ha_config_setup.sh
 
 ENTRYPOINT /run.sh
 
