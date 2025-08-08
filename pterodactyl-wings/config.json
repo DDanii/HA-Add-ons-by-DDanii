@@ -22,7 +22,7 @@
       "path": "/usr/share/hassio/media"
     },
     {
-      "type": "config",
+      "type": "homeassistant_config",
       "read_only": false,
       "path": "/usr/share/hassio/homeassistant"
     }

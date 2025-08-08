@@ -7,7 +7,7 @@ FROM $BUILD_FROM
 
 USER root
 
-RUN adduser -u 1000 -S app
+RUN adduser -u 1000 -D app
 
 RUN apk add jq bash curl sudo
 
