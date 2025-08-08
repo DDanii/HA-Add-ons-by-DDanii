@@ -7,6 +7,8 @@ FROM $BUILD_FROM
 
 USER root
 
+RUN adduser -u 1000 -S app
+
 RUN apk add jq bash curl sudo
 
 RUN mkdir -p /tmp/bashio && \
