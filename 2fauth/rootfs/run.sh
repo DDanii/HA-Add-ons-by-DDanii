@@ -2,6 +2,6 @@
 
 unset LOG_LEVEL
 
-sleep 60000000
+#sleep 60000000
 
-#exec /ha_config_setup.sh
+exec /ha_config_setup.sh

@@ -11,4 +11,4 @@ for KEY in "${arr[@]}"; do
         export "$KEY=$VALUE"
     fi
 done
-sudo -u 1000 /usr/local/bin/entrypoint.sh
+sudo -u \#1000 /usr/local/bin/entrypoint.sh
