@@ -2,6 +2,8 @@
 
 echo "Started hassio setup"
 
+chmod 777 /data
+
 JSONSOURCE="/data/options.json"
 
 mapfile -t arr < <(jq -r 'keys[]' "${JSONSOURCE}")
