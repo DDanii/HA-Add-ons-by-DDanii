@@ -1,6 +1,6 @@
 {
   "name": "2fauth - DEVELOPMENT",
-  "version": "33",
+  "version": "34",
   "slug": "2fauth",
   "image": "ghcr.io/ddanii/2fauth-{arch}",
   "description": "A Web app to manage your Two-Factor Authentication (2FA) accounts",
