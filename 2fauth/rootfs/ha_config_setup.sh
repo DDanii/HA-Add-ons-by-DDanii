@@ -2,7 +2,7 @@
 
 echo "Started hassio setup"
 
-chmod 777 /data
+chown 1000 /2fauth
 
 JSONSOURCE="/data/options.json"
 
