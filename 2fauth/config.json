@@ -1,6 +1,6 @@
 {
   "name": "2fauth - DEVELOPMENT",
-  "version": "5.6.0-1",
+  "version": "5.6.0-2",
   "slug": "2fauth",
   "image": "ghcr.io/ddanii/2fauth-{arch}",
   "description": "A Web app to manage your Two-Factor Authentication (2FA) accounts",
@@ -8,6 +8,12 @@
   "environment": {
     "DB_DATABASE": "/data/database.sqlite"
   },
+  "map": [
+    {
+      "type": "addon_config",
+      "path": "/2fauth"
+    }
+  ],
   "init": false,
   "options": {
     "APP_KEY": "SomeRandomStringOf32CharsExactly",
