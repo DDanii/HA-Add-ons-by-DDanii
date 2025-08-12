@@ -1,5 +1,5 @@
 {
-  "name": "pterodactyl Panel",
+  "name": "Pterodactyl Panel",
   "version": "v1.11.11",
   "slug": "pterodactyl_panel",
   "image": "ghcr.io/ddanii/pterodactyl_panel-{arch}",

@@ -1,5 +1,5 @@
 {
-  "name": "pinchflat",
+  "name": "Pinchflat",
   "version": "2025.6.6",
   "slug": "pinchflat",
   "image": "ghcr.io/ddanii/pinchflat-{arch}",

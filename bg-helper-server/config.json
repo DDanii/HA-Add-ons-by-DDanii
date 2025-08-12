@@ -1,5 +1,5 @@
 {
-  "name": "piped-bg-helper-server",
+  "name": "Piped-bg-helper-server",
   "version": "hotspot-2025-06-24",
   "slug": "bg-helper-server",
   "image": "ghcr.io/ddanii/bg-helper-server-{arch}",
