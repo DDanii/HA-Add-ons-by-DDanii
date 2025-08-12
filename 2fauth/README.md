@@ -19,6 +19,12 @@ The APP_KEY is the encryption key for our database and sessions. Keep this very 
 If you change it all existing data must be considered LOST.
 It must be a string of exactly 32 chars
 
+## TRUSTED_PROXIES
+
+Maybe you should set it to your homeassistant ip.
+A comma separated IP list: The list of proxies IP to trust
+'*': to trust any proxy
+
 ## Support
 
 Create an issue on [github](https://github.com/DDanii/HA-Add-ons-by-DDanii/issues/new)

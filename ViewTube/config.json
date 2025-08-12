@@ -22,5 +22,6 @@
   },
   "ports_description": {
     "8066/tcp": "Web interface http"
-  }
+  },
+  "webui": "http://[HOST]:[PORT:8066]"
 }

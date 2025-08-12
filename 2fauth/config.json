@@ -1,6 +1,6 @@
 {
   "name": "2fauth - DEVELOPMENT",
-  "version": "5.6.0-5",
+  "version": "5.6.0-6",
   "slug": "2fauth",
   "image": "ghcr.io/ddanii/2fauth-{arch}",
   "description": "A Web app to manage your Two-Factor Authentication (2FA) accounts",
@@ -20,7 +20,10 @@
     "APP_KEY": "SomeRandomStringOf32CharsExactly",
     "REDIS_HOST": "57fef649-redis",
     "REDIS_PORT": 6379,
-    "LOG_LEVEL": "notice"
+    "LOG_LEVEL": "notice",
+    "AUTHENTICATION_GUARD": "web-guard",
+    "TRUSTED_PROXIES": "*",
+    "APP_URL": "/"
   },
   "schema": {
     "APP_KEY": "password",
@@ -37,7 +40,7 @@
     "AUTH_PROXY_HEADER_FOR_USER": "str?",
     "AUTH_PROXY_HEADER_FOR_EMAIL": "str?",
     "WEBAUTHN_USER_VERIFICATION": "list(required|preferred|discouraged)?",
-    "TRUSTED_PROXIES": "str?",
+    "TRUSTED_PROXIES": "str",
     "APP_TIMEZONE": "str?"
   },
   "ports": {
@@ -46,8 +49,7 @@
   "ports_description": {
     "8000/tcp": "Web interface http"
   },
-  "ingress": true,
-  "ingress_port": 8000,
+  "webui": "http://[HOST]:[PORT:8000]",
   "arch": [
     "armv7",
     "aarch64",

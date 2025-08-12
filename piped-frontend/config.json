@@ -20,5 +20,6 @@
   },
   "ports_description": {
     "80/tcp": "Web interface"
-  }
+  },
+  "webui": "http://[HOST]:[PORT:80]"
 }

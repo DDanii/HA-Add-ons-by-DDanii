@@ -2,7 +2,7 @@
 
 echo "Started hassio setup"
 
-chown 1000 /2fauth
+chown -R 1000 /2fauth
 
 JSONSOURCE="/data/options.json"
 
