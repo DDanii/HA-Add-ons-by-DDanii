@@ -1,4 +1,4 @@
-#!/usr/bin/bashio
+#!/bin/sh
 
 mkdir -p /config/config
 mkdir -p /config/data
