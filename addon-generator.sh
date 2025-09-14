@@ -9,7 +9,7 @@ get_input () {
         export "$1"="$read"
     fi
 }
-image="corentinth/it-tools"  #todo delete
+image="corentinth/it-tools"
 get_input "image"
 
 slug=$(echo "$image" | rev | cut -d / -f -1 | rev | awk '{print tolower($0)}')
@@ -38,8 +38,11 @@ fi
 short_description=""
 get_input "short_description"
 
+port=80  
+get_input "port"
+
 files="config.json README.md updater.json"
-variables="slug name version image short_description"
+variables="slug name version image short_description port"
 
 for file in $files; do
     for variable in $variables; do

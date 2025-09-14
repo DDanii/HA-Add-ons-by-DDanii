@@ -21,12 +21,12 @@
       "keyfile": "str"
    },
    "ports": {
-      "80/tcp": 80
+      "_port_/tcp": _port_
    },
    "ports_description": {
-      "80/tcp": "Web interface http"
+      "_port/tcp": "Web interface http"
    },
    "ingress": true,
-   "ingress_port": 80,
+   "ingress_port": _port_,
    "ingress_stream": true,
    "arch": [

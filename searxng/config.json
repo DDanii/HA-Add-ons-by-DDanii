@@ -1,6 +1,6 @@
 {
    "name": "SearXNG - DEVELOPMENT",
-   "version": "2025.36",
+   "version": "2025.36 - 1",
    "slug": "searxng",
    "image": "ghcr.io/ddanii/searxng-{arch}",
    "description": "SearXNG is a metasearch engine.",
@@ -24,13 +24,13 @@
       "keyfile": "str"
    },
    "ports": {
-      "80/tcp": 80
+      "80/tcp": 8080
    },
    "ports_description": {
-      "80/tcp": "Web interface http"
+      "8080/tcp": "Web interface http"
    },
    "ingress": true,
-   "ingress_port": 80,
+   "ingress_port": 8080,
    "ingress_stream": true,
    "arch": [
       "armv7",
