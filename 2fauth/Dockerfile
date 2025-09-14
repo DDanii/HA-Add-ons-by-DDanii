@@ -9,7 +9,7 @@ USER root
 
 RUN adduser -u 1000 -D app
 
-RUN apk add jq bash curl sudo nano #TODO remove nano
+RUN apk add jq bash curl sudo
 
 RUN mkdir -p /tmp/bashio && \
     wget -q -O - "https://github.com/hassio-addons/bashio/archive/v0.17.1.tar.gz" | \
