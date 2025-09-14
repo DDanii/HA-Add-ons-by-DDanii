@@ -1,0 +1,4 @@
+build_from:
+  armv7: searxng/searxng
+  aarch64: searxng/searxng
+  amd64: searxng/searxng

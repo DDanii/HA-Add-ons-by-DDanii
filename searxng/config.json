@@ -1,0 +1,40 @@
+{
+   "name": "SearXNG - DEVELOPMENT",
+   "version": "2025.36",
+   "slug": "searxng",
+   "image": "ghcr.io/ddanii/searxng-{arch}",
+   "description": "SearXNG is a metasearch engine.",
+   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/searxng",
+   "map": [
+      "addon_config:rw"
+   ],
+   "environment": {
+      "CONFIG_PATH" : "/config/config",
+      "DATA_PATH" : "/config/data"
+   },
+   "init": false,
+   "options": {
+      "ssl": false,
+      "certfile": "fullchain.pem",
+      "keyfile": "privkey.pem"
+   },
+   "schema": {
+      "ssl": "bool",
+      "certfile": "str",
+      "keyfile": "str"
+   },
+   "ports": {
+      "80/tcp": 80
+   },
+   "ports_description": {
+      "80/tcp": "Web interface http"
+   },
+   "ingress": true,
+   "ingress_port": 80,
+   "ingress_stream": true,
+   "arch": [
+      "armv7",
+      "aarch64",
+      "amd64"
+   ]
+}
