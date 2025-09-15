@@ -1,0 +1,50 @@
+{
+   "name": "libremdb - DEVELOPMENT",
+   "version": "2025.37",
+   "slug": "libremdb",
+   "image": "ghcr.io/ddanii/libremdb-{arch}",
+   "description": "A free _short_description_ open source IMDb front-end.",
+   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/libremdb",
+   "init": false,
+   "options": {
+    "NEXT_PUBLIC_URL": null,
+    "AXIOS_USERAGENT": "Mozilla/5.0 (X11; Linux x86_64; rv:108.0) Gecko/20100101 Firefox/108.0",
+    "AXIOS_ACCEPT": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "AXIOS_LANGUAGE": "en-US,en;q=0.5",
+    "NEXT_TELEMETRY_DISABLED": 1,
+    "USE_REDIS": false,
+    "USE_REDIS_FOR_API_ONLY": false,
+    "REDIS_CACHE_TTL_API": 3600,
+    "REDIS_CACHE_TTL_MEDIA": 3600,
+    "REDIS_URL": "redis:6379",
+    "NEXT_PUBLIC_INSTANCE_MAIN_URL": "https://iket.me",
+    "NEXT_PUBLIC_INSTANCE_NAME": "zyachel"
+  },
+  "schema": {
+    "NEXT_PUBLIC_URL": "str",
+    "AXIOS_USERAGENT": "str",
+    "AXIOS_ACCEPT": "str",
+    "AXIOS_LANGUAGE": "str?",
+    "NEXT_TELEMETRY_DISABLED": "list(0,1)?",
+    "USE_REDIS": "bool",
+    "USE_REDIS_FOR_API_ONLY": "bool",
+    "REDIS_CACHE_TTL_API": "int?",
+    "REDIS_CACHE_TTL_MEDIA": "int?",
+    "REDIS_URL": "str?",
+    "NEXT_PUBLIC_INSTANCE_MAIN_URL": "str?",
+    "NEXT_PUBLIC_INSTANCE_NAME": "str?"
+  },
+   "ports": {
+      "3000/tcp": 3000
+   },
+   "ports_description": {
+      "_port/tcp": "Web interface http"
+   },
+   "ingress": true,
+   "ingress_port": 3000,
+   "ingress_stream": true,
+   "arch": [
+      "aarch64",
+      "amd64"
+   ]
+}

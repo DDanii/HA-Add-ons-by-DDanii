@@ -1,0 +1,21 @@
+{
+   "name": "Wikimore - DEVELOPMENT",
+   "version": "2025.37",
+   "slug": "wikimore",
+   "image": "ghcr.io/ddanii/wikimore-{arch}",
+   "description": "A simple frontend for Wikimedia projects",
+   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/wikimore",
+   "init": false,
+   "ports": {
+      "8109/tcp": 8109
+   },
+   "ports_description": {
+      "_port/tcp": "Web interface http"
+   },
+   "ingress": true,
+   "ingress_port": 8109,
+   "ingress_stream": true,
+   "arch": [
+      "amd64"
+   ]
+}
