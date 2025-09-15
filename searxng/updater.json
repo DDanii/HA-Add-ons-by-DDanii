@@ -2,5 +2,7 @@
   "repository": "DDanii/HA-Add-ons-by-DDanii",
   "slug": "searxng",
   "source": "dockerhub",
-  "upstream_repo": "searxng/searxng"
+  "upstream_repo": "searxng/searxng",
+  "upstream_version": "2025.9.14-a0d2ecf",
+  "last_update": "15-09-2025"
 }
