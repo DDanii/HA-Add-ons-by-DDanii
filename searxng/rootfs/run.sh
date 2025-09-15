@@ -1,6 +1,11 @@
 #!/bin/sh
 
-mkdir -p /config/config
-mkdir -p /config/data
+sleep 600
+
+mkdir -p /config/searxng
+mkdir -p /config/data/searxng
+
+ln -s /config/searxng /etc/
+ln -s /config/data/searxng /var/cache/
 
 exec /usr/local/searxng/entrypoint.sh

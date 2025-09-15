@@ -1,6 +1,6 @@
 {
   "name": "SearXNG - DEVELOPMENT",
-  "version": "2025.9.14-a0d2ecf",
+  "version": "2025.9.14-a0d2ecf-1",
   "slug": "searxng",
   "image": "ghcr.io/ddanii/searxng-{arch}",
   "description": "SearXNG is a metasearch engine.",
@@ -8,10 +8,6 @@
   "map": [
     "addon_config:rw"
   ],
-  "environment": {
-    "CONFIG_PATH": "/config/config",
-    "DATA_PATH": "/config/data"
-  },
   "init": false,
   "ports": {
     "8080/tcp": 8080
