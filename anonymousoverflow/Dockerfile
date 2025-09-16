@@ -7,9 +7,7 @@ FROM $BUILD_FROM
 
 COPY rootfs/ /
 
-RUN go mod download
-
-RUN go build -o launcher
+RUN CGO_ENABLED=0 GOOS=linux go build -o /launcher
 
 CMD ["/launcher"]
 
