@@ -1,6 +1,6 @@
 {
   "name": "SearXNG - DEVELOPMENT",
-  "version": "2025.9.14-a0d2ecf-7",
+  "version": "2025.9.14-a0d2ecf-8",
   "slug": "searxng",
   "image": "ghcr.io/ddanii/searxng-{arch}",
   "description": "SearXNG is a metasearch engine.",
@@ -18,7 +18,7 @@
     "set_base_url_for_ingress": true
   },
   "schema":{
-    "set_base_url_for_ingress": "boolean"
+    "set_base_url_for_ingress": "bool"
   },
   "ports": {
     "8080/tcp": 8080
