@@ -1,6 +1,6 @@
 {
    "name": "libremdb - DEVELOPMENT",
-   "version": "2025.37",
+   "version": "2025.37-1",
    "slug": "libremdb",
    "image": "ghcr.io/ddanii/libremdb-{arch}",
    "description": "A free _short_description_ open source IMDb front-end.",
@@ -25,7 +25,7 @@
     "AXIOS_USERAGENT": "str",
     "AXIOS_ACCEPT": "str",
     "AXIOS_LANGUAGE": "str?",
-    "NEXT_TELEMETRY_DISABLED": "list(0,1)?",
+    "NEXT_TELEMETRY_DISABLED": "int(0,1)",
     "USE_REDIS": "bool",
     "USE_REDIS_FOR_API_ONLY": "bool",
     "REDIS_CACHE_TTL_API": "int?",
