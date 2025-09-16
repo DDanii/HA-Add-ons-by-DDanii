@@ -1,6 +1,6 @@
 {
    "name": "Wikimore - DEVELOPMENT",
-   "version": "2025.37",
+   "version": "2025.37-1",
    "slug": "wikimore",
    "image": "ghcr.io/ddanii/wikimore-{arch}",
    "description": "A simple frontend for Wikimedia projects",
