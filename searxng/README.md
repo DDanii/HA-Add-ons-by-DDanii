@@ -9,13 +9,20 @@
 
 ## About
 
-TODO
+[SearXNG](https://docs.searxng.org/index.html) is a free internet metasearch engine which aggregates results from up to 247 search services. Users are neither tracked nor profiled. Additionally, SearXNG can be used over Tor for online anonymity.
 
 ## Configuration
 
+The apps can be configured in the addon_configs/57fef649_searxng/settings.yml file
+
+For convinience there is one addon configuration option:
+
 ```yaml
-TODO: this too
+"set_base_url_for_ingress": true
 ```
+
+If the set_base_url_for_ingress enabled it sets the SEARXNG_BASE_URL environment variable which is needed for ingress usage and it overrides the base_url variable in settings.yml
+
 
 ## Support
 

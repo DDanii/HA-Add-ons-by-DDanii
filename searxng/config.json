@@ -1,6 +1,6 @@
 {
   "name": "SearXNG - DEVELOPMENT",
-  "version": "2025.9.14-a0d2ecf-8",
+  "version": "2025.9.14-a0d2ecf-9",
   "slug": "searxng",
   "image": "ghcr.io/ddanii/searxng-{arch}",
   "description": "SearXNG is a metasearch engine.",
@@ -28,6 +28,7 @@
   },
   "ingress": true,
   "ingress_port": 8080,
+  "panel_icon": "mdi:magnify",
   "arch": [
     "armv7",
     "aarch64",
