@@ -10,7 +10,7 @@
       "8109/tcp": 8109
    },
    "ports_description": {
-      "_port/tcp": "Web interface http"
+      "8109/tcp": "Web interface http"
    },
    "ingress": true,
    "ingress_port": 8109,

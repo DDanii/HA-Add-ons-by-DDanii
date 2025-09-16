@@ -24,7 +24,7 @@
       "_port_/tcp": _port_
    },
    "ports_description": {
-      "_port/tcp": "Web interface http"
+      "_port_/tcp": "Web interface http"
    },
    "ingress": true,
    "ingress_port": _port_,
