@@ -7,9 +7,9 @@ export SEARXNG_BASE_URL
 
 header="Authorization: Bearer $SUPERVISOR_TOKEN"
 
-SEARXNG_BASE_URL="$(wget --header=$header \
-    http://supervisor/addons/$HOSTNAME/info \
-    | grep ingress_url | cut -d: -f2 | xargs | cut -d, -f1)"
+SEARXNG_BASE_URL=$(wget -qO- --header="$header" \
+    "http://supervisor/addons/self/info" \
+    | sed -n 's/.*"ingress_url":"\([^"]*\)".*/\1/p') #sed by ai
 fi
 
 exec /usr/local/searxng/entrypoint.sh
