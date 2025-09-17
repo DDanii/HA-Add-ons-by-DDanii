@@ -1,6 +1,6 @@
 {
    "name": "AnonymousOverflow - DEVELOPMENT",
-   "version": "2025.37-2",
+   "version": "2025.37-3",
    "slug": "anonymousoverflow",
    "image": "ghcr.io/ddanii/anonymousoverflow-{arch}",
    "description": "View StackOverflow in privacy and without the clutter.",
