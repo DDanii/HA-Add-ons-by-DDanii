@@ -1,4 +1,4 @@
 # https://developers.home-assistant.io/docs/add-ons/repository#repository-configuration
-name: Home Assistant add-on repository
+name: HA Add-ons by DDanii
 url: 'https://github.com/DDanii/HA-Add-ons-by-DDanii/'
-maintainer: DDani
+maintainer: DDanii
