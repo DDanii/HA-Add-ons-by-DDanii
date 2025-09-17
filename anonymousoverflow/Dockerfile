@@ -7,9 +7,7 @@ FROM $BUILD_FROM
 
 COPY rootfs/ /
 
-RUN CGO_ENABLED=0 GOOS=linux go build -o /launcher
-
-CMD ["/launcher"]
+CMD ["/launcher.go"]
 
 LABEL \
     io.hass.arch="${BUILD_ARCH}" \
