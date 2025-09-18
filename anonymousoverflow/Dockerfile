@@ -7,12 +7,13 @@ FROM golang:1.22.1-alpine3.19 AS build
 
 WORKDIR /app
 
-COPY go.mod .
-COPY go.sum .
+COPY rootfs/ .
+
+RUN go mod init launcher
+
+RUN go mod tidy
 
 RUN go mod download
-
-COPY rootfs/ /
 
 ENV CGO_ENABLED=0 GOOS=linux GOARCH=$BUILD_ARCH
 
