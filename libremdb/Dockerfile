@@ -7,8 +7,6 @@ FROM $BUILD_FROM
 
 COPY rootfs/ /
 
-RUN chmod a+x /run.js
-
 ENTRYPOINT /run.js
 
 LABEL \
