@@ -1,9 +1,9 @@
 {
    "name": "libremdb - DEVELOPMENT",
-   "version": "2025.37-1",
+   "version": "2025.37-2",
    "slug": "libremdb",
    "image": "ghcr.io/ddanii/libremdb-{arch}",
-   "description": "A free _short_description_ open source IMDb front-end.",
+   "description": "A free open source IMDb front-end.",
    "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/libremdb",
    "init": false,
    "options": {
@@ -16,7 +16,7 @@
     "USE_REDIS_FOR_API_ONLY": false,
     "REDIS_CACHE_TTL_API": 3600,
     "REDIS_CACHE_TTL_MEDIA": 3600,
-    "REDIS_URL": "redis:6379",
+    "REDIS_URL": "57fef649-redis:6379",
     "NEXT_PUBLIC_INSTANCE_MAIN_URL": "https://iket.me",
     "NEXT_PUBLIC_INSTANCE_NAME": "zyachel"
   },
