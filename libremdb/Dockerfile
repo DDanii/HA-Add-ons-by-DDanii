@@ -7,7 +7,7 @@ FROM $BUILD_FROM
 
 COPY rootfs/ /
 
-ENTRYPOINT /run.js
+ENTRYPOINT ["/run.js"]
 
 LABEL \
     io.hass.arch="${BUILD_ARCH}" \
