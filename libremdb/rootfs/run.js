@@ -10,7 +10,7 @@ for (const key in envData) {
 }
 
 // Start the other Node.js app
-const child = spawn('/opt/app/node_modules/next/dist/bin/next', ['start'], {
+const child = fork('/opt/app/node_modules/next/dist/bin/next', ['start'], {
   stdio: 'inherit',  // Inherit stdio so logs show in same console
   env: process.env   // Pass updated env vars
 });
