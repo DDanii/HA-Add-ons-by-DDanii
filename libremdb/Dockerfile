@@ -7,7 +7,7 @@ FROM $BUILD_FROM
 
 COPY rootfs/ /
 
-CMD ["run.js"]
+CMD ["/run.js"]
 
 LABEL \
     io.hass.arch="${BUILD_ARCH}" \
