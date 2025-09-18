@@ -1,5 +1,5 @@
 const fs = require('fs');
-const { spawn } = require('child_process');
+const { fork } = require('child_process');
 
 // Load and parse env.json
 const envData = JSON.parse(fs.readFileSync('/data/options.json', 'utf-8'));

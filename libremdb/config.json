@@ -1,6 +1,6 @@
 {
    "name": "libremdb - DEVELOPMENT",
-   "version": "2025.37-8",
+   "version": "2025.37-9",
    "slug": "libremdb",
    "image": "ghcr.io/ddanii/libremdb-{arch}",
    "description": "A free open source IMDb front-end.",
