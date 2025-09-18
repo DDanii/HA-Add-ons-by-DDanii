@@ -13,6 +13,8 @@ TODO
 
 ## Configuration
 
+(documentation)[https://github.com/zyachel/libremdb/blob/main/.env.local.example]
+
 ```yaml
 TODO: this too
 ```
