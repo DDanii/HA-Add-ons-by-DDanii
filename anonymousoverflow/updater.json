@@ -2,5 +2,7 @@
   "repository": "DDanii/HA-Add-ons-by-DDanii",
   "slug": "anonymousoverflow",
   "source": "github",
-  "upstream_repo": "httpjamesm/anonymousoverflow"
+  "upstream_repo": "httpjamesm/anonymousoverflow",
+  "upstream_version": "1.13.0",
+  "last_update": "22-09-2025"
 }
