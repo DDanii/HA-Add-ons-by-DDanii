@@ -1,6 +1,6 @@
 {
   "name": "SearXNG",
-  "version": "2025.9.14-a0d2ecf-release",
+  "version": "2025.9.20-b7ecc1c24",
   "slug": "searxng",
   "image": "ghcr.io/ddanii/searxng-{arch}",
   "description": "SearXNG is a metasearch engine.",
@@ -14,10 +14,10 @@
   ],
   "hassio_api": true,
   "init": false,
-  "options":{
+  "options": {
     "set_base_url_for_ingress": true
   },
-  "schema":{
+  "schema": {
     "set_base_url_for_ingress": "bool"
   },
   "ports": {
