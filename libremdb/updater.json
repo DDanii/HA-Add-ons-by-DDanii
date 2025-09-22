@@ -2,5 +2,7 @@
   "repository": "DDanii/HA-Add-ons-by-DDanii",
   "slug": "libremdb",
   "source": "github",
-  "upstream_repo": "zyachel/libremdb"
+  "upstream_repo": "zyachel/libremdb",
+  "upstream_version": "4.2.0",
+  "last_update": "22-09-2025"
 }
