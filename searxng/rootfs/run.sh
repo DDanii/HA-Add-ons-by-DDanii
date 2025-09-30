@@ -12,4 +12,10 @@ SEARXNG_BASE_URL=$(wget -qO- --header="$header" \
     | sed -n 's/.*"ingress_url":"\([^"]*\)".*/\1/p') #sed by ai
 fi
 
-exec /usr/local/searxng/entrypoint.sh
+if [ ! -f /etc/searxng/custom.sh ]; then
+    cp /custom.sh /etc/searxng/custom.sh
+fi
+
+chmod +x /etc/searxng/custom.sh
+
+exec /etc/searxng/custom.sh
