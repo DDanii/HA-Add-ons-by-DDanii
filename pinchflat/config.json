@@ -37,7 +37,6 @@
   },
   "webui": "http://[HOST]:[PORT:8945]",
   "arch": [
-    "aarch64",
     "amd64"
   ]
 }
