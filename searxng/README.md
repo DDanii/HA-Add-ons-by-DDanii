@@ -15,6 +15,11 @@
 
 The apps can be configured in the addon_configs/57fef649_searxng/settings.yml file
 
+If you installed the Valkey addon you can connect to it by setting the Valkey url in the settings.yml to:
+```
+  url: valkey://57fef649-valkey:6379/0
+```
+
 For convinience there is one addon configuration option:
 
 ```yaml
@@ -26,6 +31,7 @@ If the set_base_url_for_ingress enabled it sets the SEARXNG_BASE_URL environment
 ## Customization
 
 After the first run in the addon config folder (addon_configs/57fef649_searxng) there will be a custom.sh file in witch you can add your own commands
+
 
 ## Support
 
