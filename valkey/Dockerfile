@@ -8,7 +8,7 @@ FROM $BUILD_FROM
 COPY rootfs/ /
 
 RUN chmod a+x /run.sh
-
+RUN chmod 777 /valkey.conf
 RUN chmod a+x /custom.sh
 
 ENTRYPOINT /run.sh
