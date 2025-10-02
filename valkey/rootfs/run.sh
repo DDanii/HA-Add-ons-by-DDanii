@@ -2,6 +2,7 @@
 
 
 if [ ! -f /config/valkey.conf ]; then
+    sleep 600
     cp /usr/src/valkey/valkey.conf /config/valkey.conf
 fi
 

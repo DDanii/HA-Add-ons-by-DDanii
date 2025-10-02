@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 #write your custom commands befor the exec command
 
 
