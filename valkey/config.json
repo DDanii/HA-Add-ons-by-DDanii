@@ -1,6 +1,6 @@
 {
    "name": "valkey - DEVELOPMENT",
-   "version": "2025.39",
+   "version": "2025.39-1",
    "slug": "valkey",
    "image": "ghcr.io/ddanii/valkey-{arch}",
    "description": "Valkey is a high-performance key/value datastore",
