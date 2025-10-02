@@ -13,7 +13,9 @@ Valkey is an open source (BSD) high-performance key/value datastore that support
 
 ## Configuration
 
-The valkey.conf can be found in the addon config folder (addon_configs/57fef649_valkey)
+The valkey.conf can be found in the addon config folder (addon_configs/57fef649_valkey) after first run.
+
+The bind and protected-mode is set to unsafe by default.
 
 ## Customization
 
