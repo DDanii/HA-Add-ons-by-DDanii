@@ -9,7 +9,15 @@ for KEY in "${arr[@]}"; do
     fi
 done
 
-exec todo
+CONFIGPATH="/config/custom.sh"
+
+if [ ! -f $CONFIGPATH ]; then
+    cp /custom.sh $CONFIGPATH
+fi
+
+chmod +x $CONFIGPATH
+
+exec $CONFIGPATH
 
 ADDTO DOCKERFILE
 
@@ -30,5 +38,6 @@ RUN mkdir -p /tmp/bashio && \
 COPY rootfs/ /
 
 RUN chmod a+x /run.sh
+RUN chmod a+x /custom.sh
 
 ENTRYPOINT /run.sh

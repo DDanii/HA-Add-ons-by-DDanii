@@ -1,0 +1,23 @@
+{
+   "name": "valkey - DEVELOPMENT",
+   "version": "2025.39",
+   "slug": "valkey",
+   "image": "ghcr.io/ddanii/valkey-{arch}",
+   "description": "Valkey is a high-performance key/value datastore",
+   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/valkey",
+   "map": [
+      "addon_config:rw"
+   ],
+   "init": false,
+   "ports": {
+      "6379/tcp": 6379
+   },
+   "ports_description": {
+      "6379/tcp": "API port"
+   },
+   "arch": [
+      "armv7",
+      "aarch64",
+      "amd64"
+   ]
+}

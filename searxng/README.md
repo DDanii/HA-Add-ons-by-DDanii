@@ -23,6 +23,9 @@ For convinience there is one addon configuration option:
 
 If the set_base_url_for_ingress enabled it sets the SEARXNG_BASE_URL environment variable which is needed for ingress usage and it overrides the base_url variable in settings.yml
 
+## Customization
+
+After the first run in the addon config folder (addon_configs/57fef649_searxng) there will be a custom.sh file in witch you can add your own commands
 
 ## Support
 

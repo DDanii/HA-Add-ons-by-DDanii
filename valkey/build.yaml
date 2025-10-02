@@ -1,0 +1,4 @@
+build_from:
+  armv7: valkey/valkey
+  aarch64: valkey/valkey
+  amd64: valkey/valkey
