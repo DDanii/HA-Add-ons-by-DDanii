@@ -2,5 +2,7 @@
   "repository": "DDanii/HA-Add-ons-by-DDanii",
   "slug": "valkey",
   "source": "github",
-  "upstream_repo": "valkey-io/valkey"
+  "upstream_repo": "valkey-io/valkey",
+  "upstream_version": "8.1.4",
+  "last_update": "06-10-2025"
 }
