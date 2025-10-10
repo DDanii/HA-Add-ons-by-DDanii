@@ -1,6 +1,6 @@
 {
    "name": "Discount Discovery - DEVELOPMENT",
-   "version": "2025.40",
+   "version": "2025.40-1",
    "slug": "discount-discovery",
    "image": "ghcr.io/ddanii/discount-discovery-{arch}",
    "description": "A selfhost app to easyly browse and manage several stores discounts comfortably.",
@@ -20,7 +20,6 @@
    },
    "ingress": true,
    "ingress_port": 3000,
-   "ingress_stream": true,
    "arch": [
       "amd64"
    ]
