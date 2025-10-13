@@ -1,26 +1,26 @@
 {
-   "name": "Discount Discovery - DEVELOPMENT",
-   "version": "2025.40-1",
-   "slug": "discount-discovery",
-   "image": "ghcr.io/ddanii/discount-discovery-{arch}",
-   "description": "A selfhost app to easyly browse and manage several stores discounts comfortably.",
-   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/discount-discovery",
-   "map": [
-      "addon_config:rw"
-   ],
-   "init": false,
-   "environment": {
-      "DATABASE_URL": "file:/config/database.db"
-   },
-   "ports": {
-      "3000/tcp": 3000
-   },
-   "ports_description": {
-      "3000/tcp": "Web interface http"
-   },
-   "ingress": true,
-   "ingress_port": 3000,
-   "arch": [
-      "amd64"
-   ]
+  "name": "Discount Discovery - DEVELOPMENT",
+  "version": "0.1",
+  "slug": "discount-discovery",
+  "image": "ghcr.io/ddanii/discount-discovery-{arch}",
+  "description": "A selfhost app to easyly browse and manage several stores discounts comfortably.",
+  "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/discount-discovery",
+  "map": [
+    "addon_config:rw"
+  ],
+  "init": false,
+  "environment": {
+    "DATABASE_URL": "file:/config/database.db"
+  },
+  "ports": {
+    "3000/tcp": 3000
+  },
+  "ports_description": {
+    "3000/tcp": "Web interface http"
+  },
+  "ingress": true,
+  "ingress_port": 3000,
+  "arch": [
+    "amd64"
+  ]
 }

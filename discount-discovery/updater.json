@@ -2,5 +2,7 @@
   "repository": "DDanii/HA-Add-ons-by-DDanii",
   "slug": "discount-discovery",
   "source": "github",
-  "upstream_repo": "ddanii/discount-discovery"
+  "upstream_repo": "ddanii/discount-discovery",
+  "upstream_version": "0.1",
+  "last_update": "13-10-2025"
 }
