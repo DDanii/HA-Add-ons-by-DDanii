@@ -1,10 +1,13 @@
 {
   "name": "Redis",
-  "version": "8.2.3-1",
+  "version": "8.2.3-2",
   "slug": "redis",
   "image": "ghcr.io/ddanii/redis-{arch}",
   "description": "in-memory data store",
   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/redis",
+  "map": [
+    "addon_config:rw"
+  ],
   "arch": [
     "amd64"
   ],
