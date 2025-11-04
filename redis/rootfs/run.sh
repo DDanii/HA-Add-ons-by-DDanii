@@ -8,4 +8,6 @@ fi
 
 chmod +x $CONFIGPATH
 
+chown 999 /data
+
 exec $CONFIGPATH
