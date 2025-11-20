@@ -10,6 +10,7 @@
 ## About
 
 TODO
+also dark theme switchable
 
 ## Configuration
 

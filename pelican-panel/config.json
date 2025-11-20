@@ -1,0 +1,34 @@
+{
+   "name": "Pelican Panel - DEVELOPMENT",
+   "version": "2025.46",
+   "slug": "pelican-panel",
+   "image": "ghcr.io/ddanii/pelican-panel-{arch}",
+   "description": "Game server control panel",
+   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/pelican-panel",
+   "map": [
+      "addon_config:rw"
+   ],
+   "environment": {
+      "XDG_DATA_HOME": "/config"
+   },
+   "init": false,
+   "options": {
+      "APP_URL": null
+   },
+   "schema": {
+      "APP_URL": "str"
+   },
+   "ports": {
+      "80/tcp": 80
+   },
+   "ports_description": {
+      "80/tcp": "Web interface http"
+   },
+   "ingress": true,
+   "ingress_port": 80,
+   "ingress_stream": true,
+   "arch": [
+      "aarch64",
+      "amd64"
+   ]
+}

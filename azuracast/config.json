@@ -1,6 +1,6 @@
 {
   "name": "AzuraCast - DEVELOPMENT",
-  "version": "0.23.1",
+  "version": "0.23.1-1",
   "slug": "azuracast",
   "image": "ghcr.io/ddanii/azuracast-{arch}",
   "description": "self-hosted, all-in-one web radio management suite",
@@ -15,7 +15,8 @@
     "mysql:need"
   ],
   "environment": {
-    "AZURACAST_STATION_PORTS": "8000,8005,8006,8010"
+    "AZURACAST_STATION_PORTS": "8000,8005,8006,8010",
+    "APPLICATION_ENV": "production"
   },
   "init": false,
   "options": {
@@ -23,7 +24,18 @@
     "certfile": "fullchain.pem",
     "keyfile": "privkey.pem",
     "REDIS_HOST": "localhost",
-    "REDIS_PORT": 6379
+    "REDIS_PORT": 6379,
+    "run_installer": true,
+    "station_data": "/media/azuracast/stations",
+    "backups": "/config/backups",
+    "db_data": "/config/mysql",
+    "www_uploads": "/media/azuracast/uploads",
+    "shoutcast2_install": "/media/azuracast/shoutcast2",
+    "stereo_tool_install": "/media/azuracast/stereo_tool",
+    "rsas_install": "/media/azuracast/rsas",
+    "geolite_install": "/media/azuracast/geoip",
+    "sftpgo_data": "/media/azuracast/sftpgo",
+    "acme": "/config/acme"
   },
   "schema": {
     "ssl": "bool",
@@ -31,7 +43,18 @@
     "keyfile": "str",
     "reset_database": "bool?",
     "REDIS_HOST": "str",
-    "REDIS_PORT": "port"
+    "REDIS_PORT": "port",
+    "run_installer": "bool",
+    "station_data": "str",
+    "backups": "str",
+    "db_data": "str",
+    "www_uploads": "str",
+    "shoutcast2_install": "str",
+    "stereo_tool_install": "str",
+    "rsas_install": "str",
+    "geolite_install": "str",
+    "sftpgo_data": "str",
+    "acme": "str"
   },
   "ports": {
     "80/tcp": 80,

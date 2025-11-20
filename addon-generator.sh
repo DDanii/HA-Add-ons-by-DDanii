@@ -1,9 +1,17 @@
 #!/bin/bash
 
 get_input () {
-    default=$1
-    echo "$1(${!default}):"
-    read -r read
+    default=${!1}
+    echo "$1($default):"
+
+    autoFill=""
+
+    if [ "$2" == 1 ]
+    then
+        autoFill=$default
+    fi
+
+    read -r -e -i "$autoFill" read
     if [ "$read" != "" ]
     then
         export "$1"="$read"
@@ -13,10 +21,11 @@ image="corentinth/it-tools"
 get_input "image"
 
 slug=$(echo "$image" | rev | cut -d / -f -1 | rev | awk '{print tolower($0)}')
-get_input "slug"
+get_input "slug" 1
 
-name="$slug"
-get_input "name"
+# shellcheck disable=SC2001
+name=$( echo "$slug" | sed -e "s/\b\(.\)/\u\1/g")
+get_input "name" 1
 
 cp -r .template "$slug"
 
@@ -38,7 +47,7 @@ fi
 short_description=""
 get_input "short_description"
 
-port=80  
+port=80
 get_input "port"
 
 files="config.json README.md updater.json"
