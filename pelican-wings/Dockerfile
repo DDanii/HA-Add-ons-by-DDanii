@@ -23,7 +23,7 @@ COPY rootfs/ /
 RUN chmod a+x /run.sh
 RUN chmod a+x /custom.sh
 
-CMD /run.sh
+ENTRYPOINT /run.sh
 
 LABEL \
     io.hass.arch="${BUILD_ARCH}" \
