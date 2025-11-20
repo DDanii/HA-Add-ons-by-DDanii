@@ -5,6 +5,7 @@ ARG BUILD_VERSION
 
 FROM $BUILD_FROM
 
+USER root
 
 RUN apk add jq bash curl
 
