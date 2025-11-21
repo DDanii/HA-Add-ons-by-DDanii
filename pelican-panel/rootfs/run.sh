@@ -9,7 +9,9 @@ for KEY in "${arr[@]}"; do
     fi
 done
 
-CONFIGPATH="/config/custom.sh"
+chown -R www-data:www-data /pelican-data
+
+CONFIGPATH="/pelican-data/custom.sh"
 
 if [ ! -f $CONFIGPATH ]; then
     cp /custom.sh $CONFIGPATH
