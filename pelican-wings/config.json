@@ -1,6 +1,6 @@
 {
   "name": "pelican-wings - DEVELOPMENT",
-  "version": "2025.44-2",
+  "version": "2025.44-3",
   "slug": "pelican-wings",
   "image": "ghcr.io/ddanii/pelican-wings-{arch}",
   "description": "Wings is Pelican's server control plane",
@@ -31,6 +31,7 @@
     "WINGS_USERNAME": "pelican"
   },
   "docker_api": true,
+  "udev": true,
   "init": false,
   "ports": {
     "8080/tcp": 8080,
