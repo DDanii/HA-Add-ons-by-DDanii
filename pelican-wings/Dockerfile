@@ -23,7 +23,7 @@ COPY rootfs/ /
 RUN chmod a+x /run.sh
 RUN chmod a+x /custom.sh
 
-ENTRYPOINT /run.sh
+CMD [ "/usr/bin/wings", "--config", "/mnt/data/supervisor/homeassistant/addon_configs/57fef649_pelican-wings/config.yml" ]
 
 LABEL \
     io.hass.arch="${BUILD_ARCH}" \
