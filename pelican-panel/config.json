@@ -1,6 +1,6 @@
 {
    "name": "Pelican Panel - DEVELOPMENT",
-   "version": "2025.46-8",
+   "version": "2025.46-9",
    "slug": "pelican-panel",
    "image": "ghcr.io/ddanii/pelican-panel-{arch}",
    "description": "Game server control panel",
@@ -10,7 +10,7 @@
       {
          "type":"addon_config",
          "path": "/pelican-adat",
-         "read_only": "false"
+         "read_only": false
       }
    ],
    "environment": {
