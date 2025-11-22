@@ -1,16 +1,18 @@
 {
    "name": "Pelican Panel - DEVELOPMENT",
-   "version": "2025.46-7",
+   "version": "2025.46-8",
    "slug": "pelican-panel",
    "image": "ghcr.io/ddanii/pelican-panel-{arch}",
    "description": "Game server control panel",
    "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/pelican-panel",
-   "map": {
-      "addon_config": {
-         "path": "/pelican-adat/",
-         "mode": "rw"
+   "map": [
+
+      {
+         "type":"addon_config",
+         "path": "/pelican-adat",
+         "read_only": "false"
       }
-   },
+   ],
    "environment": {
       "XDG_DATA_HOME": "/pelican-data"
    },
