@@ -1,6 +1,6 @@
 {
   "name": "pelican-wings - DEVELOPMENT",
-  "version": "2025.44-6",
+  "version": "2025.44-7",
   "slug": "pelican-wings",
   "image": "ghcr.io/ddanii/pelican-wings-{arch}",
   "description": "Wings is Pelican's server control plane",
@@ -9,17 +9,17 @@
     {
       "type": "addon_config",
       "read_only": false,
-      "path": "/mnt/data/supervisor/homeassistant/addon_configs/57fef649_pelican-wings"
+      "path": "/mnt/data/supervisor/addon_configs/57fef649_pelican-wings"
     },
     {
       "type": "share",
       "read_only": false,
-      "path": "//mnt/data/supervisor/homeassistant/share"
+      "path": "//mnt/data/supervisor/share"
     },
     {
       "type": "media",
       "read_only": false,
-      "path": "/mnt/data/supervisor/homeassistant/media"
+      "path": "/mnt/data/supervisor/media"
     },
     {
       "type": "homeassistant_config",
@@ -31,7 +31,6 @@
     "WINGS_USERNAME": "pelican"
   },
   "docker_api": true,
-  "hassio_api": true,
   "init": false,
   "ports": {
     "8080/tcp": 8080,
