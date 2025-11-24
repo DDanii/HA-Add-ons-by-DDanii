@@ -2,5 +2,7 @@
   "repository": "DDanii/HA-Add-ons-by-DDanii",
   "slug": "pelican-panel",
   "source": "github",
-  "upstream_repo": "pelican-dev/panel"
+  "upstream_repo": "pelican-dev/panel",
+  "upstream_version": "main",
+  "last_update": "24-11-2025"
 }
