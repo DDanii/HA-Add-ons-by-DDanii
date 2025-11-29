@@ -1,41 +1,40 @@
 {
-   "name": "Pelican Panel - DEVELOPMENT",
-   "version": "2025.46-10",
-   "slug": "pelican-panel",
-   "image": "ghcr.io/ddanii/pelican-panel-{arch}",
-   "description": "Game server control panel",
-   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/pelican-panel",
-   "map": [
-
-      {
-         "type":"addon_config",
-         "path": "/pelican-data",
-         "read_only": false
-      }
-   ],
-   "environment": {
-      "XDG_DATA_HOME": "/pelican-data"
-   },
-   "init": false,
-   "options": {
-      "APP_URL": null,
-      "ADMIN_EMAIL": null
-   },
-   "schema": {
-      "APP_URL": "str",
-      "ADMIN_EMAIL": "str"
-   },
-   "ports": {
-      "80/tcp": 80
-   },
-   "ports_description": {
-      "80/tcp": "Web interface http"
-   },
-   "ingress": true,
-   "ingress_port": 80,
-   "ingress_stream": true,
-   "arch": [
-      "aarch64",
-      "amd64"
-   ]
+  "name": "Pelican Panel - DEVELOPMENT",
+  "version": "main",
+  "slug": "pelican-panel",
+  "image": "ghcr.io/ddanii/pelican-panel-{arch}",
+  "description": "Game server control panel",
+  "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/pelican-panel",
+  "map": [
+    {
+      "type": "addon_config",
+      "path": "/pelican-data",
+      "read_only": false
+    }
+  ],
+  "environment": {
+    "XDG_DATA_HOME": "/pelican-data"
+  },
+  "init": false,
+  "options": {
+    "APP_URL": "main",
+    "ADMIN_EMAIL": "main"
+  },
+  "schema": {
+    "APP_URL": "str",
+    "ADMIN_EMAIL": "str"
+  },
+  "ports": {
+    "80/tcp": 80
+  },
+  "ports_description": {
+    "80/tcp": "Web interface http"
+  },
+  "ingress": true,
+  "ingress_port": 80,
+  "ingress_stream": true,
+  "arch": [
+    "aarch64",
+    "amd64"
+  ]
 }

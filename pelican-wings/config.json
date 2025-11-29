@@ -1,6 +1,6 @@
 {
   "name": "pelican-wings - DEVELOPMENT",
-  "version": "2025.44-7",
+  "version": "main",
   "slug": "pelican-wings",
   "image": "ghcr.io/ddanii/pelican-wings-{arch}",
   "description": "Wings is Pelican's server control plane",
@@ -40,5 +40,8 @@
     "8080/tcp": "Api port",
     "2022/tcp": "SFTP port"
   },
-  "arch": ["aarch64", "amd64"]
+  "arch": [
+    "aarch64",
+    "amd64"
+  ]
 }
