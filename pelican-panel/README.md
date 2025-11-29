@@ -9,12 +9,13 @@
 
 ## About
 
-TODO
+Pelican Panel is an open-source, web-based application designed for easy management of game servers. It offers a user-friendly interface for deploying, configuring, and managing servers, with features like real-time resource monitoring, Docker container isolation, and extensive customization options. Ideal for both individual gamers and hosting companies, it simplifies server administration without requiring deep technical knowledge.
 
 ## Configuration
 
 ```yaml
-TODO: this too
+APP_URL: http://localhost
+ADMIN_EMAIL: USEYOUROWNEMAILHERE@example.com
 ```
 
 ## Customization
