@@ -7,17 +7,30 @@
 [![Builder](https://github.com/DDanii/HA-Add-ons-by-DDanii/actions/workflows/builder.yaml/badge.svg)](https://github.com/DDanii/HA-Add-ons-by-DDanii/actions/workflows/builder.yaml)
 [![Lint](https://github.com/DDanii/HA-Add-ons-by-DDanii/actions/workflows/lint.yaml/badge.svg)](https://github.com/DDanii/HA-Add-ons-by-DDanii/actions/workflows/lint.yaml)
 
+## Warning
+
+This addon will run additional docker containers and that will render your home assistant unsupported.
+
 ## About
 
-TODO
+Wings is Pelican's server control plane, built for the rapidly changing gaming industry and designed to be highly performant and secure. Wings provides an HTTP API allowing you to interface directly with running server instances, fetch server logs, generate backups, and control all aspects of the server lifecycle.
+
+In addition, Wings ships with a built-in SFTP server allowing your system to remain free of Pelican specific dependencies, and allowing users to authenticate with the same credentials they would normally use to access the Panel.
 
 ## Configuration
 
 config.yml expected in the addon_config folder
 
-```yaml
-TODO: this too
+After first run the app will fill the config file with additional options
+you need to change all folder routes. There are 4 folder roots you can chose from:
+
 ```
+/mnt/data/supervisor/addon_configs/57fef649_pelican-wings #addon config folder
+/mnt/data/supervisor/share #share folder
+/mnt/data/supervisor/media #media folder
+/mnt/data/supervisor/homeassistant #home asssistant config folder
+```
+
 
 ## Support
 

@@ -14,7 +14,7 @@
     {
       "type": "share",
       "read_only": false,
-      "path": "//mnt/data/supervisor/share"
+      "path": "/mnt/data/supervisor/share"
     },
     {
       "type": "media",
@@ -37,8 +37,8 @@
     "2022/tcp": 2022
   },
   "ports_description": {
-    "8080/tcp": "Api port",
-    "2022/tcp": "SFTP port"
+    "8080/tcp": "Api port(cannot be changed)",
+    "2022/tcp": "SFTP port(cannot be changed)"
   },
   "arch": [
     "aarch64",

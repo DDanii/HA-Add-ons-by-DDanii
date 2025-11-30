@@ -18,6 +18,14 @@ APP_URL: http://localhost
 ADMIN_EMAIL: USEYOUROWNEMAILHERE@example.com
 ```
 
+[Docs](https://pelican.dev/docs/panel/advanced/docker/#set-required-environment-variables)
+
+If you need a custom caddy file you can put it in the addon config folder and add this command to the custom.sh file:
+
+```
+cp /pelican-data/Caddyfile /etc/caddy/Caddyfile
+```
+
 ## Customization
 
 After the first run in the addon config folder (addon_configs/57fef649_pelican-panel) there will be a custom.sh file in witch you can add your own commands
