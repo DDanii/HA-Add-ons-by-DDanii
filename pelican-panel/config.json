@@ -1,6 +1,6 @@
 {
   "name": "Pelican Panel - DEVELOPMENT",
-  "version": "main",
+  "version": "main-1",
   "slug": "pelican-panel",
   "image": "ghcr.io/ddanii/pelican-panel-{arch}",
   "description": "Game server control panel",
@@ -25,14 +25,13 @@
     "ADMIN_EMAIL": "str"
   },
   "ports": {
-    "80/tcp": 80
+    "80/tcp": 80,
+    "443/tcp": 443
   },
   "ports_description": {
-    "80/tcp": "Web interface http"
+    "80/tcp": "Web interface http",
+    "443/tcp": "Web interface https"
   },
-  "ingress": true,
-  "ingress_port": 80,
-  "ingress_stream": true,
   "arch": [
     "aarch64",
     "amd64"
