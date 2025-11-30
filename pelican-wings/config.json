@@ -1,5 +1,5 @@
 {
-  "name": "pelican-wings - DEVELOPMENT",
+  "name": "Pelican Wings",
   "version": "main",
   "slug": "pelican-wings",
   "image": "ghcr.io/ddanii/pelican-wings-{arch}",

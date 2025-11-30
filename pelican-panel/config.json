@@ -1,5 +1,5 @@
 {
-  "name": "Pelican Panel - DEVELOPMENT",
+  "name": "Pelican Panel",
   "version": "main-1",
   "slug": "pelican-panel",
   "image": "ghcr.io/ddanii/pelican-panel-{arch}",
