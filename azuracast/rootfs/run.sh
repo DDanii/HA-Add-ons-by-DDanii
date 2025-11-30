@@ -61,12 +61,12 @@ if bashio::config.true 'reset_database'; then
     bashio::addon.option 'reset_database'
 fi
 
-if bashio::config.true 'run_installer'; then
+# if bashio::config.true 'run_installer'; then
 
-    docker_installer install
+#     docker_installer install
 
-    bashio::addon.option 'run_installer'
-fi
+#     bashio::addon.option 'run_installer'
+# fi
 
 
 chmod 777 /config
