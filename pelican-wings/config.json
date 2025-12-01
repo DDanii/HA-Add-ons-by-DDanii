@@ -1,6 +1,6 @@
 {
   "name": "Pelican Wings",
-  "version": "main",
+  "version": "1.0.0b19",
   "slug": "pelican-wings",
   "image": "ghcr.io/ddanii/pelican-wings-{arch}",
   "description": "Wings is Pelican's server control plane",

@@ -4,6 +4,6 @@
   "source": "github",
   "upstream_repo": "pelican-dev/wings",
   "github_beta": "true",
-  "upstream_version": "main",
-  "last_update": "24-11-2025"
+  "upstream_version": "1.0.0b19",
+  "last_update": "01-12-2025"
 }
