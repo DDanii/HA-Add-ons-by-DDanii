@@ -8,8 +8,6 @@ FROM $BUILD_FROM
 RUN sed -i '/if \[ ! -S \/dev\/log ]; then rm -f \/dev\/log; fi/d' /container/service/:syslog-ng-core/startup.sh
 RUN sed -i '/\/dev\/log/d' /container/service/:syslog-ng-core/assets/config/syslog-ng.conf
 
-RUN rm -rf /var/lib/apt/lists/*
-
 RUN apt-get update; \
     apt-get install -y jq bash wget tar curl
 
