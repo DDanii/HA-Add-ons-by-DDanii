@@ -8,7 +8,7 @@
   "panel_icon": "mdi:magnify",
   "ingress": true,
   "ingress_port": 3000,
-  "arch": [ "amd64", "aarch64", "armv7" ],
+  "arch": [ "amd64", "aarch64" ],
   "ports": {
     "3000/tcp": 3000
   },

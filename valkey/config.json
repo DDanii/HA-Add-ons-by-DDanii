@@ -16,7 +16,6 @@
     "6379/tcp": "API port"
   },
   "arch": [
-    "armv7",
     "aarch64",
     "amd64"
   ]

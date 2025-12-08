@@ -41,7 +41,6 @@
     "636/tcp": "LDAPS"
   },
   "arch": [
-    "armv7",
     "aarch64",
     "amd64"
   ]

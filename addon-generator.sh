@@ -60,11 +60,11 @@ for file in $files; do
     done
 done
 
-arch_list="armhf,armv7,aarch64,amd64,i386"
+arch_list="aarch64,amd64"
 echo "$arch_list"
-echo "example input: '145' for armhf,amd64 and i386"
-arches=4
-get_input "arches"
+echo "example input: '12' for aarch64 and amd64"
+arches=2
+get_input "arches" 1
 
 for (( i=0; i<${#arches}; i++ )); do
     arch_number="${arches:$i:1}"

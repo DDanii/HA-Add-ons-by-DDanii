@@ -30,7 +30,6 @@
   "ingress": true,
   "ingress_port": 80,
   "arch": [
-    "armv7",
     "aarch64",
     "amd64"
   ]

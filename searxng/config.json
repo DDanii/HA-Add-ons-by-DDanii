@@ -30,7 +30,6 @@
   "ingress_port": 8080,
   "panel_icon": "mdi:magnify",
   "arch": [
-    "armv7",
     "aarch64",
     "amd64"
   ]

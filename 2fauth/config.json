@@ -51,9 +51,7 @@
   },
   "webui": "http://[HOST]:[PORT:8000]",
   "arch": [
-    "armv7",
     "aarch64",
-    "amd64",
-    "i386"
+    "amd64"
   ]
 }
