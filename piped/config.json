@@ -1,5 +1,5 @@
 {
-  "name": "Piped",
+  "name": "Piped-Backend",
   "version": "hotspot-2025-09-27",
   "slug": "piped",
   "image": "ghcr.io/ddanii/piped-{arch}",

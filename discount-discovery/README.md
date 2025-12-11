@@ -9,13 +9,8 @@
 
 ## About
 
-TODO
-
-## Configuration
-
-```yaml
-TODO: this too
-```
+[A selfhosted app](https://github.com/DDanii/Discount-Discovery) to easyly browse and manage several stores discounts comfortably.
+The project is in early stage and only have parsers for some Hungarian stores.
 
 ## Customization
 

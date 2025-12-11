@@ -1,4 +1,4 @@
-# Home assistant add-on: anonymousoverflow
+# Home assistant add-on: AnonymousOverflow
 
 ![Version](https://img.shields.io/badge/dynamic/json?label=Version&query=%24.version&url=https%3A%2F%2Fraw.githubusercontent.com%2FDDanii%2FHA-Add-ons-by-DDanii%2Fmaster%2Fanonymousoverflow%2Fconfig.json)
 ![Ingress](https://img.shields.io/badge/dynamic/json?label=Ingress&query=%24.ingress&url=https%3A%2F%2Fraw.githubusercontent.com%2FDDanii%2FHA-Add-ons-by-DDanii%2Fmaster%2Fanonymousoverflow%2Fconfig.json)
@@ -9,12 +9,13 @@
 
 ## About
 
-TODO
+[AnonymousOverflow](https://github.com/httpjamesm/AnonymousOverflow) allows you to view StackOverflow threads without the cluttered interface and exposing your IP address, browsing habits and other browser fingerprint data to StackOverflow.
 
 ## Configuration
 
 ```yaml
-TODO: this too
+APP_URL: http://localhost
+JWT_SIGNING_SECRET: secret
 ```
 
 ## Support

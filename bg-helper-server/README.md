@@ -9,9 +9,9 @@
 
 ## About
 
-This is a server that can be used to generate PoTokens for use with Piped-Backend.
+[This](https://github.com/TeamPiped/bg-helper-server) is a server that can be used to generate PoTokens for use with [Piped-Backend](https://github.com/TeamPiped/Piped-Backend).
 
-Add this to piped config.properties if not present:
+Add this to piped config.properties file in addon_configs/57fef649_piped/ folder if not present:
 
 ```
 # BG Helper URL for supplying PoTokens

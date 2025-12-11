@@ -1,0 +1,4 @@
+---
+build_from:
+  amd64: quay.io/redlib/redlib
+  aarch64: quay.io/redlib/redlib:latest-arm

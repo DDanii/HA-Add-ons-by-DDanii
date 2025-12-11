@@ -1,5 +1,5 @@
 {
-  "name": "Discord self radio",
+  "name": "Discordbot self radio",
   "version": "2.5",
   "slug": "discord_self_radio",
   "description": "A discord bot to play a radio stream if you are alone / no one else can hear the bot.",

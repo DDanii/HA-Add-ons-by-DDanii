@@ -11,6 +11,9 @@
 
 TODO
 
+Well this has offical conrainer but there are setup steps in a long bash file that
+I never read through so it is not working
+
 The MariaDB Addon is needed before installing this one!
 
 When setting up station set their location in /config later you can add music folder from /media or /share too.
