@@ -3,6 +3,6 @@
   "slug": "valkey",
   "source": "github",
   "upstream_repo": "valkey-io/valkey",
-  "upstream_version": "8.1.5",
-  "last_update": "08-12-2025"
+  "upstream_version": "9.0.1",
+  "last_update": "13-12-2025"
 }
