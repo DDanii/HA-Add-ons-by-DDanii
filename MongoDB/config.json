@@ -1,6 +1,6 @@
 {
   "name": "MongoDB - untested",
-  "version": "8.2.2",
+  "version": "7.0.27",
   "slug": "mongodb",
   "image": "ghcr.io/ddanii/mongodb-{arch}",
   "description": "document-oriented database",
