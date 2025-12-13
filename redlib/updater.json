@@ -2,5 +2,7 @@
   "repository": "DDanii/HA-Add-ons-by-DDanii",
   "slug": "redlib",
   "source": "github",
-  "upstream_repo": "redlib-org/redlib"
+  "upstream_repo": "redlib-org/redlib",
+  "upstream_version": "0.36.0",
+  "last_update": "13-12-2025"
 }
