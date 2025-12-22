@@ -1,6 +1,6 @@
 {
   "name": "Pelican Panel",
-  "version": "1.0.0b29",
+  "version": "1.0.0b30",
   "slug": "pelican-panel",
   "image": "ghcr.io/ddanii/pelican-panel-{arch}",
   "description": "Game server control panel",
@@ -17,8 +17,8 @@
   },
   "init": false,
   "options": {
-    "APP_URL": "1.0.0b29",
-    "ADMIN_EMAIL": "1.0.0b29"
+    "APP_URL": "1.0.0b30",
+    "ADMIN_EMAIL": "1.0.0b30"
   },
   "schema": {
     "APP_URL": "str",
