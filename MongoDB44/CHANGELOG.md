@@ -1,4 +1,7 @@
 
+## 4.4.30 (29-12-2025)
+- Update to latest version from mongodb/mongo (changelog : https://github.com/mongodb/mongo/releases)
+
 ## 4.4.29 (24-02-2024)
 - Update to latest version from mongodb/mongo
 
