@@ -1,6 +1,6 @@
 {
   "name": "SearXNG",
-  "version": "2026.1.2-3d88876a3",
+  "version": "2026.1.11-cf74e1d9e",
   "slug": "searxng",
   "image": "ghcr.io/ddanii/searxng-{arch}",
   "description": "SearXNG is a metasearch engine.",
