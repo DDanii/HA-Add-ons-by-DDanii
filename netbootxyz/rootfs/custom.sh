@@ -2,4 +2,4 @@
 #write your custom commands befor the exec command
 
 
-exec todo
+exec /dumper.sh

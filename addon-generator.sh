@@ -50,8 +50,11 @@ get_input "short_description"
 port=80
 get_input "port"
 
-files="config.json README.md updater.json"
-variables="slug name version image short_description port"
+erun="exec "
+get_input "erun" 1
+
+files="config.json README.md updater.json custom.sh"
+variables="slug name version image short_description port erun"
 
 for file in $files; do
     for variable in $variables; do
@@ -78,7 +81,6 @@ for (( i=0; i<${#arches}; i++ )); do
 done
 echo "   ]" >> config.json
 echo "}" >> config.json
-
 
 
 
