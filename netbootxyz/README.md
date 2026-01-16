@@ -9,13 +9,16 @@
 
 ## About
 
-TODO
+[netboot.xyz](http://www.netboot.xyz/) is a convenient place to boot into any type of operating system or utility disk without the need of having to go spend time retrieving the ISO just to run it. [iPXE](http://ipxe.org/) is used to provide a user friendly menu from within the BIOS that lets you easily choose the operating system you want along with any specific types of versions or bootable flags.
 
 ## Configuration
 
 ```yaml
-TODO: this too
+assets: /media/netboot/assets
 ```
+
+### asstes
+The served folder for install medias (possible root folders: /media, /share, /config)
 
 ## Customization
 

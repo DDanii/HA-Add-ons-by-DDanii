@@ -2,4 +2,4 @@
 #write your custom commands befor the exec command
 
 
-exec /dumper.sh
+exec /start.sh
