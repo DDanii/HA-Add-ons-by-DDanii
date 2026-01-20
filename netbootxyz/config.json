@@ -1,38 +1,38 @@
 {
-   "name": "netboot.xyz",
-   "version": "2026.02-1",
-   "slug": "netbootxyz",
-   "image": "ghcr.io/ddanii/netbootxyz-{arch}",
-   "description": "netboot.xyz is a convenient place to boot into any type of operating system",
-   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/netbootxyz",
-   "map": [
-      "addon_config:rw",
-      "media:rw",
-      "share:rw"
-   ],
-   "environment":{
-      "TFTPD_OPTS": "--tftp-single-port"
-   },
-   "init": false,
-   "options": {
-      "assets": "/media/netboot/assets"
-   },
-   "schema": {
-      "assets": "str"
-   },
-   "ports": {
-      "3000/tcp": 3000,
-      "80/tcp": 8080,
-      "69/udp": 69
-   },
-   "ports_description": {
-      "3000/tcp": "Web interface http",
-      "80/tcp": "asset serving (nginx http)",
-      "69/tcp": "tftp can't be changed"
-   },
-   "webui": "http://[HOST]:[PORT:3000]",
-   "arch": [
-      "aarch64",
-      "amd64"
-   ]
+  "name": "netboot.xyz",
+  "version": "2.0.89",
+  "slug": "netbootxyz",
+  "image": "ghcr.io/ddanii/netbootxyz-{arch}",
+  "description": "netboot.xyz is a convenient place to boot into any type of operating system",
+  "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/netbootxyz",
+  "map": [
+    "addon_config:rw",
+    "media:rw",
+    "share:rw"
+  ],
+  "environment": {
+    "TFTPD_OPTS": "--tftp-single-port"
+  },
+  "init": false,
+  "options": {
+    "assets": "/media/netboot/assets"
+  },
+  "schema": {
+    "assets": "str"
+  },
+  "ports": {
+    "3000/tcp": 3000,
+    "80/tcp": 8080,
+    "69/udp": 69
+  },
+  "ports_description": {
+    "3000/tcp": "Web interface http",
+    "80/tcp": "asset serving (nginx http)",
+    "69/tcp": "tftp can't be changed"
+  },
+  "webui": "http://[HOST]:[PORT:3000]",
+  "arch": [
+    "aarch64",
+    "amd64"
+  ]
 }
