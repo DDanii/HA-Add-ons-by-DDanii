@@ -1,6 +1,6 @@
 #!/usr/bin/bashio
 
-jq --version
+sleep 6000
 
 if [ ! "$(bashio::config.has_value 'ROMM_AUTH_SECRET_KEY')" ]; then
     bashio::addon.option "ROMM_AUTH_SECRET_KEY" "$(openssl rand -hex 32)"
