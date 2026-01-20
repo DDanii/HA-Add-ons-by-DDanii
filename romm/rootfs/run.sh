@@ -1,5 +1,7 @@
 #!/usr/bin/bashio
 
+jq --version
+
 if [ ! "$(bashio::config.has_value 'ROMM_AUTH_SECRET_KEY')" ]; then
     bashio::addon.option "ROMM_AUTH_SECRET_KEY" "$(openssl rand -hex 32)"
 fi
@@ -13,7 +15,7 @@ for KEY in "${arr[@]}"; do
     fi
 done
 
-paths="/romm/library /romm/assets /romm/config /romm/resources redis-data"
+paths=".romm.library .romm.assets .romm.config .romm.resources redis-data"
 
 for path in $paths; do
     value=$(bashio::config "$path")
