@@ -1,6 +1,6 @@
 {
   "name": "ROMM",
-  "version": "2026.03-4",
+  "version": "2026.03-5",
   "slug": "romm",
   "image": "ghcr.io/ddanii/romm-{arch}",
   "description": "DEVELOPMENT self-hosted rom manager",
@@ -21,11 +21,11 @@
     "HASHEOUS_API_ENABLED": true,
     "PLAYMATCH_API_ENABLED": true,
     "LAUNCHBOX_API_ENABLED": true,
-    ".romm.library": "/media/romm/library",
-    ".romm.assets": "/config/assets",
-    ".romm.config": "/config/config",
-    ".romm.resources": "/media/romm/resources",
-    ".redis-data": "/media/romm/redis-data"
+    "#romm#library": "/media/romm/library",
+    "#romm#assets": "/config/assets",
+    "#romm#config": "/config/config",
+    "#romm#resources": "/media/romm/resources",
+    "#redis-data": "/media/romm/redis-data"
   },
   "schema": {
     "DB_HOST": "str",
@@ -40,11 +40,11 @@
     "HASHEOUS_API_ENABLED": "bool",
     "PLAYMATCH_API_ENABLED": "bool",
     "LAUNCHBOX_API_ENABLED": "bool",
-    ".romm.library": "str",
-    ".romm.assets": "str",
-    ".romm.config": "str",
-    ".romm.resources": "str",
-    ".redis-data": "str"
+    "#romm#library": "str",
+    "#romm#assets": "str",
+    "#romm#config": "str",
+    "#romm#resources": "str",
+    "#redis-data": "str"
   },
   "ports": {
     "8080/tcp": 8080

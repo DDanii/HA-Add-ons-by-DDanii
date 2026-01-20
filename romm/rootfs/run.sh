@@ -15,12 +15,12 @@ for KEY in "${arr[@]}"; do
     fi
 done
 
-paths=".romm.library .romm.assets .romm.config .romm.resources redis-data"
+paths="#romm#library #romm#assets #romm#config #romm#resources redis-data"
 
 for path in $paths; do
     value=$(bashio::config "$path")
     mkdir -p "$value"
-    ln -s "$value" "${path//./\/}"
+    ln -s "$value" "${path//#/\/}"
 done
 
 
