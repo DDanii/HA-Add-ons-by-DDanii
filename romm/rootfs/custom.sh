@@ -2,4 +2,4 @@
 #write your custom commands befor the exec command
 
 
-_entrypoint_
+exec /docker-entrypoint.sh /init

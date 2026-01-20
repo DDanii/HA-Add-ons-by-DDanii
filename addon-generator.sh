@@ -50,11 +50,14 @@ get_input "short_description"
 port=80
 get_input "port"
 
-erun="exec "
-get_input "erun" 1
+entrypoint="exec /entrypoint.sh"
+get_input "entrypoint" 1
 
-files="config.json README.md updater.json custom.sh"
-variables="slug name version image short_description port erun"
+package_manager="apt-get update; apt-get install -y"
+get_input "package_manager"
+
+files="config.json README.md updater.json rootfs/custom.sh Dockerfile"
+variables="slug name version image short_description port entrypoint package_manager"
 
 for file in $files; do
     for variable in $variables; do

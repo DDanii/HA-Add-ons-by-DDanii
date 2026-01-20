@@ -6,7 +6,7 @@ ARG BUILD_VERSION
 FROM $BUILD_FROM
 
 
-RUN _package_manager_ jq bash wget tar curl
+RUN apk add --no-cache jq bash wget tar curl
 
 RUN mkdir -p /tmp/bashio && \
     wget -q -O - "https://github.com/hassio-addons/bashio/archive/v0.17.1.tar.gz" | \

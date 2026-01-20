@@ -1,0 +1,59 @@
+{
+  "name": "ROMM",
+  "version": "2026.03",
+  "slug": "romm",
+  "image": "ghcr.io/ddanii/romm-{arch}",
+  "description": "DEVELOPMENT self-hosted rom manager",
+  "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/romm",
+  "map": ["addon_config:rw", "media:rw", "share:rw"],
+  "services": ["mysql:need"],
+  "init": false,
+  "options": {
+    "DB_HOST": "core-mariadb",
+    "DB_NAME": "romm",
+    "DB_USER": "romm-user",
+    "DB_PASSWD": null,
+    "ROMM_AUTH_SECRET_KEY": "",
+    "SCREENSCRAPER_USER": "",
+    "SCREENSCRAPER_PASSWORD": "",
+    "RETROACHIEVEMENTS_API_KEY": "",
+    "STEAMGRIDDB_API_KEY": "",
+    "HASHEOUS_API_ENABLED": true,
+    "PLAYMATCH_API_ENABLED": true,
+    "LAUNCHBOX_API_ENABLED": true,
+    "/romm/library": "/media/romm/library",
+    "/romm/assets": "/config/assets",
+    "/romm/config": "/config/config",
+    "/romm/resources": "/media/romm/resources",
+    "/redis-data": "/media/romm/redis-data"
+  },
+  "schema": {
+    "DB_HOST": "str",
+    "DB_NAME": "str",
+    "DB_USER": "str",
+    "DB_PASSWD": "str",
+    "ROMM_AUTH_SECRET_KEY": "str?",
+    "SCREENSCRAPER_USER": "str?",
+    "SCREENSCRAPER_PASSWORD": "str?",
+    "RETROACHIEVEMENTS_API_KEY": "str?",
+    "STEAMGRIDDB_API_KEY": "str?",
+    "HASHEOUS_API_ENABLED": "bool",
+    "PLAYMATCH_API_ENABLED": "bool",
+    "LAUNCHBOX_API_ENABLED": "bool",
+    "/romm/library": "str",
+    "/romm/assets": "str",
+    "/romm/config": "str",
+    "/romm/resources": "str",
+    "/redis-data": "str"
+  },
+  "ports": {
+    "8080/tcp": 8080
+  },
+  "ports_description": {
+    "8080/tcp": "Web interface http"
+  },
+  "ingress": true,
+  "ingress_port": 8080,
+  "ingress_stream": true,
+  "arch": ["amd64", "aarch64"]
+}
