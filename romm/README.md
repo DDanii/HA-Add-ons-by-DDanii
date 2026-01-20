@@ -17,6 +17,8 @@ todo fix slop
 
 ## Configuration
 
+You need to put a configuration file in addon_configs/57fef649_romm/config [documentation](https://docs.romm.app/latest/Getting-Started/Configuration-File/)
+
 ### Database Settings
 
 - `db_host`: MariaDB host name (default: `romm-db`)

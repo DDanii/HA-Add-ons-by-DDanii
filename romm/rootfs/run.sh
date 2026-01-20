@@ -17,10 +17,8 @@ paths="/romm/library /romm/assets /romm/config /romm/resources redis-data"
 
 for path in $paths; do
     value=$(bashio::config "$path")
-    if [ -n "$value" ]; then
-        mkdir -p "$value"
-        ln -s "$value" "$path"
-    fi
+    mkdir -p "$value"
+    ln -s "$value" "$path"
 done
 
 
