@@ -1,6 +1,6 @@
 {
   "name": "ROMM",
-  "version": "2026.03-6",
+  "version": "2026.03-7",
   "slug": "romm",
   "image": "ghcr.io/ddanii/romm-{arch}",
   "description": "DEVELOPMENT self-hosted rom manager",
@@ -21,11 +21,11 @@
     "HASHEOUS_API_ENABLED": true,
     "PLAYMATCH_API_ENABLED": true,
     "LAUNCHBOX_API_ENABLED": true,
-    "#romm#library": "/media/romm/library",
-    "#romm#assets": "/config/assets",
-    "#romm#config": "/config/config",
-    "#romm#resources": "/media/romm/resources",
-    "#redis-data": "/media/romm/redis-data"
+    "romm#library": "/media/romm/library",
+    "romm#assets": "/config/assets",
+    "romm#config": "/config/config",
+    "romm#resources": "/media/romm/resources",
+    "redis-data": "/media/romm/redis-data"
   },
   "schema": {
     "DB_HOST": "str",
