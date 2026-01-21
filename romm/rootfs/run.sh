@@ -26,8 +26,8 @@ for path in $paths; do
 
     path="${path//romm_/romm/}"
     path="${path//_/-}"
-    
-    rm -r "$path"
+
+    rm -r "/{$path}"
     ln -s "$value" "/${dest//#/\/}"
 done
 touch /romm/config/config.yml
