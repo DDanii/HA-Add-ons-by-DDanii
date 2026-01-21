@@ -1,6 +1,6 @@
 {
   "name": "ROMM",
-  "version": "2026.03-12",
+  "version": "2026.03-13",
   "slug": "romm",
   "image": "ghcr.io/ddanii/romm-{arch}",
   "description": "DEVELOPMENT self-hosted rom manager",
@@ -21,10 +21,10 @@
     "HASHEOUS_API_ENABLED": true,
     "PLAYMATCH_API_ENABLED": true,
     "LAUNCHBOX_API_ENABLED": true,
-    "romm#library": "/media/romm/library",
-    "romm#assets": "/config/assets",
-    "romm#config": "/config/config",
-    "romm#resources": "/media/romm/resources",
+    "romm_library": "/media/romm/library",
+    "romm_assets": "/config/assets",
+    "romm_config": "/config/config",
+    "romm_resources": "/media/romm/resources",
     "redis_data": "/media/romm/redis-data"
   },
   "schema": {
@@ -40,10 +40,10 @@
     "HASHEOUS_API_ENABLED": "bool",
     "PLAYMATCH_API_ENABLED": "bool",
     "LAUNCHBOX_API_ENABLED": "bool",
-    "romm#library": "str",
-    "romm#assets": "str",
-    "romm#config": "str",
-    "romm#resources": "str",
+    "romm_library": "str",
+    "romm_assets": "str",
+    "romm_config": "str",
+    "romm_resources": "str",
     "redis_data": "str"
   },
   "ports": {
