@@ -1,6 +1,6 @@
 {
   "name": "RomM",
-  "version": "2026.03-14",
+  "version": "2026.03-15",
   "slug": "romm",
   "image": "ghcr.io/ddanii/romm-{arch}",
   "description": "DEVELOPMENT self-hosted rom manager",

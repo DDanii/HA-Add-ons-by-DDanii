@@ -18,9 +18,12 @@ paths="romm_library romm_assets romm_config romm_resources redis_data"
 for path in $paths; do
     value=$(bashio::config "$path")
     mkdir -p "$value"
-    path="${path//romm_/romm/}"
-    path="${path//_/-}"
-    ln -s "$value" "/${path//#/\/}"
+    if [ "$path" = redis_data ] ; then
+        path=/
+    else
+        path=/romm
+    fi
+    ln -s "$value" "$path"
 done
 touch /romm/config/config.yml
 
