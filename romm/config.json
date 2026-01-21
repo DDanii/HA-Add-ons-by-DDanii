@@ -1,6 +1,6 @@
 {
   "name": "RomM",
-  "version": "2026.03-18",
+  "version": "2026.03-19",
   "slug": "romm",
   "image": "ghcr.io/ddanii/romm-{arch}",
   "description": "DEVELOPMENT self-hosted rom manager",
@@ -16,8 +16,7 @@
     "romm_library": "/media/romm/library",
     "romm_assets": "/config/assets",
     "romm_config": "/config/config",
-    "romm_resources": "/media/romm/resources",
-    "redis_data": "/media/romm/redis-data"
+    "romm_resources": "/media/romm/resources"
   },
   "schema": {
     "ROMM_AUTH_SECRET_KEY": "password?",
@@ -96,8 +95,7 @@
     "romm_library": "str",
     "romm_assets": "str",
     "romm_config": "str",
-    "romm_resources": "str",
-    "redis_data": "str"
+    "romm_resources": "str"
   },
   "ports": {
     "8080/tcp": 8080

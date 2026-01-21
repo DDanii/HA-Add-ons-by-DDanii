@@ -13,24 +13,17 @@ for KEY in "${arr[@]}"; do
     fi
 done
 
-paths="romm_library romm_assets romm_config romm_resources redis_data"
+export ROMM_BASE_PATH="/rom"
+
+paths="romm_library romm_assets romm_config romm_resources "
 
 for path in $paths; do
     value=$(bashio::config "$path")
     mkdir -p "$value"
-    if [ "$path" = redis_data ] ; then
-        dest=/
-    else
-        dest=/romm
-    fi
-
-    path="${path//romm_/romm/}"
-    path="/${path//_/-}"
-
-    rm -r "$path"
-    ln -s "$value" "$dest"
+    mkdir -p /rom
+    ln -s "$value" "/rom"
 done
-touch /romm/config/config.yml
+touch /rom/config/config.yml
 
 CONFIGPATH="/config/custom.sh"
 
