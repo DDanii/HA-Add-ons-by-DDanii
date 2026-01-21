@@ -1,6 +1,6 @@
 {
   "name": "RomM",
-  "version": "2026.03-15",
+  "version": "2026.03-16",
   "slug": "romm",
   "image": "ghcr.io/ddanii/romm-{arch}",
   "description": "DEVELOPMENT self-hosted rom manager",
@@ -36,8 +36,6 @@
     "DISABLE_RUFFLE_RS": "bool?",
     "YOUTUBE_BASE_URL": "str?",
     "TZ": "str?",
-    "ROMM_PORT": "int?",
-    "ROMM_BASE_PATH": "str?",
     "ROMM_BASE_URL": "str?",
     "LOGLEVEL": "str?",
     "FORCE_COLOR": "bool?",

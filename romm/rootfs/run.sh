@@ -19,11 +19,16 @@ for path in $paths; do
     value=$(bashio::config "$path")
     mkdir -p "$value"
     if [ "$path" = redis_data ] ; then
-        path=/
+        dest=/
     else
-        path=/romm
+        dest=/romm
     fi
-    ln -s "$value" "$path"
+
+    path="${path//romm_/romm/}"
+    path="${path//_/-}"
+    
+    rm -r "$path"
+    ln -s "$value" "/${dest//#/\/}"
 done
 touch /romm/config/config.yml
 
