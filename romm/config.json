@@ -1,6 +1,6 @@
 {
   "name": "ROMM",
-  "version": "2026.03-8",
+  "version": "2026.03-9",
   "slug": "romm",
   "image": "ghcr.io/ddanii/romm-{arch}",
   "description": "DEVELOPMENT self-hosted rom manager",
@@ -25,7 +25,7 @@
     "romm#assets": "/config/assets",
     "romm#config": "/config/config",
     "romm#resources": "/media/romm/resources",
-    "redis-data": "/media/romm/redis-data"
+    "redis_data": "/media/romm/redis-data"
   },
   "schema": {
     "DB_HOST": "str",
