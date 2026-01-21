@@ -1,4 +1,4 @@
-# Home Assistant Add-on: ROMM
+# Home Assistant Add-on: RomM
 
 **Note:** This add-on is under development. Expect potential nonfunctionality and data losses.
 
