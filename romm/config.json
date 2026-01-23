@@ -1,9 +1,9 @@
 {
   "name": "RomM",
-  "version": "2026.03-19",
+  "version": "2026.03-20",
   "slug": "romm",
   "image": "ghcr.io/ddanii/romm-{arch}",
-  "description": "DEVELOPMENT self-hosted rom manager",
+  "description": "DEVELOPMENT rom manager with save sync",
   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/romm",
   "map": ["addon_config:rw", "media:rw", "share:rw"],
   "services": ["mysql:need"],
@@ -13,10 +13,10 @@
     "DB_NAME": "romm",
     "DB_USER": "romm-user",
     "DB_PASSWD": null,
-    "romm_library": "/media/romm/library",
-    "romm_assets": "/config/assets",
-    "romm_config": "/config/config",
-    "romm_resources": "/media/romm/resources"
+    "library": "/media/romm",
+    "assets": "/config",
+    "config": "/config",
+    "resources": "/media/romm"
   },
   "schema": {
     "ROMM_AUTH_SECRET_KEY": "password?",
@@ -92,10 +92,10 @@
     "SCHEDULED_CONVERT_IMAGES_TO_WEBP_CRON": "str?",
     "ENABLE_SCHEDULED_RETROACHIEVEMENTS_PROGRESS_SYNC": "bool?",
     "SCHEDULED_RETROACHIEVEMENTS_PROGRESS_SYNC_CRON": "str?",
-    "romm_library": "str",
-    "romm_assets": "str",
-    "romm_config": "str",
-    "romm_resources": "str"
+    "library": "str",
+    "assets": "str",
+    "config": "str",
+    "resources": "str"
   },
   "ports": {
     "8080/tcp": 8080

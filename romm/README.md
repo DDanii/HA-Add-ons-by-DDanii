@@ -1,6 +1,6 @@
 # Home Assistant Add-on: RomM
 
-**Note:** This add-on is under development. Expect potential nonfunctionality and data losses.
+Testing path reworks
 
 ![Version](https://img.shields.io/badge/dynamic/json?label=Version&query=%24.version&url=https%3A%2F%2Fraw.githubusercontent.com%2FDDanii%2FHA-Add-ons-by-DDanii%2Fmaster%2Fromm%2Fconfig.json)
 ![Ingress](https://img.shields.io/badge/dynamic/json?label=Ingress&query=%24.ingress&url=https%3A%2F%2Fraw.githubusercontent.com%2FDDanii%2FHA-Add-ons-by-DDanii%2Fmaster%2Fromm%2Fconfig.json)
@@ -11,69 +11,54 @@
 
 ## About
 
-todo fix slop
-
-[ROMM](https://romm.app/) is a self-hosted retro ROM manager that helps you organize, manage, and play retro games. It supports multiple metadata providers including IGDB, Screenscraper, RetroAchievements, and SteamGridDB.
+[RomM](https://romm.app/) (ROM Manager) allows you to scan, enrich, and browse your game collection with a clean and responsive interface. With support for multiple platforms, various naming schemes, and custom tags, RomM is a must-have for anyone who plays on emulators.
 
 ## Configuration
 
-You need to put a configuration file in addon_configs/57fef649_romm/config [documentation](https://docs.romm.app/latest/Getting-Started/Configuration-File/)
+MariaDB addon and its manual configuration is required.
 
 ### Database Settings
 
-- `db_host`: MariaDB host name (default: `romm-db`)
-- `db_name`: Database name (default: `romm`)
-- `db_user`: Database user (default: `romm-user`)
-- `db_passwd`: Database password (leave empty if not required)
+You need to make MariaDB setup through its config settings:
+    - Create a database: needs to mach DB_NAME config value
+    - Add a Login: DB_USER and DB_PASSWD values
+    - Assign Rights: the corresponding previous values and leave privileges as empty
+
+- `DB_HOST`: MariaDB host name (default: `core-mariadb`)
+- `DB_NAME`: Database name (default: `romm`)
+- `DB_USER`: Database user (default: `romm-user`)
+- `DB_PASSWD`: Database password
 
 ### Application Settings
 
-- `romm_auth_secret_key`: Secret key for authentication. Generate with: `openssl rand -hex 32`
+- `ROMM_AUTH_SECRET_KEY`: Secret key for authentication. Generate with: `openssl rand -hex 32` if you leave it empty it will auto generate one
 
-### Metadata Providers
 
-These are the recommended metadata providers for ROMM:
+### Folders
 
-- `screenscraper_user`: Screenscraper username ([Documentation](https://docs.romm.app/latest/Getting-Started/Metadata-Providers/#screenscraper))
-- `screenscraper_password`: Screenscraper password
-- `retroachievements_api_key`: RetroAchievements API key ([Documentation](https://docs.romm.app/latest/Getting-Started/Metadata-Providers/#retroachievements))
-- `steamgriddb_api_key`: SteamGridDB API key ([Documentation](https://docs.romm.app/latest/Getting-Started/Metadata-Providers/#steamgriddb))
-- `hasheous_api_enabled`: Enable Hasheous API (default: `true`) ([Documentation](https://docs.romm.app/latest/Getting-Started/Metadata-Providers/#hasheous))
+Locations for RomM folders. Possible root folders: /config /media /share
+Dont put / at the end of the paths.
 
-### Volume Paths
+- `library`: Path to your game library directory (e.g., `/media/romm`)
+- `assets`: Path for uploaded saves, states, etc. (e.g., `/config`)
+- `config`: Path where config.yml is stored (e.g., `/config`)
+- `resources`:Resources fetched from IGDB (e.g., `/media/romm`)
 
-- `library_path`: Path to your game library directory (e.g., `/share/games/roms`)
-- `assets_path`: Path for uploaded saves, states, etc. (e.g., `/share/romm/assets`)
-- `config_path`: Path where config.yml is stored (e.g., `/share/romm/config`)
 
-For folder structure details, see the [ROMM Folder Structure Documentation](https://docs.romm.app/latest/Getting-Started/Folder-Structure/).
+### [Futher configurations](https://docs.romm.app/latest/Getting-Started/Environment-Variables/)
 
 ### Example Configuration
 
 ```yaml
-ssl: false
-db_host: romm-db
-db_name: romm
-db_user: romm-user
-db_passwd: "your-secure-password"
-romm_auth_secret_key: "your-generated-key-from-openssl-rand-hex-32"
-screenscraper_user: "your-username"
-screenscraper_password: "your-password"
-retroachievements_api_key: "your-api-key"
-steamgriddb_api_key: "your-api-key"
-hasheous_api_enabled: true
-library_path: /share/games/roms
-assets_path: /share/romm/assets
-config_path: /share/romm/config
+DB_HOST: core-mariadb
+DB_NAME: romm
+DB_USER: romm-user
+DB_PASSWD: secretPassword
+library: /media/romm
+assets: /config
+config: /config
+resources: /media/romm
 ```
-
-## Folders
-
-- `romm_resources`: Resources fetched from IGDB (covers, screenshots, etc.)
-- `romm_redis_data`: Cached data for background tasks
-- Library path: Your game library (configurable)
-- Assets path: Uploaded saves, states, etc. (configurable)
-- Config path: Where config.yml is stored (configurable)
 
 ## Customization
 
