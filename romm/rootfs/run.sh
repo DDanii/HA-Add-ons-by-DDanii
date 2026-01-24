@@ -18,10 +18,10 @@ export ROMM_BASE_PATH="/rom"
 paths="library assets config resources"
 
 for path in $paths; do
-    value=$(bashio::config "$path")
+    value=$(bashio::config "$path")/$path
     mkdir -p "$value"
     mkdir -p /rom
-    ln -s "$value/$path" "/rom"
+    ln -s "$value" "/rom"
 done
 touch /rom/config/config.yml
 

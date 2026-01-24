@@ -1,9 +1,9 @@
 {
   "name": "RomM",
-  "version": "2026.03-20",
+  "version": "2026.03-21",
   "slug": "romm",
   "image": "ghcr.io/ddanii/romm-{arch}",
-  "description": "DEVELOPMENT rom manager with save sync",
+  "description": "Rom Manager with save sync and more",
   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/romm",
   "map": ["addon_config:rw", "media:rw", "share:rw"],
   "services": ["mysql:need"],
