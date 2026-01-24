@@ -2,4 +2,4 @@
 #write your custom commands befor the exec command
 
 
-exec node scripts/deployment/docker-entrypoint.js
+exec sudo -E -u"$PGID:$PUID" node scripts/deployment/docker-entrypoint.js

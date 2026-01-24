@@ -7,8 +7,7 @@ FROM $BUILD_FROM
 
 USER root
 
-RUN apk add jq bash wget tar curl
-
+RUN apk add jq bash wget tar curl openssl sudo
 
 RUN mkdir -p /tmp/bashio && \
 wget -q -O - "https://github.com/hassio-addons/bashio/archive/v0.17.1.tar.gz" | \
@@ -26,8 +25,6 @@ COPY rootfs/ /
 
 RUN chmod a+x /run.sh
 RUN chmod a+x /custom.sh
-
-USER 1000
 
 ENTRYPOINT /run.sh
 

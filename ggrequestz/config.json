@@ -1,6 +1,6 @@
 {
   "name": "GG Requestz",
-  "version": "2026.03-2",
+  "version": "2026.03-3",
   "slug": "ggrequestz",
   "image": "ghcr.io/ddanii/ggrequestz-{arch}",
   "description": "DEVELOPMENT Game discovery and request management",
@@ -15,7 +15,9 @@
     "POSTGRES_HOST": "db21ed7f-postgres",
     "POSTGRES_PORT": 5432,
     "POSTGRES_DB": "ggrequestz",
-    "POSTGRES_USER": "postgres"
+    "POSTGRES_USER": "postgres",
+    "PUID": 1000,
+    "PGID": 1000
   },
   "schema": {
     "POSTGRES_PASSWORD": "password",
