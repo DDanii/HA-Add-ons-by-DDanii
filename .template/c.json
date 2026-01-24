@@ -5,11 +5,11 @@
    "image": "ghcr.io/ddanii/_slug_-{arch}",
    "description": "DEVELOPMENT _short_description_",
    "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/_slug_",
-  "map": [
-    "addon_config:rw",
-    "media:rw",
-    "share:rw"
-  ],
+   "map": [
+      "addon_config:rw",
+      "media:rw",
+      "share:rw"
+   ],
    "init": false,
    "options": {
       "ssl": false,
