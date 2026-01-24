@@ -1,6 +1,6 @@
 {
   "name": "GG Requestz",
-  "version": "2026.03-4",
+  "version": "2026.03-5",
   "slug": "ggrequestz",
   "image": "ghcr.io/ddanii/ggrequestz-{arch}",
   "description": "DEVELOPMENT Game discovery and request management",
@@ -51,7 +51,7 @@
     "OIDC_ISSUER_URL": "str?",
     "OIDC_REDIRECT_URI": "str?",
     "OIDC_SCOPE": "str?",
-    "OIDC_AUTH_UR": "url?",
+    "OIDC_AUTH_URL": "url?",
     "OIDC_TOKEN_URL": "url?",
     "OIDC_USERINFO_URL": "url?",
     "DEBUG_AGE_RATINGS": "bool?",
