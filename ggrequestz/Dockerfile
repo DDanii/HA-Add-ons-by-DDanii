@@ -5,8 +5,11 @@ ARG BUILD_VERSION
 
 FROM $BUILD_FROM
 
+USER root
 
 RUN apk add jq bash wget tar curl
+
+USER 1000
 
 RUN mkdir -p /tmp/bashio && \
     wget -q -O - "https://github.com/hassio-addons/bashio/archive/v0.17.1.tar.gz" | \

@@ -1,6 +1,6 @@
 {
   "name": "GG Requestz",
-  "version": "2026.03",
+  "version": "2026.03-1",
   "slug": "ggrequestz",
   "image": "ghcr.io/ddanii/ggrequestz-{arch}",
   "description": "DEVELOPMENT Game discovery and request management",
