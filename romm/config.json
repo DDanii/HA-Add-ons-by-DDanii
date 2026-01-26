@@ -1,18 +1,24 @@
 {
   "name": "RomM",
-  "version": "2026.03-21",
+  "version": "4.5.0",
   "slug": "romm",
   "image": "ghcr.io/ddanii/romm-{arch}",
   "description": "Rom Manager with save sync and more",
   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/romm",
-  "map": ["addon_config:rw", "media:rw", "share:rw"],
-  "services": ["mysql:need"],
+  "map": [
+    "addon_config:rw",
+    "media:rw",
+    "share:rw"
+  ],
+  "services": [
+    "mysql:need"
+  ],
   "init": false,
   "options": {
     "DB_HOST": "core-mariadb",
     "DB_NAME": "romm",
     "DB_USER": "romm-user",
-    "DB_PASSWD": null,
+    "DB_PASSWD": "4.5.0",
     "library": "/media/romm",
     "assets": "/config",
     "config": "/config",
@@ -106,5 +112,8 @@
   "ingress": true,
   "ingress_port": 8080,
   "ingress_stream": true,
-  "arch": ["amd64", "aarch64"]
+  "arch": [
+    "amd64",
+    "aarch64"
+  ]
 }

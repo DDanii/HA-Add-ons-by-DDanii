@@ -2,5 +2,7 @@
   "repository": "DDanii/HA-Add-ons-by-DDanii",
   "slug": "romm",
   "source": "github",
-  "upstream_repo": "rommapp/romm"
+  "upstream_repo": "rommapp/romm",
+  "upstream_version": "4.5.0",
+  "last_update": "2026-01-26"
 }
