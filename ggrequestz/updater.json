@@ -2,5 +2,7 @@
   "repository": "DDanii/HA-Add-ons-by-DDanii",
   "slug": "ggrequestz",
   "source": "dockerhub",
-  "upstream_repo": "ghcr.io/xtreemmak/ggrequestz"
+  "upstream_repo": "ghcr.io/xtreemmak/ggrequestz",
+  "upstream_version": "",
+  "last_update": "2026-01-26"
 }
