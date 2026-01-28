@@ -1,6 +1,6 @@
 {
   "name": "RomM",
-  "version": "4.5.0",
+  "version": "4.6.1",
   "slug": "romm",
   "image": "ghcr.io/ddanii/romm-{arch}",
   "description": "Rom Manager with save sync and more",
@@ -18,7 +18,7 @@
     "DB_HOST": "core-mariadb",
     "DB_NAME": "romm",
     "DB_USER": "romm-user",
-    "DB_PASSWD": "4.5.0",
+    "DB_PASSWD": "4.6.1",
     "library": "/media/romm",
     "assets": "/config",
     "config": "/config",
