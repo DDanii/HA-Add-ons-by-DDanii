@@ -3,9 +3,9 @@
   "version": "2026.03-5",
   "slug": "ggrequestz",
   "image": "ghcr.io/ddanii/ggrequestz-{arch}",
-  "description": "DEVELOPMENT Game discovery and request management",
+  "description": "Game discovery and request management",
   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/ggrequestz",
-  "map": ["addon_config:rw", "media:rw", "share:rw"],
+  "map": ["addon_config:rw"],
   "init": false,
   "options": {
     "POSTGRES_PASSWORD": null,
@@ -65,8 +65,6 @@
   "ports_description": {
     "3000/tcp": "Web interface http"
   },
-  "ingress": true,
-  "ingress_port": 3000,
-  "ingress_stream": true,
+  "webui": "http://[HOST]:[PORT:3000]",
   "arch": ["amd64", "aarch64"]
 }
