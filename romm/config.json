@@ -1,6 +1,6 @@
 {
   "name": "RomM",
-  "version": "4.6.1",
+  "version": "4.6.1-1",
   "slug": "romm",
   "image": "ghcr.io/ddanii/romm-{arch}",
   "description": "Rom Manager with save sync and more",
@@ -109,9 +109,7 @@
   "ports_description": {
     "8080/tcp": "Web interface http"
   },
-  "ingress": true,
-  "ingress_port": 8080,
-  "ingress_stream": true,
+  "webui": "http://[HOST]:[PORT:8080]/",
   "arch": [
     "amd64",
     "aarch64"
