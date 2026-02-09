@@ -1,6 +1,6 @@
 {
   "name": "Piped-bg-helper-server",
-  "version": "hotspot-2025-09-27-1",
+  "version": "hotspot-2026-02-07",
   "slug": "bg-helper-server",
   "image": "ghcr.io/ddanii/bg-helper-server-{arch}",
   "description": "Generates PoTokens for use with Piped-Backend.",
