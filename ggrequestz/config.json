@@ -1,16 +1,18 @@
 {
   "name": "GG Requestz",
-  "version": "2026-2-3",
+  "version": "1.2.5",
   "slug": "ggrequestz",
   "image": "ghcr.io/ddanii/ggrequestz-{arch}",
   "description": "Game discovery and request management",
   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/ggrequestz",
-  "map": ["addon_config:rw"],
+  "map": [
+    "addon_config:rw"
+  ],
   "init": false,
   "options": {
-    "POSTGRES_PASSWORD": "",
-    "IGDB_CLIENT_ID": "",
-    "IGDB_CLIENT_SECRET": "",
+    "POSTGRES_PASSWORD": "1.2.5",
+    "IGDB_CLIENT_ID": "1.2.5",
+    "IGDB_CLIENT_SECRET": "1.2.5",
     "AUTH_METHOD": "basic",
     "POSTGRES_HOST": "db21ed7f-postgres",
     "POSTGRES_PORT": 5432,
@@ -66,5 +68,8 @@
     "3000/tcp": "Web interface http"
   },
   "webui": "http://[HOST]:[PORT:3000]",
-  "arch": ["amd64", "aarch64"]
+  "arch": [
+    "amd64",
+    "aarch64"
+  ]
 }
