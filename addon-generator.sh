@@ -27,12 +27,6 @@ get_input "slug" 1
 name=$( echo "$slug" | sed -e "s/\b\(.\)/\u\1/g")
 get_input "name" 1
 
-cp -r .template "$slug"
-
-cd "$slug" || return 1
-
-mv c.json config.json
-mv u.json updater.json
 
 version=$(date +%Y.%W)
 get_input "version"
@@ -40,9 +34,6 @@ get_input "version"
 keep_rootfs=0
 get_input "keep_rootfs"
 
-if [ $keep_rootfs -eq 0 ]; then
-    rm -r rootfs
-fi
 
 short_description=""
 get_input "short_description"
@@ -56,12 +47,28 @@ get_input "entrypoint" 1
 package_manager="apt-get update; apt-get install -y"
 get_input "package_manager"
 
+updater_source="github"
+get_input updater_source
+
+updater_upstream=$image
+get_input updater_upstream
+
+cp -r .template "$slug"
+cd "$slug" || return 1
+
+mv c.json config.json
+mv u.json updater.json
+if [ $keep_rootfs -eq 0 ]; then
+    rm -r rootfs
+fi
 files="config.json README.md updater.json rootfs/custom.sh Dockerfile"
-variables="slug name version image short_description port entrypoint package_manager"
+variables="slug name version image short_description port entrypoint package_manager updater_source updater_upstream"
+
+DELIM=$(echo -en "\001")
 
 for file in $files; do
     for variable in $variables; do
-        script="s;_${variable}_;${!variable};g"
+        script="s${DELIM}_${variable}_${DELIM}${!variable}${DELIM}g"
         sed -i "$script" "$file"
     done
 done
@@ -69,7 +76,7 @@ done
 arch_list="aarch64,amd64"
 echo "$arch_list"
 echo "example input: '12' for aarch64 and amd64"
-arches=2
+arches=21
 get_input "arches" 1
 
 for (( i=0; i<${#arches}; i++ )); do

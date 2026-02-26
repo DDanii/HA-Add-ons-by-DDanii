@@ -1,4 +1,4 @@
-# Home assistant add-on: _name_
+# Home assistant app (add-on): _name_
 
 This add-on is under development not recommended for usage, expect nonfuctionality and datalosses.
 

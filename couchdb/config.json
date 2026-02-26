@@ -1,0 +1,47 @@
+{
+  "name": "CouchDB",
+  "version": "2026.08",
+  "slug": "couchdb",
+  "image": "ghcr.io/ddanii/couchdb-{arch}",
+  "description": "DEVELOPMENT database that uses JSON for documents _short_description_ an HTTP API",
+  "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/couchdb",
+  "map": ["addon_config:rw"],
+  "init": false,
+  "options": {
+    "COUCHDB_USER": "admin",
+    "COUCHDB_PASSWORD": null,
+    "COUCHDB_SECRET": null,
+    "NODENAME": "couchdb"
+  },
+  "schema": {
+    "COUCHDB_USER": "str",
+    "COUCHDB_PASSWORD": "password",
+    "COUCHDB_SECRET": "password",
+    "NODENAME": "str",
+    "ERL_CRASH_DUMP": "str",
+    "ERL_CRASH_DUMP_NICE": "str",
+    "ERL_CRASH_DUMP_SECONDS": "str",
+    "ERL_CRASH_DUMP_BYTES": "str",
+    "ERL_AFLAGS": "str",
+    "ERL_ZFLAGS": "str",
+    "ERL_FLAGS": "str",
+    "ERL_LIBS": "str",
+    "ERL_EPMD_ADDRESS": "str",
+    "ERL_EPMD_PORT": "port"
+  },
+  "ports": {
+    "5984/tcp": 5984,
+    "4369/tcp": null,
+    "9100/tcp": null
+  },
+  "ports_description": {
+    "5984/tcp": "Main CouchDB endpoint",
+    "4369/tcp": "Erlang portmap daemon (epmd)",
+    "9100/tcp": "CouchDB cluster communication port"
+  },
+  "ingress": true,
+  "ingress_port": 5984,
+  "ingress_stream": true,
+  "ingress_entry": "/_utils/",
+  "arch": ["amd64", "aarch64"]
+}
