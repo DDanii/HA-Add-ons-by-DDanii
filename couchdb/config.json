@@ -1,6 +1,6 @@
 {
   "name": "CouchDB",
-  "version": "2026.08-1",
+  "version": "2026.08-2",
   "slug": "couchdb",
   "image": "ghcr.io/ddanii/couchdb-{arch}",
   "description": "DEVELOPMENT database that uses JSON for documents _short_description_ an HTTP API",

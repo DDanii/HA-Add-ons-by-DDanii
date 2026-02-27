@@ -9,15 +9,17 @@ for KEY in "${arr[@]}"; do
     fi
 done
 
+mkdir -p /config/data
+ln -sf /config/data /opt/couchdb/
 
 if [ ! -f /config/docker.ini ]; then
-    cp /opt/couchdb/etc/local.d/docker.ini /config/docker.ini
+    cp /opt/couchdb/etc/local.d/docker.ini /config/docker.ini || true
 fi
 tocuh /config/docker.ini
 ln -sf /config/docker.ini /opt/couchdb/etc/local.d/
 
 if [ ! -f /config/vm.args ]; then
-    cp /opt/couchdb/etc/vm.args /config/vm.args
+    cp /opt/couchdb/etc/vm.args /config/vm.args || true
 fi
 touch /config/vm.args
 ln -sf /config/vm.args /opt/couchdb/etc/
