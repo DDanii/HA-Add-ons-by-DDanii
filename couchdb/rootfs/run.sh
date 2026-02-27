@@ -10,7 +10,6 @@ for KEY in "${arr[@]}"; do
 done
 
 mkdir -p /config/data
-ln -sf /config/data /opt/couchdb/
 
 if [ ! -f /config/docker.ini ]; then
     cp /opt/couchdb/etc/local.d/docker.ini /config/docker.ini || true
