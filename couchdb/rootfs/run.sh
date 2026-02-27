@@ -12,9 +12,8 @@ done
 mkdir -p /config/data
 
 if [ ! -f /config/docker.ini ]; then
-    cp /opt/couchdb/etc/local.d/docker.ini /config/docker.ini || true
+  cp /docker.ini /config/docker.ini
 fi
-touch /config/docker.ini
 ln -sf /config/docker.ini /opt/couchdb/etc/local.d/
 
 if [ ! -f /config/vm.args ]; then
@@ -22,6 +21,8 @@ if [ ! -f /config/vm.args ]; then
 fi
 touch /config/vm.args
 ln -sf /config/vm.args /opt/couchdb/etc/
+
+chown -R couchdb /config
 
 CONFIGPATH="/config/custom.sh"
 

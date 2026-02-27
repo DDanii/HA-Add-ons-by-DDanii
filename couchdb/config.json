@@ -1,9 +1,9 @@
 {
   "name": "CouchDB",
-  "version": "2026.08-4",
+  "version": "2026.08-5",
   "slug": "couchdb",
   "image": "ghcr.io/ddanii/couchdb-{arch}",
-  "description": "DEVELOPMENT database that uses JSON for documents _short_description_ an HTTP API",
+  "description": "Database that uses JSON for documents _short_description_ an HTTP API",
   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/couchdb",
   "map": ["addon_config:rw"],
   "init": false,
@@ -43,5 +43,6 @@
   "ingress_port": 5984,
   "ingress_stream": true,
   "ingress_entry": "/_utils/",
+  "panel_icon": "mdi:sofa-single",
   "arch": ["amd64", "aarch64"]
 }
