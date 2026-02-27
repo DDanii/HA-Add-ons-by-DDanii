@@ -14,7 +14,7 @@ mkdir -p /config/data
 if [ ! -f /config/docker.ini ]; then
     cp /opt/couchdb/etc/local.d/docker.ini /config/docker.ini || true
 fi
-tocuh /config/docker.ini
+touch /config/docker.ini
 ln -sf /config/docker.ini /opt/couchdb/etc/local.d/
 
 if [ ! -f /config/vm.args ]; then
