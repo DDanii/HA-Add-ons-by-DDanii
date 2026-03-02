@@ -1,16 +1,18 @@
 {
   "name": "CouchDB",
-  "version": "2026.08-5",
+  "version": "3.5.1-nouveau",
   "slug": "couchdb",
   "image": "ghcr.io/ddanii/couchdb-{arch}",
   "description": "Database that uses JSON for documents _short_description_ an HTTP API",
   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/couchdb",
-  "map": ["addon_config:rw"],
+  "map": [
+    "addon_config:rw"
+  ],
   "init": false,
   "options": {
     "COUCHDB_USER": "admin",
-    "COUCHDB_PASSWORD": null,
-    "COUCHDB_SECRET": null,
+    "COUCHDB_PASSWORD": "3.5.1-nouveau",
+    "COUCHDB_SECRET": "3.5.1-nouveau",
     "NODENAME": "couchdb"
   },
   "schema": {
@@ -31,8 +33,8 @@
   },
   "ports": {
     "5984/tcp": 5984,
-    "4369/tcp": null,
-    "9100/tcp": null
+    "4369/tcp": "3.5.1-nouveau",
+    "9100/tcp": "3.5.1-nouveau"
   },
   "ports_description": {
     "5984/tcp": "Main CouchDB endpoint",
@@ -44,5 +46,8 @@
   "ingress_stream": true,
   "ingress_entry": "/_utils/",
   "panel_icon": "mdi:sofa-single",
-  "arch": ["amd64", "aarch64"]
+  "arch": [
+    "amd64",
+    "aarch64"
+  ]
 }
