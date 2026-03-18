@@ -1,6 +1,6 @@
 {
   "name": "Discount Discovery - DEVELOPMENT",
-  "version": "0.8",
+  "version": "0.100",
   "slug": "discount-discovery",
   "image": "ghcr.io/ddanii/discount-discovery-{arch}",
   "description": "A selfhost app to easyly browse and manage several stores discounts comfortably.",
@@ -12,6 +12,18 @@
   "environment": {
     "DATABASE_URL": "file:/config/database.db"
   },
+  "options": {
+    "COUCHDB_USER": "admin",
+    "COUCHDB_PASSWORD": null,
+    "DISCOUT_DISCOVERY_DB_URL": "http://57fef649-couchdb:5984",
+    "DISCOUT_DISCOVERY_DB_SETUP": true
+  },
+  "schema": {
+    "COUCHDB_USER": "str",
+    "COUCHDB_PASSWORD": "password",
+    "DISCOUT_DISCOVERY_DB_URL": "url",
+    "DISCOUT_DISCOVERY_DB_SETUP": "bool"
+  },
   "ports": {
     "3000/tcp": 3000
   },
@@ -22,5 +34,8 @@
   "ingress_port": 3000,
   "arch": [
     "amd64"
+  ],
+  "breaking_versions": [
+    "0.100"
   ]
 }
