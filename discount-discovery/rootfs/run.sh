@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bashio
 
 JSONSOURCE="/data/options.json"
 mapfile -t arr < <(jq -r 'keys[]' "${JSONSOURCE}")
