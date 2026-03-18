@@ -2,5 +2,7 @@
   "repository": "DDanii/HA-Add-ons-by-DDanii",
   "slug": "couchdb",
   "source": "dockerhub",
-  "upstream_repo": "library/couchdb"
+  "upstream_repo": "library/couchdb",
+  "upstream_version": "3.5.1-nouveau",
+  "last_update": "2026-03-02"
 }
