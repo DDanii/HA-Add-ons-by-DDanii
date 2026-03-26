@@ -5,6 +5,8 @@ ARG BUILD_VERSION
 
 FROM $BUILD_FROM
 
+USER root
+
 RUN apk add jq bash wget tar curl
 
 RUN mkdir -p /tmp/bashio && \
