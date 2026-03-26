@@ -5,7 +5,6 @@ ARG BUILD_VERSION
 
 FROM $BUILD_FROM
 
-
 RUN _package_manager_ jq bash wget tar curl
 
 RUN mkdir -p /tmp/bashio && \

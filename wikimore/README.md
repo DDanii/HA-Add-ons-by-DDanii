@@ -9,13 +9,17 @@
 
 ## About
 
-TODO
+[Wikimore](https://git.private.coffee/PrivateCoffee/wikimore) is a simple frontend for Wikimedia projects. It uses the MediaWiki API to fetch data from Wikimedia projects and display it in a user-friendly way. It is built using Flask.
 
 ## Configuration
 
 ```yaml
 TODO: this too
 ```
+
+## Customization
+
+After the first run in the addon config folder (addon_configs/57fef649_wikimore) there will be a custom.sh file in witch you can add your own commands
 
 ## Support
 
