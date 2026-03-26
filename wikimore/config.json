@@ -1,11 +1,14 @@
 {
    "name": "Wikimore - DEVELOPMENT",
-   "version": "2026.3-1",
+   "version": "2026.3-2",
    "slug": "wikimore",
    "image": "ghcr.io/ddanii/wikimore-{arch}",
    "description": "A simple frontend for Wikimedia projects",
    "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/wikimore",
    "init": false,
+   "map": [
+      "addon_config:rw"
+   ],
    "ports": {
       "8109/tcp": 8109
    },
