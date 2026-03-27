@@ -11,6 +11,8 @@
 
 [CouchDB](https://docs.couchdb.org/en/stable/index.html) is a database that completely embraces the web. Store your data with JSON documents. Access your documents with your web browser, via HTTP. Query, combine, and transform your documents with JavaScript.
 
+The version contains "nouveau" but it is not the "nouveau" version it is just how the auto updater naming the version
+
 ## Configuration
 
 After starting it you have to set up the database in the ingress to stop the flow of errors.

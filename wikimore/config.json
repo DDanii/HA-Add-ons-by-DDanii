@@ -1,24 +1,37 @@
 {
-   "name": "Wikimore - DEVELOPMENT",
-   "version": "2026.3-2",
-   "slug": "wikimore",
-   "image": "ghcr.io/ddanii/wikimore-{arch}",
-   "description": "A simple frontend for Wikimedia projects",
-   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/wikimore",
-   "init": false,
-   "map": [
-      "addon_config:rw"
-   ],
-   "ports": {
-      "8109/tcp": 8109
-   },
-   "ports_description": {
-      "8109/tcp": "Web interface http"
-   },
-   "ingress": true,
-   "ingress_port": 8109,
-   "ingress_stream": true,
-   "arch": [
-      "amd64"
-   ]
+  "name": "Wikimore - DEVELOPMENT",
+  "version": "2026.3-3",
+  "slug": "wikimore",
+  "image": "ghcr.io/ddanii/wikimore-{arch}",
+  "description": "A simple frontend for Wikimedia projects",
+  "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/wikimore",
+  "init": false,
+  "map": [
+    "addon_config:rw"
+  ],
+  "schema": {
+    "WIKIMORE_HOST": "str?",
+    "WIKIMORE_SOCKET": "str?",
+    "WIKIMORE_DEBUG": "bool?",
+    "WIKIMORE_INSTANCE_HOSTNAME": "str?",
+    "WIKIMORE_ADMIN_EMAIL": "email?",
+    "WIKIMORE_NO_LANGSORT": "bool?",
+    "WIKIMORE_LANGSORT": "str?",
+    "WIKIMORE_CACHE_TYPE": "list(SimpleCache|FileSystemCache|RedisCache)?",
+    "WIKIMORE_CACHE_DIR": "str?",
+    "WIKIMORE_REDIS_URL": "url?",
+    "WIKIMORE_CACHE_TIMEOUT": "int?"
+  },
+  "ports": {
+    "8109/tcp": 8109
+  },
+  "ports_description": {
+    "8109/tcp": "Web interface http"
+  },
+  "ingress": true,
+  "ingress_port": 8109,
+  "ingress_stream": true,
+  "arch": [
+    "amd64"
+  ]
 }
