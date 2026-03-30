@@ -27,7 +27,7 @@ WIKIMORE_NO_LANGSORT: false
 WIKIMORE_LANGSORT: "en,es,ja,de,fr,zh,ru,it,pt,pl,nl,ar"
 WIKIMORE_CACHE_TYPE: "SimpleCache"   # SimpleCache|FileSystemCache|RedisCache
 WIKIMORE_CACHE_DIR: "/tmp/wikimore_cache" # FileSystemCache location
-WIKIMORE_REDIS_URL: "57fef649-redis:6379"
+WIKIMORE_REDIS_URL: "redis://57fef649-redis:6379"
 WIKIMORE_CACHE_TIMEOUT: 3600
 ```
 

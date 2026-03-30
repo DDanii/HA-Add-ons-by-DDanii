@@ -1,5 +1,5 @@
 {
-  "name": "Wikimore - DEVELOPMENT",
+  "name": "Wikimore",
   "version": "2026.3-3",
   "slug": "wikimore",
   "image": "ghcr.io/ddanii/wikimore-{arch}",
