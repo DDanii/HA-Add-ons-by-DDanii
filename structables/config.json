@@ -1,9 +1,9 @@
 {
    "name": "Structables",
-   "version": "2026.13",
+   "version": "2026.13-1",
    "slug": "structables",
    "image": "ghcr.io/ddanii/structables-{arch}",
-   "description": "DEVELOPMENT An open source alternative front-end to Instructables.",
+   "description": "An open source alternative front-end to Instructables.",
    "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/structables",
    "map": [
       "addon_config:rw",
@@ -30,9 +30,7 @@
    "ports_description": {
       "8002/tcp": "Web interface http"
    },
-   "ingress": true,
-   "ingress_port": 8002,
-   "ingress_stream": true,
+  "webui": "http://[HOST]:[PORT:8002]",
    "arch": [
       "amd64"
    ]
