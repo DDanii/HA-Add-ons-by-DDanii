@@ -1,13 +1,15 @@
 {
   "name": "Wikimore",
-  "version": "2026.3-3",
+  "version": "2026.3-4",
   "slug": "wikimore",
   "image": "ghcr.io/ddanii/wikimore-{arch}",
   "description": "A simple frontend for Wikimedia projects",
   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/wikimore",
   "init": false,
   "map": [
-    "addon_config:rw"
+    "addon_config:rw",
+      "media:rw",
+      "share:rw"
   ],
   "schema": {
     "WIKIMORE_HOST": "str?",
@@ -28,9 +30,7 @@
   "ports_description": {
     "8109/tcp": "Web interface http"
   },
-  "ingress": true,
-  "ingress_port": 8109,
-  "ingress_stream": true,
+  "webui": "http://[HOST]:[PORT:8109]",
   "arch": [
     "amd64"
   ]

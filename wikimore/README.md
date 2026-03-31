@@ -31,6 +31,8 @@ WIKIMORE_REDIS_URL: "redis://57fef649-redis:6379"
 WIKIMORE_CACHE_TIMEOUT: 3600
 ```
 
+For cache dir possible root folders: /media, /share, /config
+
 ## Customization
 
 After the first run in the addon config folder (addon_configs/57fef649_wikimore) there will be a custom.sh file in witch you can add your own commands
