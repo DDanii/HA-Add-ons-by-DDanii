@@ -31,10 +31,6 @@ get_input "name" 1
 version=$(date +%Y.%W)
 get_input "version"
 
-keep_rootfs=0
-get_input "keep_rootfs"
-
-
 short_description=""
 get_input "short_description"
 
@@ -58,9 +54,7 @@ cd "$slug" || return 1
 
 mv c.json config.json
 mv u.json updater.json
-if [ $keep_rootfs -eq 0 ]; then
-    rm -r rootfs
-fi
+
 files="config.json README.md updater.json rootfs/custom.sh Dockerfile"
 variables="slug name version image short_description port entrypoint package_manager updater_source updater_upstream"
 
