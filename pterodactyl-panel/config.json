@@ -1,6 +1,6 @@
 {
   "name": "Pterodactyl Panel",
-  "version": "v1.12.1",
+  "version": "v1.12.2",
   "slug": "pterodactyl_panel",
   "image": "ghcr.io/ddanii/pterodactyl_panel-{arch}",
   "description": "OpenSource Gameserver",
