@@ -1,6 +1,6 @@
 {
    "name": "Structables",
-   "version": "2026.13-1",
+   "version": "2026.14",
    "slug": "structables",
    "image": "ghcr.io/ddanii/structables-{arch}",
    "description": "An open source alternative front-end to Instructables.",
