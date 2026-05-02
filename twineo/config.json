@@ -1,10 +1,9 @@
 {
    "name": "Twineo",
    "slug": "twineo",
-   "version": "v0.3.3-rc-2",
-   "stage": "experimental",
+   "version": "v0.3.3-rc-3",
    "image": "ghcr.io/ddanii/twineo",
-   "description": "DEVELOPMENT Privacy focused alternative front-end to Twitch",
+   "description": "Privacy focused alternative front-end to Twitch",
    "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/twineo",
    "init": false,
    "map": [
@@ -21,9 +20,7 @@
    "ports_description": {
       "3000/tcp": "Web interface http"
    },
-   "ingress": true,
-   "ingress_port": 3000,
-   "ingress_stream": true,
+  "webui": "http://[HOST]:[PORT:3000]",
    "arch": [
       "amd64",
       "aarch64"

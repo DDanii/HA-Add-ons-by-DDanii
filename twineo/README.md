@@ -1,6 +1,5 @@
 # Home assistant app (add-on): Twineo
 
-This add-on is under development not recommended for usage, expect nonfuctionality and datalosses.
 
 ![Version](https://img.shields.io/badge/dynamic/json?label=Version&query=%24.version&url=https%3A%2F%2Fraw.githubusercontent.com%2FDDanii%2FHA-Add-ons-by-DDanii%2Fmaster%2Ftwineo%2Fconfig.json)
 ![Ingress](https://img.shields.io/badge/dynamic/json?label=Ingress&query=%24.ingress&url=https%3A%2F%2Fraw.githubusercontent.com%2FDDanii%2FHA-Add-ons-by-DDanii%2Fmaster%2Ftwineo%2Fconfig.json)
@@ -11,13 +10,13 @@ This add-on is under development not recommended for usage, expect nonfuctionali
 
 ## About
 
-TODO
+[Twineo](https://codeberg.org/CloudyyUw/twineo) is privacy focused alternative front-end to Twitch inspired by [Invidious](https://github.com/iv-org/invidious) and [Nitter](https://github.com/zedeus/nitter).
 
-## Configuration
+Twineo aims to provide:
 
-```yaml
-TODO: this too
-```
+- No trackers: all the media is requested by the server, no JavaScript fingerprint or IP tracking
+- Lightweight and clear: Twitch loads a bunch of unnecessary resources, Twineo on the other hand only loads what you want.
+- Open-Source: all the source code for Twineo is fully open under AGPL, so you can inspect, modify or host by your own.
 
 ## Customization
 
