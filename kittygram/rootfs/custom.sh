@@ -2,4 +2,4 @@
 #write your custom commands befor the exec command
 
 
-exec /usr/local/openresty/luajit/bin/lapis "serve", "docker"
+exec /usr/local/openresty/luajit/bin/lapis "serve" "docker"

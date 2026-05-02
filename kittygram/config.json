@@ -1,7 +1,7 @@
 {
    "name": "Kittygram",
    "slug": "kittygram",
-   "version": "2026.17",
+   "version": "2026.17-1",
    "stage": "experimental",
    "image": "ghcr.io/ddanii/kittygram",
    "description": "DEVELOPMENT Kittygram is an Instagram frontend",
