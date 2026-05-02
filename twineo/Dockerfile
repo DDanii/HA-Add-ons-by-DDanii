@@ -4,7 +4,7 @@ ARG BUILD_VERSION
 
 FROM codeberg.org/cloudyyuw/twineo
 
-RUN apk add -y jq bash wget tar curl
+RUN apt-get update; apt-get install -y jq bash wget tar curl
 
 RUN mkdir -p /tmp/bashio && \
     wget -q -O - "https://github.com/hassio-addons/bashio/archive/v0.17.1.tar.gz" | \

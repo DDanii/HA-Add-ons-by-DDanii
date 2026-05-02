@@ -40,7 +40,7 @@ get_input "port"
 entrypoint="exec /entrypoint.sh"
 get_input "entrypoint" 1
 
-echo "note: node: apk add"
+echo "note: node: default"
 package_manager="apt-get update; apt-get install -y"
 get_input "package_manager"
 
