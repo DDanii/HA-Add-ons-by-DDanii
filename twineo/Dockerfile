@@ -2,9 +2,9 @@
 ARG BUILD_ARCH
 ARG BUILD_VERSION
 
-FROM _image_
+FROM codeberg.org/cloudyyuw/twineo
 
-RUN _package_manager_ jq bash wget tar curl
+RUN apk add -y jq bash wget tar curl
 
 RUN mkdir -p /tmp/bashio && \
     wget -q -O - "https://github.com/hassio-addons/bashio/archive/v0.17.1.tar.gz" | \
@@ -28,6 +28,6 @@ LABEL \
     io.hass.arch="${BUILD_ARCH}" \
     io.hass.type="addon" \
     io.hass.version=${BUILD_VERSION} \
-    org.opencontainers.image.title="_name_" \
-    org.opencontainers.image.description="_short_description_" \
+    org.opencontainers.image.title="Twineo" \
+    org.opencontainers.image.description="Privacy focused alternative front-end to Twitch" \
     org.opencontainers.image.source="https://github.com/DDanii/HA-Add-ons-by-DDanii"

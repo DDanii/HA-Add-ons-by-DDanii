@@ -40,6 +40,7 @@ get_input "port"
 entrypoint="exec /entrypoint.sh"
 get_input "entrypoint" 1
 
+echo "note: node: apk add"
 package_manager="apt-get update; apt-get install -y"
 get_input "package_manager"
 
@@ -76,7 +77,6 @@ get_input "arches" 1
 for (( i=0; i<${#arches}; i++ )); do
     arch_number="${arches:$i:1}"
     arch=$(echo $arch_list | cut -d , -f "$arch_number")
-    echo "  $arch: $image" >> build.yaml
     conf_line='      "'"$arch"'"'
     if [ "$arch_number" -ne "${arches:0-1}" ]; then
         conf_line="$conf_line,"

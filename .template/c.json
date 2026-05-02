@@ -1,8 +1,9 @@
 {
    "name": "_name_",
-   "version": "_version_",
    "slug": "_slug_",
-   "image": "ghcr.io/ddanii/_slug_-{arch}",
+   "version": "_version_",
+   "stage": "experimental",
+   "image": "ghcr.io/ddanii/_slug_",
    "description": "DEVELOPMENT _short_description_",
    "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/_slug_",
    "map": [
