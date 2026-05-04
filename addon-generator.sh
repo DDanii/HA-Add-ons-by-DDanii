@@ -48,7 +48,7 @@ updater_source="github"
 get_input updater_source
 
 updater_upstream=$image
-get_input updater_upstream
+get_input updater_upstream 1
 
 cp -r .template "$slug"
 cd "$slug" || return 1
