@@ -4,6 +4,8 @@ ARG BUILD_VERSION
 
 FROM ghcr.io/ahwxorg/binternet
 
+USER root
+
 RUN apk add jq bash wget tar curl
 
 RUN mkdir -p /tmp/bashio && \

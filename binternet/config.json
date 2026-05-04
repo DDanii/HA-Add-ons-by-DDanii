@@ -1,7 +1,7 @@
 {
    "name": "Binternet",
    "slug": "binternet",
-   "version": "2026.18",
+   "version": "2026.18-1",
    "stage": "experimental",
    "image": "ghcr.io/ddanii/binternet",
    "description": "DEVELOPMENT A custom Pinterest frontend, made in PHP.",
