@@ -6,7 +6,7 @@ FROM ghcr.io/ahwxorg/binternet
 
 USER root
 
-RUN apk add jq bash wget tar curl
+RUN apk add jq bash wget tar curl sudo
 
 RUN mkdir -p /tmp/bashio && \
     wget -q -O - "https://github.com/hassio-addons/bashio/archive/v0.17.1.tar.gz" | \
