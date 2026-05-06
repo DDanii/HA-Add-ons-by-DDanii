@@ -1,0 +1,56 @@
+{
+   "name": "rimgo",
+   "slug": "rimgo",
+   "version": "rimgo v1.4.2",
+   "stage": "experimental",
+   "image": "ghcr.io/ddanii/rimgo",
+   "description": "DEVELOPMENT An alternative frontend for Imgur.",
+   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/rimgo",
+   "map": [
+      "addon_config:rw"
+   ],
+   "init": false,
+   "options": {
+      "ssl": false,
+      "certfile": "fullchain.pem",
+      "keyfile": "privkey.pem",
+      "ADDRESS": "0.0.0.0",
+      "IMGUR_CLIENT_ID": "546c25a59c58ad7",
+      "PROTOCOL_DETECTION": false,
+      "SECURE": false,
+      "FORCE_WEBP": false,
+      "PRIVACY_NOT_COLLECTED": null
+   },
+   "schema": {
+      "ADDRESS": "str",
+      "IMGUR_CLIENT_ID": "str",
+      "PROTOCOL_DETECTION": "bool",
+      "SECURE": "bool",
+      "FORCE_WEBP": "bool",
+      "PRIVACY_POLICY": "url?",
+      "PRIVACY_MESSAGE": "str?",
+      "PRIVACY_COUNTRY": "str?",
+      "PRIVACY_PROVIDER": "str?",
+      "PRIVACY_CLOUDFLARE": "bool?",
+      "PRIVACY_NOT_COLLECTED": "bool",
+      "PRIVACY_IP": "bool?",
+      "PRIVACY_URL": "bool?",
+      "PRIVACY_DEVICE": "bool?",
+      "PRIVACY_DIAGNOSTICS": "bool?",
+      "HTTP_PROXY": "url?",
+      "HTTPS_PROXY": "url?"
+   },
+   "ports": {
+      "3000/tcp": 3000
+   },
+   "ports_description": {
+      "3000/tcp": "Web interface http"
+   },
+   "ingress": true,
+   "ingress_port": 3000,
+   "ingress_stream": true,
+   "arch": [
+      "amd64",
+      "aarch64"
+   ]
+}

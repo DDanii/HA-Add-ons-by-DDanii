@@ -1,0 +1,52 @@
+configuration:
+  ADDRESS:
+    name: Address
+    description: Address to listen on
+  IMGUR_CLIENT_ID:
+    name: Imgur Client ID
+    description: Should not be changed unless you have a registered Imgur app
+  PROTOCOL_DETECTION:
+    name: Protocol Detection
+    description: Use the X-Forwarded-Proto header for the base URL scheme
+  SECURE:
+    name: Secure
+    description: Whether the instance uses HTTPS
+  FORCE_WEBP:
+    name: Force WebP
+    description: Use WebP for images unless the 'no_webp' query parameter is set
+  PRIVACY_POLICY:
+    name: Privacy Policy
+    description: Optional, URL to privacy policy
+  PRIVACY_MESSAGE:
+    name: Privacy Message
+    description: Optional, message to display on privacy page
+  PRIVACY_COUNTRY:
+    name: Privacy Country
+    description: (clearnet only) The country the instance is located
+  PRIVACY_PROVIDER:
+    name: Privacy Provider
+    description: (clearnet only) The provider the instance is using (ISP for self-hosted, or hosting provider)
+  PRIVACY_CLOUDFLARE:
+    name: Privacy Cloudflare
+    description: Whether the instance uses Cloudflare proxy (orange cloud icon)
+  PRIVACY_NOT_COLLECTED:
+    name: Privacy Not Collected
+    description: (required) Whether the instance collects data
+  PRIVACY_IP:
+    name: Privacy IP
+    description: Whether the instance collects IP addresses
+  PRIVACY_URL:
+    name: Privacy URL
+    description: Whether the instance collects request URLs
+  PRIVACY_DEVICE:
+    name: Privacy Device
+    description: Whether the instance collects user agents
+  PRIVACY_DIAGNOSTICS:
+    name: Privacy Diagnostics
+    description: Whether the instance only collects this data for diagnostic purposes
+  HTTP_PROXY:
+    name: HTTP Proxy
+    description: See [Proxy](https://rimgo.codeberg.page/docs/usage/proxy/)
+  HTTPS_PROXY:
+    name: HTTPS Proxy
+    description: See [Proxy](https://rimgo.codeberg.page/docs/usage/proxy/)
