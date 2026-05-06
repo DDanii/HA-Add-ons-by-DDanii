@@ -2,27 +2,27 @@
 ARG BUILD_ARCH
 ARG BUILD_VERSION
 
+FROM golang:1.22.1-alpine3.19 AS build
+
+WORKDIR /app
+
+COPY rootfs/ .
+
+RUN go mod init launcher
+
+RUN go mod tidy
+
+RUN go mod download
+
+ENV CGO_ENABLED=0 GOOS=linux GOARCH=$BUILD_ARCH
+
+RUN go build -o launcher
+
 FROM codeberg.org/rimgo/rimgo
 
-RUN apk add jq bash wget tar curl
+COPY --from=build /app/launcher /launcher
 
-RUN mkdir -p /tmp/bashio && \
-    wget -q -O - "https://github.com/hassio-addons/bashio/archive/v0.17.1.tar.gz" | \
-    tar -xzf - --strip 1 -C /tmp/bashio && \
-    mv /tmp/bashio/lib /usr/lib/bashio && \
-    ln -s /usr/lib/bashio/bashio /usr/bin/bashio && \
-    rm -rf /tmp/bashio \
-    \
-    && wget -q -O /usr/bin/tempio \
-    "https://github.com/home-assistant/tempio/releases/download/2021.09.0/tempio_amd64" \
-    && chmod a+x /usr/bin/tempio
-
-COPY rootfs/ /
-
-RUN chmod a+x /run.sh
-RUN chmod a+x /custom.sh
-
-ENTRYPOINT /run.sh
+CMD ["/launcher"]
 
 LABEL \
     io.hass.arch="${BUILD_ARCH}" \
