@@ -22,7 +22,7 @@ FROM codeberg.org/rimgo/rimgo
 
 COPY --from=build /app/launcher /launcher
 
-ENTRYPOINT ["/launcher"]
+ENTRYPOINT /launcher
 
 LABEL \
     io.hass.arch="${BUILD_ARCH}" \
