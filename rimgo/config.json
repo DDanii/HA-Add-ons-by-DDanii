@@ -1,7 +1,7 @@
 {
    "name": "rimgo",
    "slug": "rimgo",
-   "version": "rimgo_v1.4.2-2",
+   "version": "rimgo_v1.4.2-3",
    "stage": "experimental",
    "image": "ghcr.io/ddanii/rimgo",
    "description": "DEVELOPMENT An alternative frontend for Imgur.",

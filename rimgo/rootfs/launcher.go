@@ -32,7 +32,7 @@ func main() {
 
 	// Step 4: Run the second Go app
 	// Change "app2" to your compiled binary name or source file (e.g. "./app2")
-	cmd := exec.Command("/rimgo")
+	cmd := exec.Command("/app/rimgo")
 
 	// Inherit std streams so you can see output
 	cmd.Stdout = os.Stdout
