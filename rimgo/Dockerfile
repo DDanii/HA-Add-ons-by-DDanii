@@ -22,6 +22,8 @@ FROM codeberg.org/rimgo/rimgo
 
 COPY --from=build /app/launcher /launcher
 
+RUN ln -s /app/rimgo /rimgo
+
 CMD ["/launcher"]
 
 LABEL \
