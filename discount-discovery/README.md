@@ -12,6 +12,8 @@
 [A selfhosted app](https://github.com/DDanii/Discount-Discovery) to easyly browse and manage several stores discounts comfortably.
 The project is in early stage and only have parsers for some Hungarian stores.
 
+It requires a couchdb instance.
+
 ## Customization
 
 After the first run in the addon config folder (addon_configs/57fef649_discount-discovery) there will be a custom.sh file in witch you can add your own commands
