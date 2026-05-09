@@ -1,0 +1,43 @@
+{
+   "name": "Phantom",
+   "slug": "phantom",
+   "version": "2026.18",
+   "stage": "experimental",
+   "image": "ghcr.io/ddanii/phantom",
+   "description": "DEVELOPMENT Phantom is a privacy frontend for fandom.com",
+   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/phantom",
+   "map": [
+      "addon_config:rw"
+   ],
+   "init": false,
+   "options": {
+      "SERVER_HOST": "0.0.0.0",
+      "INSTANCE_THEME": "dark",
+      "INSTANCE_NAME": "kuuro.net",
+      "INSTANCE_JS_ENABLED": true,
+      "CACHE_ENABLED": true,
+      "CACHE_DURATION": 86400,
+      "LOG_LEVEL": "info"
+   },
+   "schema": {
+      "SERVER_HOST": "str",
+      "INSTANCE_THEME": "list(dark|light)",
+      "INSTANCE_NAME": "str",
+      "INSTANCE_JS_ENABLED": "bool",
+      "CACHE_ENABLED": "bool",
+      "CACHE_DURATION": "int",
+      "LOG_LEVEL": "list(panic|fatal|error|warn|info|debug|trace)"
+   },
+   "ports": {
+      "8080/tcp": 8080
+   },
+   "ports_description": {
+      "8080/tcp": "Web interface http"
+   },
+   "ingress": true,
+   "ingress_port": 8080,
+   "ingress_stream": true,
+   "arch": [
+      "amd64"
+   ]
+}

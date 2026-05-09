@@ -13,12 +13,6 @@ This add-on is under development not recommended for usage, expect nonfuctionali
 
 TODO
 
-## Configuration
-
-```yaml
-TODO: this too
-```
-
 ## Customization
 
 After the first run in the addon config folder (addon_configs/57fef649__slug_) there will be a custom.sh file in witch you can add your own commands

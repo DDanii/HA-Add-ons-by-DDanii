@@ -44,10 +44,15 @@ echo "note: node: default"
 package_manager="apt-get update; apt-get install -y"
 get_input "package_manager"
 
-updater_source="github"
+if [ $(echo "$image" | cut -c 1-8) == "codeberg" ]
+then
+    updater_source="codeberg"
+else
+    updater_source="github"
+fi
 get_input updater_source
 
-updater_upstream=$image
+updater_upstream=$(echo "$image" | rev | cut -d / -f -1,2 | rev)
 get_input updater_upstream 1
 
 cp -r .template "$slug"

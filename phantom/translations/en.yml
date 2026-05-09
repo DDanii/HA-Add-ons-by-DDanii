@@ -1,0 +1,22 @@
+configuration:
+  SERVER_HOST:
+    name: Server host
+    description: Address the application binds to
+  INSTANCE_THEME:
+    name: Instance theme
+    description: Theme used by the application interface
+  INSTANCE_NAME:
+    name: Instance name
+    description: Name of the instance shown in the application
+  INSTANCE_JS_ENABLED:
+    name: Enable JavaScript
+    description: Enable JavaScript execution in the application
+  CACHE_ENABLED:
+    name: Enable cache
+    description: Enable in-app caching
+  CACHE_DURATION:
+    name: Cache duration
+    description: Cache expiration time in seconds
+  LOG_LEVEL:
+    name: Log level
+    description: Application log verbosity level

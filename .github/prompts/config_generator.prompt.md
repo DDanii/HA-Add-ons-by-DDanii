@@ -31,5 +31,3 @@ description: Enable usage of SSL on the webserver inside the app
 
 Use question marks for optional options and don't generate option field for them.
 Assing null value to option if it isn't optional and no default value is given.
-
-Generate the default config as yaml in the readme file overwriting the todo part
