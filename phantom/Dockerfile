@@ -4,6 +4,8 @@ ARG BUILD_VERSION
 
 FROM codeberg.org/phantom-org/phantom
 
+USER root
+
 RUN apk add jq bash wget tar curl
 
 RUN mkdir -p /tmp/bashio && \
