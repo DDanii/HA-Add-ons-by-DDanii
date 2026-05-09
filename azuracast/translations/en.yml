@@ -1,0 +1,55 @@
+configuration:
+  reset_database:
+    name: Reset database
+    description: Reset the database on startup
+  REDIS_HOST:
+    name: Redis host
+    description: Hostname or IP address of the Redis server
+  REDIS_PORT:
+    name: Redis port
+    description: Port number for the Redis server connection
+  MYSQL_HOST:
+    name: MySQL host
+    description: Hostname or IP address of the MySQL server
+  MYSQL_PORT:
+    name: MySQL port
+    description: Port number for the MySQL server connection
+  MYSQL_USER:
+    name: MySQL user
+    description: Username for MySQL database authentication
+  MYSQL_PASSWORD:
+    name: MySQL password
+    description: Password for MySQL database authentication
+  run_installer:
+    name: Run installer
+    description: Run the AzuraCast installer on startup
+  station_data:
+    name: Station data directory
+    description: Path where station data is stored
+  backups:
+    name: Backups directory
+    description: Path where backups are stored
+  db_data:
+    name: Database directory
+    description: Path where database files are stored
+  www_uploads:
+    name: Uploads directory
+    description: Path where web uploads are stored
+  shoutcast2_install:
+    name: ShoutCast 2 directory
+    description: Path where ShoutCast 2 is installed
+  stereo_tool_install:
+    name: Stereo Tool directory
+    description: Path where Stereo Tool is installed
+  rsas_install:
+    name: RSAS directory
+    description: Path where RSAS is installed
+  geolite_install:
+    name: GeoLite directory
+    description: Path where GeoLite database is stored
+  sftpgo_data:
+    name: SFTPgo directory
+    description: Path where SFTPgo data is stored
+  acme:
+    name: ACME directory
+    description: Path where ACME certificates are stored

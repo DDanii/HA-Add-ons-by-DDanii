@@ -39,13 +39,6 @@ ln -sf "${ACME}" /var/azuracast/storage/acme
 
 bashio::log.info "Volume mappings completed successfully"
 
-
-
-export MYSQL_HOST=$(bashio::services "mysql" "host")
-export MYSQL_PORT=$(bashio::services "mysql" "port")
-export MYSQL_USER=$(bashio::services "mysql" "username")
-export MYSQL_PASSWORD=$(bashio::services "mysql" "password")
-
 env
 
 if bashio::config.true 'reset_database'; then
@@ -61,12 +54,12 @@ if bashio::config.true 'reset_database'; then
     bashio::addon.option 'reset_database'
 fi
 
-# if bashio::config.true 'run_installer'; then
+if bashio::config.true 'run_installer'; then
 
-#     docker_installer install
+    /var/azuracast/docker.sh install
 
-#     bashio::addon.option 'run_installer'
-# fi
+    bashio::addon.option 'run_installer'
+fi
 
 
 chmod 777 /config

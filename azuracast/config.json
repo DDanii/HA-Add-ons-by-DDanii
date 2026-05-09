@@ -1,6 +1,6 @@
 {
   "name": "AzuraCast - DEVELOPMENT",
-  "version": "0.23.6",
+  "version": "0.23.6-2",
   "slug": "azuracast",
   "image": "ghcr.io/ddanii/azuracast-{arch}",
   "description": "self-hosted, all-in-one web radio management suite",
@@ -12,7 +12,7 @@
     "share:rw"
   ],
   "services": [
-    "mysql:need"
+    "mysql:want"
   ],
   "environment": {
     "AZURACAST_STATION_PORTS": "8000,8005,8006,8010",
@@ -20,11 +20,12 @@
   },
   "init": false,
   "options": {
-    "ssl": false,
-    "certfile": "fullchain.pem",
-    "keyfile": "privkey.pem",
-    "REDIS_HOST": "localhost",
+    "REDIS_HOST": "57fef649-redis",
     "REDIS_PORT": 6379,
+    "MYSQL_HOST": "core-mariadb",
+    "MYSQL_PORT": 3306,
+    "MYSQL_USER": "azuracast",
+    "MYSQL_PASSWORD": null,
     "run_installer": true,
     "station_data": "/media/azuracast/stations",
     "backups": "/config/backups",
@@ -38,12 +39,13 @@
     "acme": "/config/acme"
   },
   "schema": {
-    "ssl": "bool",
-    "certfile": "str",
-    "keyfile": "str",
     "reset_database": "bool?",
     "REDIS_HOST": "str",
     "REDIS_PORT": "port",
+    "MYSQL_HOST": "str",
+    "MYSQL_PORT": "port",
+    "MYSQL_USER": "str",
+    "MYSQL_PASSWORD": "password",
     "run_installer": "bool",
     "station_data": "str",
     "backups": "str",
