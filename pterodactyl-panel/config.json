@@ -9,7 +9,7 @@
     "amd64"
   ],
   "services": [
-    "mysql:need"
+    "mysql:want"
   ],
   "map": [
     "ssl"
