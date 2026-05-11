@@ -2,5 +2,7 @@
   "repository": "DDanii/HA-Add-ons-by-DDanii",
   "slug": "binternet",
   "source": "github",
-  "upstream_repo": "ahwxorg/binternet"
+  "upstream_repo": "ahwxorg/binternet",
+  "upstream_version": "",
+  "last_update": "2026-05-11"
 }
