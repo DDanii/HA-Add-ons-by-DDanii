@@ -11,7 +11,7 @@
     "share:rw"
   ],
   "services": [
-    "mysql:need"
+    "mysql:want"
   ],
   "init": false,
   "options": {
