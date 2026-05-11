@@ -1,22 +1,22 @@
 {
-   "name": "Binternet",
-   "slug": "binternet",
-   "version": "2026.18-2",
-   "image": "ghcr.io/ddanii/binternet",
-   "description": "A custom Pinterest frontend, made in PHP.",
-   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/binternet",
-   "map": [
-      "addon_config:rw"
-   ],
-   "init": false,
-   "ports": {
-      "8080/tcp": 8080
-   },
-   "ports_description": {
-      "8080/tcp": "Web interface http"
-   },
+  "name": "Binternet",
+  "slug": "binternet",
+  "version": "",
+  "image": "ghcr.io/ddanii/binternet",
+  "description": "A custom Pinterest frontend, made in PHP.",
+  "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/binternet",
+  "map": [
+    "addon_config:rw"
+  ],
+  "init": false,
+  "ports": {
+    "8080/tcp": 8080
+  },
+  "ports_description": {
+    "8080/tcp": "Web interface http"
+  },
   "webui": "http://[HOST]:[PORT:8080]/",
-   "arch": [
-      "amd64"
-   ]
+  "arch": [
+    "amd64"
+  ]
 }
