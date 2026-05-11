@@ -56,7 +56,7 @@ fi
 
 if bashio::config.true 'run_installer'; then
 
-    /var/azuracast/docker.sh install
+    exec /var/azuracast/www/docker.sh install
 
     bashio::addon.option 'run_installer'
 fi
