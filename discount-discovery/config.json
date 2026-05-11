@@ -9,9 +9,9 @@
     "addon_config:rw"
   ],
   "init": false,
-  "service": {
-    "couchdb": "want"
-  },
+  "services": [
+    "couchdb:want"
+  ],
   "options": {
     "COUCHDB_USER": "admin",
     "COUCHDB_PASSWORD": null,
