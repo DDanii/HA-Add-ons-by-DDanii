@@ -3,7 +3,7 @@ ARG BUILD_FROM
 ARG BUILD_ARCH
 ARG BUILD_VERSION
 
-FROM $BUILD_FROM
+FROM ghcr.io/home-assistant/base:latest
 
 RUN mkdir -p /etc/pelican /var/run/wings
 RUN curl -L -o /usr/local/bin/wings "https://github.com/pelican-dev/wings/releases/latest/download/wings_linux_$([[ "$(uname -m)" == "x86_64" ]] && echo "amd64" || echo "arm64")"
