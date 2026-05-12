@@ -2,7 +2,7 @@
   "name": "AnonymousOverflow",
   "version": "1.13.0-2",
   "slug": "anonymousoverflow",
-  "image": "ghcr.io/ddanii/anonymousoverflow-{arch}",
+  "image": "ghcr.io/ddanii/anonymousoverflow",
   "description": "View StackOverflow in privacy and without the clutter.",
   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/anonymousoverflow",
   "init": false,
