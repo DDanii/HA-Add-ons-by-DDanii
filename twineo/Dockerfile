@@ -2,7 +2,7 @@
 ARG BUILD_ARCH
 ARG BUILD_VERSION
 
-FROM codeberg.org/cloudyyuw/twineo
+FROM codeberg.org/cloudyyuw/twineo:v0.3.3-rc
 
 RUN apt-get update; apt-get install -y jq bash wget tar curl
 
