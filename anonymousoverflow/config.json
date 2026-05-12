@@ -1,6 +1,6 @@
 {
   "name": "AnonymousOverflow",
-  "version": "1.13.0",
+  "version": "1.13.0-2",
   "slug": "anonymousoverflow",
   "image": "ghcr.io/ddanii/anonymousoverflow-{arch}",
   "description": "View StackOverflow in privacy and without the clutter.",

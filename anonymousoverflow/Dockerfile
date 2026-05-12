@@ -1,5 +1,4 @@
 #############
-ARG BUILD_FROM
 ARG BUILD_ARCH
 ARG BUILD_VERSION
 
@@ -19,7 +18,7 @@ ENV CGO_ENABLED=0 GOOS=linux GOARCH=$BUILD_ARCH
 
 RUN go build -o launcher
 
-FROM $BUILD_FROM
+FROM ghcr.io/httpjamesm/anonymousoverflow:release
 
 COPY --from=build /app/launcher /launcher
 
