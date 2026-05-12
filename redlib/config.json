@@ -1,8 +1,8 @@
 {
   "name": "Redlib - DEVELOPMENT",
-  "version": "0.36.0",
+  "version": "0.36.0-2",
   "slug": "redlib",
-  "image": "ghcr.io/ddanii/redlib-{arch}",
+  "image": "ghcr.io/ddanii/redlib",
   "description": "Private front-end for reddit",
   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/redlib",
   "init": false,

@@ -1,8 +1,7 @@
-ARG BUILD_FROM
 ARG BUILD_ARCH
 ARG BUILD_VERSION
 
-FROM $BUILD_FROM
+FROM library/redis
 
 RUN apt-get update; \
     apt-get install -y jq bash wget tar curl

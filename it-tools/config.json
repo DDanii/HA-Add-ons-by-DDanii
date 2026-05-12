@@ -1,8 +1,8 @@
 {
   "name": "IT-Tools",
-  "version": "2024.10.22-7ca5933",
+  "version": "2024.10.22-7ca5933-2",
   "slug": "it-tools",
-  "image": "ghcr.io/ddanii/it-tools-{arch}",
+  "image": "ghcr.io/ddanii/it-tools",
   "description": "Collection of handy online tools for developers",
   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/it-tools",
   "init": false,

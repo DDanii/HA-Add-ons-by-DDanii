@@ -1,9 +1,8 @@
 #############
-ARG BUILD_FROM
 ARG BUILD_ARCH
 ARG BUILD_VERSION
 
-FROM $BUILD_FROM
+FROM 1337kavin/bg-helper-server
 
 LABEL \
     io.hass.arch="${BUILD_ARCH}" \

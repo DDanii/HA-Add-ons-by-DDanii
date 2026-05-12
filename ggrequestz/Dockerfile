@@ -1,9 +1,8 @@
 #############
-ARG BUILD_FROM
 ARG BUILD_ARCH
 ARG BUILD_VERSION
 
-FROM $BUILD_FROM
+FROM ghcr.io/xtreemmak/ggrequestz
 
 USER root
 
@@ -19,7 +18,6 @@ wget -q -O - "https://github.com/hassio-addons/bashio/archive/v0.17.1.tar.gz" | 
     && wget -q -O /usr/bin/tempio \
     "https://github.com/home-assistant/tempio/releases/download/2021.09.0/tempio_amd64" \
     && chmod a+x /usr/bin/tempio
-
 
 COPY rootfs/ /
 

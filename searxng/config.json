@@ -1,8 +1,8 @@
 {
   "name": "SearXNG",
-  "version": "2026.5.10-df1f24fb7",
+  "version": "2026.5.10-df1f24fb7-2",
   "slug": "searxng",
-  "image": "ghcr.io/ddanii/searxng-{arch}",
+  "image": "ghcr.io/ddanii/searxng",
   "description": "SearXNG is a metasearch engine.",
   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/searxng",
   "map": [

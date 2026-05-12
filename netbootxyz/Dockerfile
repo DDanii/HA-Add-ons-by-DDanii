@@ -1,9 +1,8 @@
 #############
-ARG BUILD_FROM
 ARG BUILD_ARCH
 ARG BUILD_VERSION
 
-FROM $BUILD_FROM
+FROM ghcr.io/netbootxyz/netbootxyz
 
 
 RUN apk add jq bash curl

@@ -1,3 +1,0 @@
-build_from:
-  aarch64: searxng/searxng
-  amd64: searxng/searxng

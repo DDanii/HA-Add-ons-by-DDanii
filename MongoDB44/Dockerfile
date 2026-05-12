@@ -1,6 +1,5 @@
-ARG BUILD_FROM
 ARG BUILD_ARCH
-FROM $BUILD_FROM
+FROM library/mongo:4.4
 
 RUN apt-get update; \
     apt-get install -y jq bash wget tar curl

@@ -1,8 +1,8 @@
 {
   "name": "openldap - untested",
-  "version": "1.5.0-test16",
+  "version": "1.5.0-test16-2",
   "slug": "openldap",
-  "image": "ghcr.io/ddanii/openldap-{arch}",
+  "image": "ghcr.io/ddanii/openldap",
   "description": "OpenLDAP based on osixia container",
   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/openldap",
   "map": [

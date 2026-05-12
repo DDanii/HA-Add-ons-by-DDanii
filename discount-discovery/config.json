@@ -1,8 +1,8 @@
 {
   "name": "Discount Discovery - DEVELOPMENT",
-  "version": "0.151-2",
+  "version": "0.151-2-2",
   "slug": "discount-discovery",
-  "image": "ghcr.io/ddanii/discount-discovery-{arch}",
+  "image": "ghcr.io/ddanii/discount-discovery",
   "description": "A selfhost app to easyly browse and manage several stores discounts comfortably.",
   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/discount-discovery",
   "map": [

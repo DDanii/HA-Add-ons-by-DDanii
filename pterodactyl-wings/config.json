@@ -1,8 +1,8 @@
 {
   "name": "Pterodactyl-wings - DEVELOPMENT",
-  "version": "v1.12.1",
+  "version": "v1.12.1-2",
   "slug": "pterodactyl-wings",
-  "image": "ghcr.io/ddanii/pterodactyl-wings-{arch}",
+  "image": "ghcr.io/ddanii/pterodactyl-wings",
   "description": "Wings is the server control plane from Pterodacty",
   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/pterodactyl-wings",
   "map": [

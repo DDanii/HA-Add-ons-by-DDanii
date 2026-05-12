@@ -1,8 +1,8 @@
 {
   "name": "Piped-Backend",
-  "version": "hotspot-2026-03-26",
+  "version": "hotspot-2026-03-26-2",
   "slug": "piped",
-  "image": "ghcr.io/ddanii/piped-{arch}",
+  "image": "ghcr.io/ddanii/piped",
   "description": "Alternative YouTube frontend",
   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/piped",
   "arch": [

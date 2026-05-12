@@ -1,8 +1,8 @@
 {
   "name": "Pterodactyl Panel",
-  "version": "v1.12.2",
+  "version": "v1.12.2-2",
   "slug": "pterodactyl_panel",
-  "image": "ghcr.io/ddanii/pterodactyl_panel-{arch}",
+  "image": "ghcr.io/ddanii/pterodactyl_panel",
   "description": "OpenSource Gameserver",
   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/pterodactyl-panel",
   "arch": [

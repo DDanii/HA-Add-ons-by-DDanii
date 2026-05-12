@@ -1,8 +1,8 @@
 {
   "name": "Redis",
-  "version": "8.6.2",
+  "version": "8.6.2-2",
   "slug": "redis",
-  "image": "ghcr.io/ddanii/redis-{arch}",
+  "image": "ghcr.io/ddanii/redis",
   "description": "in-memory data store",
   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/redis",
   "map": [

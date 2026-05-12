@@ -1,8 +1,8 @@
 {
   "name": "MongoDB - untested",
-  "version": "8.2.7",
+  "version": "8.2.7-2",
   "slug": "mongodb",
-  "image": "ghcr.io/ddanii/mongodb-{arch}",
+  "image": "ghcr.io/ddanii/mongodb",
   "description": "document-oriented database",
   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/mongodb",
   "arch": [

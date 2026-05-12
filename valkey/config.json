@@ -1,8 +1,8 @@
 {
   "name": "Valkey",
-  "version": "9.0.3",
+  "version": "9.0.3-2",
   "slug": "valkey",
-  "image": "ghcr.io/ddanii/valkey-{arch}",
+  "image": "ghcr.io/ddanii/valkey",
   "description": "Valkey is a high-performance key/value datastore",
   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/valkey",
   "map": [

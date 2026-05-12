@@ -1,8 +1,8 @@
 {
   "name": "AzuraCast - DEVELOPMENT",
-  "version": "0.23.6-3",
+  "version": "0.23.6-3-2",
   "slug": "azuracast",
-  "image": "ghcr.io/ddanii/azuracast-{arch}",
+  "image": "ghcr.io/ddanii/azuracast",
   "description": "self-hosted, all-in-one web radio management suite",
   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/azuracast",
   "map": [

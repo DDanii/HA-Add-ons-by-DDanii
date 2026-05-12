@@ -1,8 +1,8 @@
 {
   "name": "MongoDB 4.4",
-  "version": "4.4.30",
+  "version": "4.4.30-2",
   "slug": "mongodb44",
-  "image": "ghcr.io/ddanii/mongodb44-{arch}",
+  "image": "ghcr.io/ddanii/mongodb44",
   "description": "document-oriented database",
   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/mongodb44",
   "arch": [

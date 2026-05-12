@@ -1,9 +1,8 @@
 #############
-ARG BUILD_FROM
 ARG BUILD_ARCH
 ARG BUILD_VERSION
 
-FROM $BUILD_FROM
+FROM ddanii/discount-discovery
 
 RUN apt-get update; apt-get install -y jq bash wget tar curl
 
@@ -17,7 +16,6 @@ RUN mkdir -p /tmp/bashio && \
     && wget -q -O /usr/bin/tempio \
     "https://github.com/home-assistant/tempio/releases/download/2021.09.0/tempio_amd64" \
     && chmod a+x /usr/bin/tempio
-
 
 COPY rootfs/ /
 

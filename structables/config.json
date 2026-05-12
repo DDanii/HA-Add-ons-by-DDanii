@@ -1,37 +1,37 @@
 {
-   "name": "Structables",
-   "version": "2026.14",
-   "slug": "structables",
-   "image": "ghcr.io/ddanii/structables-{arch}",
-   "description": "An open source alternative front-end to Instructables.",
-   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/structables",
-   "map": [
-      "addon_config:rw",
-      "media:rw",
-      "share:rw"
-   ],
-   "schema": {
-      "STRUCTABLES_LISTEN_HOST": "str?",
-      "STRUCTABLES_INVIDIOUS": "str?",
-      "STRUCTABLES_UNSAFE": "bool?",
-      "STRUCTABLES_PRIVACY_FILE": "str?",
-      "STRUCTABLES_DEBUG": "bool?",
-      "STRUCTABLES_THEME": "list(dark|light)?",
-      "STRUCTABLES_CACHE_ENABLED": "bool?",
-      "STRUCTABLES_CACHE_DIR": "str?",
-      "STRUCTABLES_CACHE_MAX_AGE": "int?",
-      "STRUCTABLES_CACHE_MAX_SIZE": "int?",
-      "STRUCTABLES_CACHE_CLEANUP_INTERVAL": "int?"
-   },
-   "init": false,
-   "ports": {
-      "8002/tcp": 8002
-   },
-   "ports_description": {
-      "8002/tcp": "Web interface http"
-   },
+  "name": "Structables",
+  "version": "2026.14-2",
+  "slug": "structables",
+  "image": "ghcr.io/ddanii/structables",
+  "description": "An open source alternative front-end to Instructables.",
+  "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/structables",
+  "map": [
+    "addon_config:rw",
+    "media:rw",
+    "share:rw"
+  ],
+  "schema": {
+    "STRUCTABLES_LISTEN_HOST": "str?",
+    "STRUCTABLES_INVIDIOUS": "str?",
+    "STRUCTABLES_UNSAFE": "bool?",
+    "STRUCTABLES_PRIVACY_FILE": "str?",
+    "STRUCTABLES_DEBUG": "bool?",
+    "STRUCTABLES_THEME": "list(dark|light)?",
+    "STRUCTABLES_CACHE_ENABLED": "bool?",
+    "STRUCTABLES_CACHE_DIR": "str?",
+    "STRUCTABLES_CACHE_MAX_AGE": "int?",
+    "STRUCTABLES_CACHE_MAX_SIZE": "int?",
+    "STRUCTABLES_CACHE_CLEANUP_INTERVAL": "int?"
+  },
+  "init": false,
+  "ports": {
+    "8002/tcp": 8002
+  },
+  "ports_description": {
+    "8002/tcp": "Web interface http"
+  },
   "webui": "http://[HOST]:[PORT:8002]",
-   "arch": [
-      "amd64"
-   ]
+  "arch": [
+    "amd64"
+  ]
 }

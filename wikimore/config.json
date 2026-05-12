@@ -1,15 +1,15 @@
 {
   "name": "Wikimore",
-  "version": "2026.3-4",
+  "version": "2026.3-4-2",
   "slug": "wikimore",
-  "image": "ghcr.io/ddanii/wikimore-{arch}",
+  "image": "ghcr.io/ddanii/wikimore",
   "description": "A simple frontend for Wikimedia projects",
   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/wikimore",
   "init": false,
   "map": [
     "addon_config:rw",
-      "media:rw",
-      "share:rw"
+    "media:rw",
+    "share:rw"
   ],
   "schema": {
     "WIKIMORE_HOST": "str?",

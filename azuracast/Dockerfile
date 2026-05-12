@@ -1,9 +1,8 @@
 #############
-ARG BUILD_FROM
 ARG BUILD_ARCH
 ARG BUILD_VERSION
 
-FROM $BUILD_FROM
+FROM ghcr.io/azuracast/azuracast:stable
 
 RUN apt-get update; \
     apt-get install -y jq bash wget tar curl mariadb-client

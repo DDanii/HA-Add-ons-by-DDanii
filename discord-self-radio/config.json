@@ -1,10 +1,10 @@
 {
   "name": "Discordbot self radio",
-  "version": "2.5",
+  "version": "2.5-2",
   "slug": "discord_self_radio",
   "description": "A discord bot to play a radio stream if you are alone / no one else can hear the bot.",
   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii",
-  "image": "ghcr.io/ddanii/discord_self_radio-{arch}",
+  "image": "ghcr.io/ddanii/discord_self_radio",
   "init": false,
   "arch": [
     "amd64"
