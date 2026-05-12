@@ -1,6 +1,6 @@
 {
   "name": "Discount Discovery - DEVELOPMENT",
-  "version": "0.151-2-2",
+  "version": "0.151-3",
   "slug": "discount-discovery",
   "image": "ghcr.io/ddanii/discount-discovery",
   "description": "A selfhost app to easyly browse and manage several stores discounts comfortably.",
@@ -9,9 +9,6 @@
     "addon_config:rw"
   ],
   "init": false,
-  "services": [
-    "couchdb:want"
-  ],
   "options": {
     "COUCHDB_USER": "admin",
     "COUCHDB_PASSWORD": null,

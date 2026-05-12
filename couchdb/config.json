@@ -1,6 +1,6 @@
 {
   "name": "CouchDB",
-  "version": "3.5.1-nouveau-3-2",
+  "version": "3.5.1-nouveau-4",
   "slug": "couchdb",
   "image": "ghcr.io/ddanii/couchdb",
   "description": "Database that uses JSON for documents an HTTP API",
@@ -8,9 +8,7 @@
   "map": [
     "addon_config:rw"
   ],
-  "services": [
-    "couchdb:provide"
-  ],
+  "startup": "system",
   "init": false,
   "options": {
     "COUCHDB_USER": "admin",
