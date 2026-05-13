@@ -1,0 +1,25 @@
+configuration:
+  CODE_CACHE:
+    name: Code cache
+    description: Cache code to improve performance
+  NUM_WORKERS:
+    name: Number of workers
+    description: Number of worker processes to handle requests
+  ALLOW_JSON:
+    name: Allow JSON
+    description: Allow JSON format responses
+  ENABLE_ATOM:
+    name: Enable Atom feeds
+    description: Enable Atom feed support for content syndication
+  BASE_ATOM_PATH:
+    name: Base Atom path
+    description: Base URL path for Atom feed endpoints
+  RESOLVER:
+    name: Resolver
+    description: DNS resolver configuration
+  REDIS_HOST:
+    name: Redis host
+    description: Hostname or IP address of the Redis server
+  REDIS_PORT:
+    name: Redis port
+    description: Port number for the Redis server connection

@@ -1,10 +1,9 @@
 {
    "name": "Kittygram",
    "slug": "kittygram",
-   "version": "2026.17-2",
-   "stage": "experimental",
+   "version": "2026.17-3",
    "image": "ghcr.io/ddanii/kittygram",
-   "description": "DEVELOPMENT Kittygram is an Instagram frontend",
+   "description": "Kittygram is an Instagram frontend",
    "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/kittygram",
    "map": [
       "addon_config:rw"
@@ -26,9 +25,7 @@
    "ports_description": {
       "80/tcp": "Web interface http"
    },
-   "ingress": true,
-   "ingress_port": 80,
-   "ingress_stream": true,
+  "webui": "http://[HOST]:[PORT:80]",
    "arch": [
       "amd64"
    ]

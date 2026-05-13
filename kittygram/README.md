@@ -1,7 +1,5 @@
 # Home assistant app (add-on): Kittygram
 
-This add-on is under development not recommended for usage, expect nonfuctionality and datalosses.
-
 ![Version](https://img.shields.io/badge/dynamic/json?label=Version&query=%24.version&url=https%3A%2F%2Fraw.githubusercontent.com%2FDDanii%2FHA-Add-ons-by-DDanii%2Fmaster%2Fkittygram%2Fconfig.json)
 ![Ingress](https://img.shields.io/badge/dynamic/json?label=Ingress&query=%24.ingress&url=https%3A%2F%2Fraw.githubusercontent.com%2FDDanii%2FHA-Add-ons-by-DDanii%2Fmaster%2Fkittygram%2Fconfig.json)
 ![Arch](https://img.shields.io/badge/dynamic/json?color=success&label=Arch&query=%24.arch&url=https%3A%2F%2Fraw.githubusercontent.com%2FDDanii%2FHA-Add-ons-by-DDanii%2Fmaster%2Fkittygram%2Fconfig.json)
@@ -11,13 +9,9 @@ This add-on is under development not recommended for usage, expect nonfuctionali
 
 ## About
 
-TODO
-
-## Configuration
-
-```yaml
-TODO: this too
-```
+[Kittygram](https://codeberg.org/irelephant/kittygram) is an anonymous, privacy-friendly, lightweight, and open-source
+Instagram frontend inspired by [nitter](https://github.com/zedeus/nitter).
+It offers a clean, fast way to browse Instagram without the usual clutter or tracking.
 
 ## Customization
 
