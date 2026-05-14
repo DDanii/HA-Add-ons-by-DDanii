@@ -28,7 +28,7 @@ Set it empty to disable persistency.
 
 ## Customization
 
-After the first run in the addon config folder (addon_configs/57fef649__slug_) there will be a custom.sh file in witch you can add your own commands
+After the first run in the addon config folder (addon_configs/57fef649_redis) there will be a custom.sh file in witch you can add your own commands
 
 ## Support
 
