@@ -16,7 +16,7 @@ RUN mkdir -p /tmp/bashio && \
     rm -rf /tmp/bashio \
     \
     && wget -q -O /usr/bin/tempio \
-    "https://github.com/home-assistant/tempio/releases/download/2026.05.0/tempio_${BUILD_ARCH}" \
+    "https://github.com/home-assistant/tempio/releases/download/2026.05.0/tempio_$BUILD_ARCH" \
     && chmod a+x /usr/bin/tempio
 
 COPY rootfs/ /
