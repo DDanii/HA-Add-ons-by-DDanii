@@ -4,6 +4,8 @@ ARG BUILD_VERSION
 
 FROM quay.io/redlib/redlib:latest
 
+ARG BUILD_ARCH
+
 USER root
 
 RUN apk add jq bash wget tar curl
