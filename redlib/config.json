@@ -1,6 +1,6 @@
 {
   "name": "Redlib",
-  "version": "0.36.0-4",
+  "version": "0.36.0-5",
   "slug": "redlib",
   "image": "ghcr.io/ddanii/redlib",
   "description": "Private front-end for reddit",
