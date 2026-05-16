@@ -1,5 +1,6 @@
 ARG BUILD_ARCH
 FROM library/mongo
+ARG BUILD_ARCH
 
 RUN apt-get update; \
     apt-get install -y jq bash wget tar curl

@@ -2,6 +2,7 @@ ARG BUILD_ARCH
 ARG BUILD_VERSION
 
 FROM library/redis
+ARG BUILD_ARCH
 
 RUN apt-get update; \
     apt-get install -y jq bash wget tar curl

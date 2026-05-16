@@ -3,6 +3,7 @@ ARG BUILD_ARCH
 ARG BUILD_VERSION
 
 FROM git.private.coffee/privatecoffee/wikimore
+ARG BUILD_ARCH
 
 USER root
 

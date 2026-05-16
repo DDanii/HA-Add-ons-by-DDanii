@@ -1,5 +1,6 @@
 ARG BUILD_ARCH
 FROM ddanii/discordbot-self-radio
+ARG BUILD_ARCH
 
 ENV \
     S6_BEHAVIOUR_IF_STAGE2_FAILS=2 \

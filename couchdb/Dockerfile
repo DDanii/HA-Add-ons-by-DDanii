@@ -3,7 +3,7 @@ ARG BUILD_ARCH
 ARG BUILD_VERSION
 
 FROM library/couchdb
-
+ARG BUILD_ARCH
 
 RUN apt-get update; apt-get install -y jq bash wget tar curl
 

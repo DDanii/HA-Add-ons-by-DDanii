@@ -3,6 +3,7 @@ ARG BUILD_ARCH
 ARG BUILD_VERSION
 
 FROM _image_
+ARG BUILD_ARCH
 
 RUN _package_manager_ jq bash wget tar curl
 

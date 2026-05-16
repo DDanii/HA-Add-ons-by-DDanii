@@ -1,5 +1,6 @@
 ARG BUILD_ARCH
 FROM 1337kavin/piped-frontend:latest
+ARG BUILD_ARCH
 
 USER root
 

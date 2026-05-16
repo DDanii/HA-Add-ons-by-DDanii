@@ -3,6 +3,7 @@ ARG BUILD_ARCH
 ARG BUILD_VERSION
 
 FROM keglin/pinchflat
+ARG BUILD_ARCH
 
 RUN apt-get update; \
     apt-get install -y jq bash wget tar curl

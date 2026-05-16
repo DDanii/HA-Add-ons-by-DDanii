@@ -3,6 +3,7 @@ ARG BUILD_ARCH
 ARG BUILD_VERSION
 
 FROM codeberg.org/phantom-org/phantom
+ARG BUILD_ARCH
 
 USER root
 

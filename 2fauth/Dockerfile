@@ -3,6 +3,8 @@ ARG BUILD_ARCH
 ARG BUILD_VERSION
 
 FROM 2fauth/2fauth
+ARG BUILD_ARCH
+
 USER root
 
 RUN adduser -u 1000 -D app

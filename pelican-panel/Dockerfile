@@ -3,6 +3,7 @@ ARG BUILD_ARCH
 ARG BUILD_VERSION
 
 FROM ghcr.io/pelican-dev/panel:latest
+ARG BUILD_ARCH
 
 USER root
 

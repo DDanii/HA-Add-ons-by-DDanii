@@ -2,6 +2,7 @@
 ARG BUILD_ARCH
 # hadolint ignore=DL3006
 FROM ccarney16/pterodactyl-panel
+ARG BUILD_ARCH
 
 RUN microdnf install -y jq bash wget tar
 

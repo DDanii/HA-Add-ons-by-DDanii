@@ -1,5 +1,6 @@
 ARG BUILD_ARCH
 FROM mauriceo/viewtube
+ARG BUILD_ARCH
 
 RUN apt-get update
 RUN apt-get install -y wget curl jq

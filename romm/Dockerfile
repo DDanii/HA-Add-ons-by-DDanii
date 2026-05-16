@@ -3,7 +3,7 @@ ARG BUILD_ARCH
 ARG BUILD_VERSION
 
 FROM rommapp/romm
-
+ARG BUILD_ARCH
 
 RUN apk add --no-cache jq bash wget tar curl openssl
 

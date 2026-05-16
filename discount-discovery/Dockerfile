@@ -3,6 +3,7 @@ ARG BUILD_ARCH
 ARG BUILD_VERSION
 
 FROM ddanii/discount-discovery
+ARG BUILD_ARCH
 
 RUN apt-get update; apt-get install -y jq bash wget tar curl
 

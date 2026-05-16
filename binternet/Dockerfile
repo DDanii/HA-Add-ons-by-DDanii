@@ -3,6 +3,7 @@ ARG BUILD_ARCH
 ARG BUILD_VERSION
 
 FROM ghcr.io/ahwxorg/binternet
+ARG BUILD_ARCH
 
 USER root
 

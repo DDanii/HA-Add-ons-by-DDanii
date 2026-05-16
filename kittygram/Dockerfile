@@ -3,6 +3,7 @@ ARG BUILD_ARCH
 ARG BUILD_VERSION
 
 FROM codeberg.org/irelephant/kittygram
+ARG BUILD_ARCH
 
 RUN apk add jq bash wget tar curl
 
