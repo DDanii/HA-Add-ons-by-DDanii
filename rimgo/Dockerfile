@@ -18,7 +18,7 @@ RUN go mod download
 
 RUN go build -o launcher
 
-FROM codeberg.org/rimgo/rimgo
+FROM codeberg.org/rimgo/rimgo:2.0-rc.2
 
 COPY --from=build /app/launcher /launcher
 
