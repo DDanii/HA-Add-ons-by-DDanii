@@ -1,6 +1,6 @@
 {
   "name": "TubeSync - untested",
-  "version": "0.17.1-2",
+  "version": "0.17.4",
   "slug": "tubesync",
   "image": "ghcr.io/ddanii/tubesync",
   "description": "TubeSync is a PVR (personal video recorder) for YouTube",
