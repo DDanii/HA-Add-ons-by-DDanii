@@ -2,5 +2,7 @@
   "repository": "DDanii/HA-Add-ons-by-DDanii",
   "slug": "twineo",
   "source": "codeberg",
-  "upstream_repo": "CloudyyUw/twineo"
+  "upstream_repo": "CloudyyUw/twineo",
+  "upstream_version": "0.3.2",
+  "last_update": "2026-05-25"
 }

@@ -1,27 +1,27 @@
 {
-   "name": "Twineo",
-   "slug": "twineo",
-   "version": "v0.2.x",
-   "image": "ghcr.io/ddanii/twineo",
-   "description": "Privacy focused alternative front-end to Twitch",
-   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/twineo",
-   "init": false,
-   "map": [
-      "addon_config:rw"
-   ],
-   "schema": {
-      "CLIENTID": "str?",
-      "USERAGENT": "str?",
-      "INSTANCE_URL": "url?"
-   },
-   "ports": {
-      "3000/tcp": 3000
-   },
-   "ports_description": {
-      "3000/tcp": "Web interface http"
-   },
+  "name": "Twineo",
+  "slug": "twineo",
+  "version": "0.3.2",
+  "image": "ghcr.io/ddanii/twineo",
+  "description": "Privacy focused alternative front-end to Twitch",
+  "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/twineo",
+  "init": false,
+  "map": [
+    "addon_config:rw"
+  ],
+  "schema": {
+    "CLIENTID": "str?",
+    "USERAGENT": "str?",
+    "INSTANCE_URL": "url?"
+  },
+  "ports": {
+    "3000/tcp": 3000
+  },
+  "ports_description": {
+    "3000/tcp": "Web interface http"
+  },
   "webui": "http://[HOST]:[PORT:3000]",
-   "arch": [
-      "amd64"
-   ]
+  "arch": [
+    "amd64"
+  ]
 }
