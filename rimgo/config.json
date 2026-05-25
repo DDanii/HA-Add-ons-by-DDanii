@@ -1,50 +1,50 @@
 {
-   "name": "rimgo",
-   "slug": "rimgo",
-   "version": "v2.0-rc2",
-   "image": "ghcr.io/ddanii/rimgo",
-   "description": "An alternative frontend for Imgur.",
-   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/rimgo",
-   "map": [
-      "addon_config:rw"
-   ],
-   "init": false,
-   "options": {
-      "ADDRESS": "0.0.0.0",
-      "IMGUR_CLIENT_ID": "546c25a59c58ad7",
-      "PROTOCOL_DETECTION": false,
-      "SECURE": false,
-      "FORCE_WEBP": false,
-      "PRIVACY_NOT_COLLECTED": null
-   },
-   "schema": {
-      "ADDRESS": "str",
-      "IMGUR_CLIENT_ID": "str",
-      "PROTOCOL_DETECTION": "bool",
-      "SECURE": "bool",
-      "FORCE_WEBP": "bool",
-      "PRIVACY_POLICY": "url?",
-      "PRIVACY_MESSAGE": "str?",
-      "PRIVACY_COUNTRY": "str?",
-      "PRIVACY_PROVIDER": "str?",
-      "PRIVACY_CLOUDFLARE": "bool?",
-      "PRIVACY_NOT_COLLECTED": "bool",
-      "PRIVACY_IP": "bool?",
-      "PRIVACY_URL": "bool?",
-      "PRIVACY_DEVICE": "bool?",
-      "PRIVACY_DIAGNOSTICS": "bool?",
-      "HTTP_PROXY": "url?",
-      "HTTPS_PROXY": "url?"
-   },
-   "ports": {
-      "3000/tcp": 3000
-   },
-   "ports_description": {
-      "3000/tcp": "Web interface http"
-   },
+  "name": "rimgo",
+  "slug": "rimgo",
+  "version": "2022.4.22",
+  "image": "ghcr.io/ddanii/rimgo",
+  "description": "An alternative frontend for Imgur.",
+  "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/rimgo",
+  "map": [
+    "addon_config:rw"
+  ],
+  "init": false,
+  "options": {
+    "ADDRESS": "0.0.0.0",
+    "IMGUR_CLIENT_ID": "546c25a59c58ad7",
+    "PROTOCOL_DETECTION": false,
+    "SECURE": false,
+    "FORCE_WEBP": false,
+    "PRIVACY_NOT_COLLECTED": "2022.4.22"
+  },
+  "schema": {
+    "ADDRESS": "str",
+    "IMGUR_CLIENT_ID": "str",
+    "PROTOCOL_DETECTION": "bool",
+    "SECURE": "bool",
+    "FORCE_WEBP": "bool",
+    "PRIVACY_POLICY": "url?",
+    "PRIVACY_MESSAGE": "str?",
+    "PRIVACY_COUNTRY": "str?",
+    "PRIVACY_PROVIDER": "str?",
+    "PRIVACY_CLOUDFLARE": "bool?",
+    "PRIVACY_NOT_COLLECTED": "bool",
+    "PRIVACY_IP": "bool?",
+    "PRIVACY_URL": "bool?",
+    "PRIVACY_DEVICE": "bool?",
+    "PRIVACY_DIAGNOSTICS": "bool?",
+    "HTTP_PROXY": "url?",
+    "HTTPS_PROXY": "url?"
+  },
+  "ports": {
+    "3000/tcp": 3000
+  },
+  "ports_description": {
+    "3000/tcp": "Web interface http"
+  },
   "webui": "http://[HOST]:[PORT:3000]",
-   "arch": [
-      "amd64",
-      "aarch64"
-   ]
+  "arch": [
+    "amd64",
+    "aarch64"
+  ]
 }

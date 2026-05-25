@@ -2,5 +2,7 @@
   "repository": "DDanii/HA-Add-ons-by-DDanii",
   "slug": "rimgo",
   "source": "codeberg",
-  "upstream_repo": "rimgo/rimgo"
+  "upstream_repo": "rimgo/rimgo",
+  "upstream_version": "2022.4.22",
+  "last_update": "2026-05-25"
 }
