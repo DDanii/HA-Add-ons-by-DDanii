@@ -3,6 +3,6 @@
   "slug": "pterodactyl-wings",
   "source": "dockerhub",
   "upstream_repo": "ccarney16/pterodactyl-daemon",
-  "upstream_version": "v1.12.2",
-  "last_update": "2026-05-25"
+  "upstream_version": "v1.12.3",
+  "last_update": "2026-06-02"
 }
