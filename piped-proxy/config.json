@@ -1,6 +1,6 @@
 {
   "name": "Piped-proxy",
-  "version": "hotspot-2026-03-26-2",
+  "version": "hotspot-2026-05-29",
   "slug": "piped-proxy",
   "image": "ghcr.io/ddanii/piped-proxy",
   "description": "piped proxy",
