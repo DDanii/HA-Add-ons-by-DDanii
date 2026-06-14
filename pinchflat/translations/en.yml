@@ -1,0 +1,40 @@
+configuration:
+  dl_path:
+    name: Download path
+    description: Directory where Pinchflat stores downloaded media.
+  TZ:
+    name: Time zone
+    description: Container time zone. Must follow the IANA TZ format.
+  LOG_LEVEL:
+    name: Log level
+    description: Logging verbosity for the application. debug is strongly recommended.
+  UMASK:
+    name: UMASK
+    description: File permissions mask used by the container.
+  BASIC_AUTH_USERNAME:
+    name: Basic auth username
+    description: Optional username for basic authentication.
+  BASIC_AUTH_PASSWORD:
+    name: Basic auth password
+    description: Optional password for basic authentication.
+  EXPOSE_FEED_ENDPOINTS:
+    name: Expose feed endpoints
+    description: Enable RSS and podcast feed endpoints.
+  ENABLE_IPV6:
+    name: Enable IPv6
+    description: Enable IPv6 support.
+  JOURNAL_MODE:
+    name: Journal mode
+    description: SQLite journal mode. Use delete on network shares.
+  TZ_DATA_DIR:
+    name: Time zone data directory
+    description: Container path where the timezone database is stored.
+  BASE_ROUTE_PATH:
+    name: Base route path
+    description: Base path for generated routes when running behind a reverse proxy.
+  YT_DLP_WORKER_CONCURRENCY:
+    name: yt-dlp worker concurrency
+    description: Number of concurrent yt-dlp workers used per queue. Set to 1 if you're getting IP limited, otherwise don't touch it.
+  ENABLE_PROMETHEUS:
+    name: Enable Prometheus
+    description: Enable the Prometheus metrics endpoint.

@@ -9,13 +9,17 @@
 
 ## About
 
-TODO
+
+[Pinchflat](https://github.com/kieraneglin/pinchflat) is a self-hosted app for downloading YouTube content built using [yt-dlp](https://github.com/yt-dlp/yt-dlp). It's designed to be lightweight, self-contained, and easy to use. You set up rules for how to download content from YouTube channels or playlists and it'll do the rest, periodically checking for new content. It's perfect for people who want to download content for use in with a media center app (Plex, Jellyfin, Kodi) or for those who want to archive media!
 
 ## Configuration
 
-```yaml
-TODO: this too
-```
+dl_path: download location, possible root folders: /media, /share, /config
+
+## Customization
+
+After the first run in the addon config folder (addon_configs/57fef649_pinchflat) there will be a custom.sh file in witch you can add your own commands
+
 
 ## Support
 

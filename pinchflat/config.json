@@ -1,6 +1,6 @@
 {
   "name": "Pinchflat",
-  "version": "2025.9.26-2",
+  "version": "2025.9.26-3",
   "slug": "pinchflat",
   "image": "ghcr.io/ddanii/pinchflat",
   "description": "YouTube media manager",
@@ -20,14 +20,28 @@
       "read_only": false
     }
   ],
+  "backup_exclude": [
+    "**/logs/",
+    "**/metadatad/"
+  ],
   "init": false,
   "options": {
     "dl_path": "/media/pinchflat"
   },
   "schema": {
     "dl_path": "str",
+    "TZ": "str?",
+    "LOG_LEVEL": "list(debug|info)?",
+    "UMASK": "str?",
     "BASIC_AUTH_USERNAME": "str?",
-    "BASIC_AUTH_PASSWORD": "password?"
+    "BASIC_AUTH_PASSWORD": "password?",
+    "EXPOSE_FEED_ENDPOINTS": "bool?",
+    "ENABLE_IPV6": "bool?",
+    "JOURNAL_MODE": "list(wal|delete)?",
+    "TZ_DATA_DIR": "str?",
+    "BASE_ROUTE_PATH": "str?",
+    "YT_DLP_WORKER_CONCURRENCY": "int(1,)?",
+    "ENABLE_PROMETHEUS": "bool?"
   },
   "ports": {
     "8945/tcp": 8945

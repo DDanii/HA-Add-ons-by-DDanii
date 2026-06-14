@@ -29,5 +29,5 @@ name: Enable SSL
 description: Enable usage of SSL on the webserver inside the app
 ```
 
-Use question marks for optional options and don't generate option field for them.
+Use question marks for optional options schema and don't generate options field for them even if there is a default value.
 Assing null value to option if it isn't optional and no default value is given.
