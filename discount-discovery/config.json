@@ -1,6 +1,6 @@
 {
   "name": "Discount Discovery - DEVELOPMENT",
-  "version": "0.151-3",
+  "version": "0.152",
   "slug": "discount-discovery",
   "image": "ghcr.io/ddanii/discount-discovery",
   "description": "A selfhost app to easyly browse and manage several stores discounts comfortably.",
@@ -34,6 +34,6 @@
     "amd64"
   ],
   "breaking_versions": [
-    "0.151"
+    "0.152"
   ]
 }

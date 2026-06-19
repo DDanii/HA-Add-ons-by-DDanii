@@ -1,3 +1,6 @@
+ 
+## 0.152 (2026-06-19)
+- Update to latest version from ddanii/discount-discovery (changelog : https://github.com/ddanii/discount-discovery/releases)
 
 ## 0.151 (2026-04-29)
 - Update to latest version from ddanii/discount-discovery (changelog : https://github.com/ddanii/discount-discovery/releases)
