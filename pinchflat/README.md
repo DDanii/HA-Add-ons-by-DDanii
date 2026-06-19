@@ -16,6 +16,8 @@
 
 dl_path: download location, possible root folders: /media, /share, /config
 
+vacuum: cleans up db before start according this [issue](https://github.com/kieraneglin/pinchflat/issues/887)
+
 ## Customization
 
 After the first run in the addon config folder (addon_configs/57fef649_pinchflat) there will be a custom.sh file in witch you can add your own commands

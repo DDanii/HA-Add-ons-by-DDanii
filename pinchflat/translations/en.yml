@@ -2,6 +2,9 @@ configuration:
   dl_path:
     name: Download path
     description: Directory where Pinchflat stores downloaded media.
+  vacuum:
+    name: Clean database
+    description: Database maintenance before startup.
   TZ:
     name: Time zone
     description: Container time zone. Must follow the IANA TZ format.

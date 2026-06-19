@@ -1,6 +1,6 @@
 {
   "name": "Pinchflat",
-  "version": "2025.9.26-3",
+  "version": "2025.9.26-4",
   "slug": "pinchflat",
   "image": "ghcr.io/ddanii/pinchflat",
   "description": "YouTube media manager",
@@ -22,13 +22,14 @@
   ],
   "backup_exclude": [
     "**/logs/",
-    "**/metadatad/"
+    "**/metadata/"
   ],
   "init": false,
   "options": {
     "dl_path": "/media/pinchflat"
   },
   "schema": {
+    "vacuum": "bool?",
     "dl_path": "str",
     "TZ": "str?",
     "LOG_LEVEL": "list(debug|info)?",

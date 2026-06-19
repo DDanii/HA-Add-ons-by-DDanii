@@ -18,6 +18,11 @@ for KEY in "${arr[@]}"; do
     fi
 done
 
+if bashio::config.true 'vacuum'; then
+    apt-get install sqlite3
+    sqlite3 /config/db/pinchflat.db "VACUUM;"
+fi
+
 CONFIGPATH="/config/custom.sh"
 
 if [ ! -f $CONFIGPATH ]; then
