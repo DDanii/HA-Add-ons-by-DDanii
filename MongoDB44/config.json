@@ -1,6 +1,6 @@
 {
   "name": "MongoDB 4.4",
-  "version": "4.4.30-2",
+  "version": "4.4.31",
   "slug": "mongodb44",
   "image": "ghcr.io/ddanii/mongodb44",
   "description": "document-oriented database",
