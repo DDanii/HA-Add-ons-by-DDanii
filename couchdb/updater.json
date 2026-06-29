@@ -3,6 +3,6 @@
   "slug": "couchdb",
   "source": "dockerhub",
   "upstream_repo": "library/couchdb",
-  "upstream_version": "3.5.2-nouveau",
-  "last_update": "2026-06-02"
+  "upstream_version": "3.5.2.1-nouveau",
+  "last_update": "2026-06-29"
 }
