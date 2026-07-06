@@ -3,6 +3,6 @@
   "slug": "tubesync",
   "source": "github",
   "upstream_repo": "meeb/tubesync",
-  "upstream_version": "0.18.1",
-  "last_update": "2026-06-02"
+  "upstream_version": "0.18.2",
+  "last_update": "2026-07-06"
 }
