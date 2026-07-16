@@ -1,7 +1,7 @@
 {
    "name": "Kittygram",
    "slug": "kittygram",
-   "version": "2026.17-3",
+   "version": "1.1.0",
    "image": "ghcr.io/ddanii/kittygram",
    "description": "Kittygram is an Instagram frontend",
    "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/kittygram",
