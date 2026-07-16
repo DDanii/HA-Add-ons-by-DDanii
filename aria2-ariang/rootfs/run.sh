@@ -28,8 +28,7 @@ fi
 conf_path=/config
 
 while read -r name value; do 
-    echo "Content of $name is ${value//\"/}"; 
-    if [ $name == "dir" ]; then
+    if [ "$name" = "dir" ]; then
         data_path="${value//\"/}"
     fi
 done < $conf_path/aria2.conf 
