@@ -1,0 +1,22 @@
+configuration:
+  PUID:
+    name: PUID
+    description: User ID that will own downloaded files and configuration files
+  PGID:
+    name: PGID
+    description: Group ID that will own downloaded files and configuration files
+  RPC_SECRET:
+    name: RPC secret
+    description: The Aria2 RPC secret token used for authentication
+  EMBED_RPC_SECRET:
+    name: Embed RPC secret
+    description: INSECURE: embeds the RPC secret into the web UI JavaScript so it can be skipped in the UI. Only use this with authentication enabled
+  BASIC_AUTH_USERNAME:
+    name: Basic auth username
+    description: Username for HTTP basic authentication
+  BASIC_AUTH_PASSWORD:
+    name: Basic auth password
+    description: Password for HTTP basic authentication
+  ARIA2RPCPORT:
+    name: Aria2 RPC port
+    description: Port used for RPC calls to aria2, such as 443 when the web UI is served over HTTPS behind a reverse proxy
