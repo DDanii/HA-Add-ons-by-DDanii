@@ -32,7 +32,7 @@ while read -r name value; do
     if [ $name == "dir" ]; then
         data_path="${value//\"/}"
     fi
-done < conf_path/aria2.conf 
+done < $conf_path/aria2.conf 
 
 echo "$data_path"
 
