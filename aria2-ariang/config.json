@@ -1,7 +1,7 @@
 {
    "name": "Aria2 + Ariang",
    "slug": "aria2-ariang",
-   "version": "2026.28-4",
+   "version": "2026.28-5",
    "stage": "experimental",
    "image": "ghcr.io/ddanii/aria2-ariang",
    "description": "DEVELOPMENT Lightweight download utility",
