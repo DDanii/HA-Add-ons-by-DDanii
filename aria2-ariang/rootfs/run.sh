@@ -24,4 +24,38 @@ if [ ! -f $ARIACONFIGPATH ]; then
 fi
 
 
+set +u
+
+
+conf_path=/config
+data_path=""
+
+IFS="="
+while read -r name value; do
+    if [ "$name" = "dir" ]; then
+        data_path="${value//\"/}"
+    fi
+done < $conf_path/aria2.conf
+
+mkdir -p "$data_path"
+
+if [ -n "$RPC_SECRET" ]; then
+    sed -i '/^rpc-secret=/d' $conf_path/aria2.conf
+    printf '\nrpc-secret=%s\n' "${RPC_SECRET}" >>$conf_path/aria2.conf
+
+    if [ -n "$EMBED_RPC_SECRET" ]; then
+        echo "Embedding RPC secret into ariang Web UI"
+        RPC_SECRET_BASE64=$(echo -n "${RPC_SECRET}" | base64 -w 0)
+        sed -i 's,secret:"[^"]*",secret:"'"${RPC_SECRET_BASE64}"'",g' $ariang_js_path
+    fi
+fi
+
+touch $conf_path/aria2.session
+
+userid="$(id -u)" # 65534 - nobody, 0 - root
+groupid="$(id -g)"
+
+chown -R "$userid":"$groupid" $conf_path
+chown -R "$userid":"$groupid" $data_path
+
 exec $CONFIGPATH

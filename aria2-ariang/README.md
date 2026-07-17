@@ -11,7 +11,7 @@ This add-on is under development not recommended for usage, expect nonfuctionali
 
 ## About
 
-TODO
+[AriaNg](https://github.com/mayswind/AriaNg) is a modern web frontend making [aria2](https://github.com/aria2/aria2) easier to use. AriaNg is written in pure html & javascript
 
 ## Configuration
 
