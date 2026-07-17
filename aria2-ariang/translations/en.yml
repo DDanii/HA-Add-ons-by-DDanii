@@ -10,7 +10,7 @@ configuration:
     description: The Aria2 RPC secret token used for authentication
   EMBED_RPC_SECRET:
     name: Embed RPC secret
-    description: INSECURE: embeds the RPC secret into the web UI JavaScript so it can be skipped in the UI. Only use this with authentication enabled
+    description: INSECURE embeds the RPC secret into the web UI JavaScript so it can be skipped in the UI. Only use this with authentication enabled
   BASIC_AUTH_USERNAME:
     name: Basic auth username
     description: Username for HTTP basic authentication

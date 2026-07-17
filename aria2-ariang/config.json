@@ -1,13 +1,12 @@
 {
    "name": "Aria2 + Ariang",
    "slug": "aria2-ariang",
-   "version": "2026.28-6",
-   "stage": "experimental",
+   "version": "2026.28-7",
    "image": "ghcr.io/ddanii/aria2-ariang",
-   "description": "DEVELOPMENT Lightweight download utility",
+   "description": "Lightweight download utility",
    "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/aria2-ariang",
    "map": [
-      "addon_config:rw",
+      "app_config:rw",
       "media:rw",
       "share:rw"
    ],
@@ -27,9 +26,7 @@
    "ports_description": {
       "8080/tcp": "Web interface http"
    },
-   "ingress": true,
-   "ingress_port": 8080,
-   "ingress_stream": true,
+   "webui": "http://[HOST]:[PORT:8080]/",
    "arch": [
       "amd64",
       "aarch64"
