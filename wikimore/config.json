@@ -1,6 +1,6 @@
 {
   "name": "Wikimore",
-  "version": "2026.3-4-2",
+  "version": "0.1.18",
   "slug": "wikimore",
   "image": "ghcr.io/ddanii/wikimore",
   "description": "A simple frontend for Wikimedia projects",

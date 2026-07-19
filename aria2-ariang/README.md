@@ -9,6 +9,8 @@
 
 ## About
 
+<ha-alert alert-type="info">I think [pyload](https://github.com/pyload/pyload) is a much more cappable tool [app repository](https://github.com/tr4nt0r/pyload-ng) </ha-alert>
+
 [AriaNg](https://github.com/mayswind/AriaNg) is a modern web frontend making [aria2](https://github.com/aria2/aria2) easier to use. AriaNg is written in pure html & javascript.
 
 This app is based on [this docker image](https://github.com/hurlenko/aria2-ariang-docker).
