@@ -2,5 +2,7 @@
   "repository": "DDanii/HA-Add-ons-by-DDanii",
   "slug": "aria2-ariang",
   "source": "github",
-  "upstream_repo": "hurlenko/aria2-ariang-docker"
+  "upstream_repo": "hurlenko/aria2-ariang-docker",
+  "upstream_version": "1.3.14",
+  "last_update": "2026-07-20"
 }
