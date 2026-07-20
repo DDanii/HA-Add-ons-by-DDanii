@@ -6,7 +6,7 @@
   "description": "Lightweight download utility",
   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/aria2-ariang",
   "map": [
-    "app_config:rw",
+    "addon_config:rw",
     "media:rw",
     "share:rw"
   ],
