@@ -1,0 +1,22 @@
+{
+   "name": "Small",
+   "slug": "small",
+   "version": "0.1.3",
+   "stage": "experimental",
+   "image": "ghcr.io/ddanii/small",
+   "description": "DEVELOPMENT Small is an alternative frontend for Medium articles",
+   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/small",
+   "init": false,
+   "ports": {
+      "8002/tcp": 8002
+   },
+   "ports_description": {
+      "8002/tcp": "Web interface http"
+   },
+   "ingress": true,
+   "ingress_port": 8002,
+   "ingress_stream": true,
+   "arch": [
+      "amd64"
+   ]
+}
