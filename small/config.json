@@ -1,11 +1,14 @@
 {
    "name": "Small",
    "slug": "small",
-   "version": "0.1.3",
+   "version": "0.1.3-2",
    "stage": "experimental",
    "image": "ghcr.io/ddanii/small",
    "description": "DEVELOPMENT Small is an alternative frontend for Medium articles",
    "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/small",
+   "map": [
+      "addon_config:rw"
+   ],
    "init": false,
    "ports": {
       "8002/tcp": 8002
