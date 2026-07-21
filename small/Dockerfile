@@ -5,6 +5,8 @@ ARG BUILD_VERSION
 FROM git.private.coffee/privatecoffee/small
 ARG BUILD_ARCH
 
+USER root
+
 RUN apt-get update; apt-get install -y jq bash wget tar curl
 
 RUN mkdir -p /tmp/bashio && \
