@@ -1,6 +1,6 @@
 {
   "name": "GG Requestz",
-  "version": "1.2.5-2",
+  "version": "1.2.5.2",
   "slug": "ggrequestz",
   "image": "ghcr.io/ddanii/ggrequestz",
   "description": "Game discovery and request management",

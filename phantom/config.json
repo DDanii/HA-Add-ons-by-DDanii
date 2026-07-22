@@ -1,7 +1,7 @@
 {
    "name": "Phantom",
    "slug": "phantom",
-   "version": "2026.18-2",
+   "version": "2026.18.2",
    "stage": "experimental",
    "image": "ghcr.io/ddanii/phantom",
    "description": "DEVELOPMENT Phantom is a privacy frontend for fandom.com",

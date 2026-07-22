@@ -1,6 +1,6 @@
 {
   "name": "ViewTube - untested",
-  "version": "0.17.0-2",
+  "version": "0.17.0.2",
   "slug": "ViewTube",
   "image": "ghcr.io/ddanii/viewtube",
   "description": "Alternative YouTube frontend",
