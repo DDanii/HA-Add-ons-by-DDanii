@@ -10,7 +10,13 @@ for KEY in "${arr[@]}"; do
 done
 
 if bashio::config.true "dark_mode"; then
-    sed -i '/<body>/c\<body style="background-color: black;color:white;">' /opt/venv/lib64/*/site-packages/small/templates/base.html
+    css=/opt/venv/lib64/*/site-packages/small/static/css/style.css
+
+    sed -i '/    background-color: #fff;/c\    background-color: #222;' $css
+    sed -i '/    background-color: #f4f4f4;/c\    background-color: #000;' $css
+    sed -i '/    background-color: #f9f9f9;/c\    background-color: #000;' $css
+    sed -i '/    color: #333;/c\    color: #fff;' $css
+
 fi
 
 CONFIGPATH="/config/custom.sh"
