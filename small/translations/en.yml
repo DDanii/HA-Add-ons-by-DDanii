@@ -1,0 +1,4 @@
+configuration:
+  dark_mode:
+    name: Enable dark mode
+    description: Enable dark mode for the application interface
