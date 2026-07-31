@@ -4,6 +4,6 @@
   "source": "github",
   "upstream_repo": "mongodb/mongo",
   "github_exclude": "rc",
-  "upstream_version": "8.2.11",
-  "last_update": "2026-06-19"
+  "upstream_version": "8.3.7",
+  "last_update": "2026-07-27"
 }
