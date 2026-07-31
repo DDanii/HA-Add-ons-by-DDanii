@@ -2,7 +2,7 @@
 ARG BUILD_ARCH
 ARG BUILD_VERSION
 
-FROM ghcr.io/communitymaintained/pinchflat:latest
+FROM ghcr.io/communitymaintained/tubeless:latest
 ARG BUILD_ARCH
 
 RUN apt-get update; \

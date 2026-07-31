@@ -1,0 +1,56 @@
+{
+  "name": "Tubeless",
+  "version": "2025.9.26-4",
+  "slug": "tubeless",
+  "image": "ghcr.io/ddanii/tubeless",
+  "description": "YouTube media manager",
+  "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/tubeless",
+  "map": [
+    {
+      "type": "addon_config",
+      "read_only": false,
+      "path": "/config"
+    },
+    {
+      "type": "media",
+      "read_only": false
+    },
+    {
+      "type": "share",
+      "read_only": false
+    }
+  ],
+  "backup_exclude": [
+    "**/logs/",
+    "**/metadata/"
+  ],
+  "init": false,
+  "options": {
+    "dl_path": "/media/tubeless"
+  },
+  "schema": {
+    "dl_path": "str",
+    "TZ": "str?",
+    "LOG_LEVEL": "list(debug|info)?",
+    "UMASK": "str?",
+    "BASIC_AUTH_USERNAME": "str?",
+    "BASIC_AUTH_PASSWORD": "password?",
+    "EXPOSE_FEED_ENDPOINTS": "bool?",
+    "ENABLE_IPV6": "bool?",
+    "JOURNAL_MODE": "list(wal|delete)?",
+    "TZ_DATA_DIR": "str?",
+    "BASE_ROUTE_PATH": "str?",
+    "YT_DLP_WORKER_CONCURRENCY": "int(1,)?",
+    "ENABLE_PROMETHEUS": "bool?"
+  },
+  "ports": {
+    "8945/tcp": 8945
+  },
+  "ports_description": {
+    "8945/tcp": "Web interface http"
+  },
+  "webui": "http://[HOST]:[PORT:8945]",
+  "arch": [
+    "amd64"
+  ]
+}
