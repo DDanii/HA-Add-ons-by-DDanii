@@ -1,0 +1,26 @@
+{
+   "name": "OrcaSlicer API & Web UI",
+   "slug": "orcaslicer-web",
+   "version": "2026.30",
+   "stage": "experimental",
+   "image": "ghcr.io/ddanii/orcaslicer-web",
+   "description": "DEVELOPMENT Containerized web application that exposes OrcaSlicer's CLI",
+   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/orcaslicer-web",
+   "map": [
+      "addon_config:rw"
+   ],
+   "init": false,
+   "ports": {
+      "5000/tcp": 5000
+   },
+   "ports_description": {
+      "5000/tcp": "Web interface http"
+   },
+   "ingress": true,
+   "ingress_port": 5000,
+   "ingress_stream": true,
+   "arch": [
+      "amd64",
+      "aarch64"
+   ]
+}
