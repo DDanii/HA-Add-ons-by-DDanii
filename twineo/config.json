@@ -1,8 +1,8 @@
 {
   "name": "Twineo",
   "slug": "twineo",
-  "version": "0.3.2",
-  "image": "ghcr.io/ddanii/twineo",
+   "version": "0.3.2.1",
+  "image": "ghcr.io/ddanii/ha-app-twineo",
   "description": "Privacy focused alternative front-end to Twitch",
   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/twineo",
   "init": false,

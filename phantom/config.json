@@ -1,9 +1,9 @@
 {
    "name": "Phantom",
    "slug": "phantom",
-   "version": "2026.18.2",
+   "version": "2026.18.2.1",
    "stage": "experimental",
-   "image": "ghcr.io/ddanii/phantom",
+   "image": "ghcr.io/ddanii/ha-app-phantom",
    "description": "DEVELOPMENT Phantom is a privacy frontend for fandom.com",
    "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/phantom",
    "map": [

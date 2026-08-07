@@ -1,8 +1,8 @@
 {
   "name": "Wikimore",
-  "version": "0.1.18",
+  "version": "0.1.18.1",
   "slug": "wikimore",
-  "image": "ghcr.io/ddanii/wikimore",
+  "image": "ghcr.io/ddanii/ha-app-wikimore",
   "description": "A simple frontend for Wikimedia projects",
   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/wikimore",
   "init": false,

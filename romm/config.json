@@ -1,8 +1,8 @@
 {
   "name": "RomM",
-  "version": "5.1.0",
+  "version": "5.1.0.1",
   "slug": "romm",
-  "image": "ghcr.io/ddanii/romm",
+  "image": "ghcr.io/ddanii/ha-app-romm",
   "description": "Rom Manager with save sync and more",
   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/romm",
   "map": [

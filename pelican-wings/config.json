@@ -1,8 +1,8 @@
 {
   "name": "Pelican Wings",
-  "version": "1.0.0b26",
+  "version": "1.0.0b26.1",
   "slug": "pelican-wings",
-  "image": "ghcr.io/ddanii/pelican-wings",
+  "image": "ghcr.io/ddanii/ha-app-pelican-wings",
   "description": "Wings is Pelican's server control plane",
   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/pelican-wings",
   "map": [

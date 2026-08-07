@@ -1,8 +1,8 @@
 {
   "name": "ViewTube - untested",
-  "version": "0.17.0.2",
+  "version": "0.17.0.3",
   "slug": "ViewTube",
-  "image": "ghcr.io/ddanii/viewtube",
+  "image": "ghcr.io/ddanii/ha-app-viewtube",
   "description": "Alternative YouTube frontend",
   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/viewtube",
   "arch": [

@@ -1,8 +1,8 @@
 {
   "name": "CouchDB",
-  "version": "3.5.2.1-nouveau",
+  "version": "3.5.2.2-nouveau",
   "slug": "couchdb",
-  "image": "ghcr.io/ddanii/couchdb",
+  "image": "ghcr.io/ddanii/ha-app-couchdb",
   "description": "Database that uses JSON for documents an HTTP API",
   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/couchdb",
   "map": [

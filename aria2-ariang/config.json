@@ -1,8 +1,8 @@
 {
   "name": "Aria2 + Ariang",
   "slug": "aria2-ariang",
-  "version": "1.3.14",
-  "image": "ghcr.io/ddanii/aria2-ariang",
+  "version": "1.3.14.1",
+  "image": "ghcr.io/ddanii/ha-app-aria2-ariang",
   "description": "Lightweight download utility",
   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/aria2-ariang",
   "map": [

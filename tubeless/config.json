@@ -1,8 +1,8 @@
 {
   "name": "Tubeless",
-  "version": "2026.08.03",
+  "version": "2026.08.03.1",
   "slug": "tubeless",
-  "image": "ghcr.io/ddanii/tubeless",
+  "image": "ghcr.io/ddanii/ha-app-tubeless",
   "description": "YouTube media manager",
   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/tubeless",
   "map": [

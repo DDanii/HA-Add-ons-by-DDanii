@@ -1,8 +1,8 @@
 {
   "name": "Piped-proxy",
-  "version": "hotspot-2026-05-29",
+  "version": "hotspot-2026-05-29.1",
   "slug": "piped-proxy",
-  "image": "ghcr.io/ddanii/piped-proxy",
+  "image": "ghcr.io/ddanii/ha-app-piped-proxy",
   "description": "piped proxy",
   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/piped-proxy",
   "init": false,

@@ -1,8 +1,8 @@
 {
   "name": "Binternet",
   "slug": "binternet",
-  "version": "2026.18-3",
-  "image": "ghcr.io/ddanii/binternet",
+  "version": "2026.18.4",
+  "image": "ghcr.io/ddanii/ha-app-binternet",
   "description": "A custom Pinterest frontend, made in PHP.",
   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/binternet",
   "map": [

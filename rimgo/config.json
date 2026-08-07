@@ -1,8 +1,8 @@
 {
   "name": "rimgo",
   "slug": "rimgo",
-  "version": "2022.4.22",
-  "image": "ghcr.io/ddanii/rimgo",
+   "version": "2022.4.22.1",
+  "image": "ghcr.io/ddanii/ha-app-rimgo",
   "description": "An alternative frontend for Imgur.",
   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/rimgo",
   "map": [

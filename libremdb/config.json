@@ -1,8 +1,8 @@
 {
   "name": "libremdb",
-  "version": "4.5.0.2",
+  "version": "4.5.0.3",
   "slug": "libremdb",
-  "image": "ghcr.io/ddanii/libremdb",
+  "image": "ghcr.io/ddanii/ha-app-libremdb",
   "description": "A free open source IMDb front-end.",
   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/libremdb",
   "init": false,

@@ -1,8 +1,8 @@
 {
   "name": "Structables",
-  "version": "2026.14.2",
+  "version": "2026.14.2.1",
   "slug": "structables",
-  "image": "ghcr.io/ddanii/structables",
+  "image": "ghcr.io/ddanii/ha-app-structables",
   "description": "An open source alternative front-end to Instructables.",
   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/structables",
   "map": [

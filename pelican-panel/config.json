@@ -1,8 +1,8 @@
 {
   "name": "Pelican Panel",
-  "version": "1.0.0b35",
+  "version": "1.0.0b35.1",
   "slug": "pelican-panel",
-  "image": "ghcr.io/ddanii/pelican-panel",
+  "image": "ghcr.io/ddanii/ha-app-pelican-panel",
   "description": "Game server control panel",
   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/pelican-panel",
   "map": [

@@ -1,8 +1,8 @@
 {
   "name": "GG Requestz",
-  "version": "1.4.0",
+  "version": "1.4.0.1",
   "slug": "ggrequestz",
-  "image": "ghcr.io/ddanii/ggrequestz",
+  "image": "ghcr.io/ddanii/ha-app-ggrequestz",
   "description": "Game discovery and request management",
   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/ggrequestz",
   "map": [

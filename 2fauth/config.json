@@ -1,8 +1,8 @@
 {
   "name": "2FAuth",
-  "version": "8.0.1",
+  "version": "8.0.1.1",
   "slug": "2fauth",
-  "image": "ghcr.io/ddanii/2fauth",
+  "image": "ghcr.io/ddanii/ha-app-2fauth",
   "description": "A Web app to manage your Two-Factor Authentication (2FA) accounts",
   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/2fauth",
   "environment": {

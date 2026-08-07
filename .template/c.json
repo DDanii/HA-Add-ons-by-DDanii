@@ -3,7 +3,7 @@
    "slug": "_slug_",
    "version": "_version_",
    "stage": "experimental",
-   "image": "ghcr.io/ddanii/_slug_",
+   "image": "ghcr.io/ddanii/ha-app-_slug_",
    "description": "DEVELOPMENT _short_description_",
    "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/_slug_",
    "map": [
