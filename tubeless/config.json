@@ -1,6 +1,6 @@
 {
   "name": "Tubeless",
-  "version": "2025.9.26-4",
+  "version": "2026.08.03",
   "slug": "tubeless",
   "image": "ghcr.io/ddanii/tubeless",
   "description": "YouTube media manager",
