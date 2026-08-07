@@ -1,8 +1,8 @@
 {
   "name": "Pinchflat",
-  "version": "1.4.3.1",
+  "version": "1.4.3",
   "slug": "pinchflat",
-  "image": "ghcr.io/ddanii/ha-app-pinchflat",
+  "image": "ghcr.io/ddanii/pinchflat",
   "description": "YouTube media manager",
   "url": "https://github.com/DDanii/HA-Add-ons-by-DDanii/tree/master/pinchflat",
   "map": [
