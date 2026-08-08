@@ -1,4 +1,4 @@
-# Home Assistant Add-on: MongoDB
+# Home Assistant app (add-on): MongoDB
 
 ![Supports amd64 Architecture][amd64-shield]
 

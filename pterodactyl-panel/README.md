@@ -1,4 +1,4 @@
-# Home Assistant Add-on: pterodactyl Panel
+# Home Assistant app (add-on): pterodactyl Panel
 
 ![Supports amd64 Architecture][amd64-shield]
 

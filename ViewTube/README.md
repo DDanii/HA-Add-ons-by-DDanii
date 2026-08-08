@@ -1,4 +1,4 @@
-# Home Assistant Add-on: ViewTube
+# Home Assistant app (add-on): ViewTube
 
 ![Supports amd64 Architecture][amd64-shield]
 

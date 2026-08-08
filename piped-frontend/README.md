@@ -1,4 +1,4 @@
-# Home Assistant Add-on: piped-frontend
+# Home Assistant app (add-on): piped-frontend
 
 ![Supports amd64 Architecture][amd64-shield]
 

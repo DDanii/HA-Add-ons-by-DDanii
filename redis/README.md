@@ -1,4 +1,4 @@
-# Home Assistant Add-on: redis
+# Home Assistant app (add-on): redis
 
 ![Supports amd64 Architecture][amd64-shield]
 
