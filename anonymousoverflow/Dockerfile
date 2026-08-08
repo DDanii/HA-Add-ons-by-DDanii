@@ -18,7 +18,7 @@ ENV CGO_ENABLED=0 GOOS=linux GOARCH=$BUILD_ARCH
 
 RUN go build -o launcher
 
-FROM ghcr.io/httpjamesm/anonymousoverflow:release
+FROM ghcr.io/ddanii/anonymousoverflow:release
 
 COPY --from=build /app/launcher /launcher
 
