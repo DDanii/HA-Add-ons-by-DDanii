@@ -20,6 +20,8 @@ RUN go build -o launcher
 
 FROM ghcr.io/ddanii/anonymousoverflow:release
 
+USER root
+
 COPY --from=build /app/launcher /launcher
 
 CMD ["/launcher"]
