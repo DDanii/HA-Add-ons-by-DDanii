@@ -1,6 +1,6 @@
 {
   "name": "Pterodactyl-wings - DEVELOPMENT",
-  "version": "v1.13.2",
+  "version": "v1.13.3",
   "slug": "pterodactyl-wings",
   "image": "ghcr.io/ddanii/ha-app-pterodactyl-wings",
   "description": "Wings is the server control plane from Pterodacty",
