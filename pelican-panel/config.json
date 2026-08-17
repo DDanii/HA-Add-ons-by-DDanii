@@ -1,6 +1,6 @@
 {
   "name": "Pelican Panel",
-  "version": "1.0.0.36",
+  "version": "1.0.0.38",
   "slug": "pelican-panel",
   "image": "ghcr.io/ddanii/ha-app-pelican-panel",
   "description": "Game server control panel",
