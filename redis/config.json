@@ -1,6 +1,6 @@
 {
   "name": "Redis",
-  "version": "8.11.1",
+  "version": "8.11.2",
   "slug": "redis",
   "image": "ghcr.io/ddanii/ha-app-redis",
   "description": "in-memory data store",
