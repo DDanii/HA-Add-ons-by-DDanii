@@ -1,6 +1,6 @@
 {
   "name": "Wikimore",
-  "version": "0.1.18.1",
+  "version": "0.1.26",
   "slug": "wikimore",
   "image": "ghcr.io/ddanii/ha-app-wikimore",
   "description": "A simple frontend for Wikimedia projects",
