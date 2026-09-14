@@ -1,6 +1,6 @@
 {
   "name": "AnonymousOverflow",
-  "version": "1.20.0.3",
+  "version": "1.20.0.4",
   "slug": "anonymousoverflow",
   "image": "ghcr.io/ddanii/ha-app-anonymousoverflow",
   "description": "View StackOverflow in privacy and without the clutter.",
@@ -9,16 +9,13 @@
   "options": {
     "APP_URL": "http://localhost",
     "JWT_SIGNING_SECRET": "secret",
-    "FLARESOLVER": "http://db21ed7f-flaresolverr:8191",
-    "TIMEOUT": "120",
-    "THEME": "dark"
+    "SCRAPER": "api"
   },
   "schema": {
     "APP_URL": "str?",
-    "JWT_SIGNING_SECRET": "str",
-    "FLARESOLVER": "url",
-    "TIMEOUT": "str",
-    "THEME": "list(dark|light)"
+    "JWT_SIGNING_SECRET": "password",
+    "SCRAPER": "list(api)?",
+    "API_KEY": "password?"
   },
   "ports": {
     "8080/tcp": 8080
@@ -32,6 +29,7 @@
     "amd64"
   ],
   "breaking_versions": [
-    "1.20.0"
+    "1.20.0",
+    "1.20.0.4"
   ]
 }
