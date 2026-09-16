@@ -5,12 +5,9 @@ configuration:
   JWT_SIGNING_SECRET:
     name: JWT Signing Secret
     description: Secret value used to sign and validate JSON Web Tokens for the application.
-  FLARESOLVER:
-    name: Flaresolverr URL
-    description: URL of the FlareSolverr service used by the application.
-  TIMEOUT:
-    name: Timeout
-    description: Flaresolverr timeout in seconds.
-  THEME:
-    name: Theme
-    description: Visual theme used by the application.
+  SCRAPER:
+    name: Scraping method
+    description: Currently only api works I think.
+  API_KEY:
+    name: StackExcange api key
+    description: Optional, to increase request limit.
