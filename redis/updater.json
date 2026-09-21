@@ -3,6 +3,6 @@
   "slug": "redis",
   "source": "github",
   "upstream_repo": "redis/redis",
-  "upstream_version": "8.10.1",
-  "last_update": "2026-08-24"
+  "upstream_version": "8.12",
+  "last_update": "2026-09-21"
 }
