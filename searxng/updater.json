@@ -3,6 +3,6 @@
   "slug": "searxng",
   "source": "dockerhub",
   "upstream_repo": "searxng/searxng",
-  "upstream_version": "2026.10.4-d48c4b555",
-  "last_update": "2026-10-05"
+  "upstream_version": "2026.10.11-ad46ebd7d",
+  "last_update": "2026-10-12"
 }
