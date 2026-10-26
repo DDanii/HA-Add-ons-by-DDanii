@@ -3,6 +3,6 @@
   "slug": "azuracast",
   "source": "github",
   "upstream_repo": "azuracast/azuracast",
-  "upstream_version": "0.23.8",
-  "last_update": "2026-08-10"
+  "upstream_version": "0.24.0",
+  "last_update": "2026-10-26"
 }
