@@ -1,5 +1,5 @@
 ARG BUILD_ARCH
-FROM library/mongo:4.4
+FROM library/mongo:9.0
 ARG BUILD_ARCH
 
 RUN apt-get update; \
