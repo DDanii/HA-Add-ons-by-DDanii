@@ -45,6 +45,19 @@
       "datasourceTemplate": "custom.phantom-package",
       "versioningTemplate": "regex:^(?<major>\\d+)(?:\\.(?<minor>\\d+))?(?:\\.(?<patch>\\d+))?$",
       "autoReplaceStringTemplate": "\"version\": \"{{{newValue}}}\""
+    },
+    {
+      "customType": "regex",
+      "description": "Update Binternet from GitHub package dates",
+      "managerFilePatterns": ["/^binternet\\/config\\.json$/"],
+      "matchStrings": [
+        "\"version\"\\s*:\\s*\"\\d{4}\\.(?:1[3-9]|[2-9]\\d)\\.(?<currentValue>\\d+)\"",
+        "\"version\"\\s*:\\s*\"(?<currentValue>\\d{4}\\.(?:0?[1-9]|1[0-2])\\.(?:0?[1-9]|[12]\\d|3[01]))\""
+      ],
+      "depNameTemplate": "binternet",
+      "datasourceTemplate": "custom.binternet-package-date",
+      "versioningTemplate": "regex:^(?<major>\\d+)(?:\\.(?<minor>\\d+))?(?:\\.(?<patch>\\d+))?$",
+      "autoReplaceStringTemplate": "\"version\": \"{{{newValue}}}\""
     }
   ],
   "customDatasources": {
@@ -52,6 +65,12 @@
       "defaultRegistryUrlTemplate": "https://codeberg.org/api/v1/packages/phantom-org?limit=100",
       "transformTemplates": [
         "{\"releases\": $map($filter($, function($v) { $v.type = 'container' and $v.name = 'phantom' and $contains($v.version, /^\\d{4}\\.\\d{2}\\.\\d{2}-/) }), function($v) { {\"version\": $replace($v.created_at, /^(\\d{4})-0?(\\d{1,2})-0?(\\d{1,2}).*/, \"$1.$2.$3\")} })}"
+      ]
+    },
+    "binternet-package-date": {
+      "defaultRegistryUrlTemplate": "https://api.github.com/users/Ahwxorg/packages/container/binternet/versions?per_page=100",
+      "transformTemplates": [
+        "{\"releases\": $map($, function($v) { {\"version\": $replace($v.created_at, /^(\\d{4})-0?(\\d{1,2})-0?(\\d{1,2}).*/, \"$1.$2.$3\")} })}"
       ]
     }
   }
