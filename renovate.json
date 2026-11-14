@@ -24,6 +24,17 @@
       "registryUrlTemplate": "https://git.private.coffee",
       "versioningTemplate": "semver",
       "extractVersionTemplate": "^v(?<version>.*)$"
+    },
+    {
+      "customType": "regex",
+      "description": "Update Small from Forgejo tags",
+      "managerFilePatterns": ["/^small\\/config\\.json$/"],
+      "matchStrings": ["\"version\"\\s*:\\s*\"(?<currentValue>\\d+\\.\\d+\\.\\d+)(?:\\.\\d+)?\""],
+      "datasourceTemplate": "forgejo-tags",
+      "packageNameTemplate": "privatecoffee/small",
+      "registryUrlTemplate": "https://git.private.coffee",
+      "versioningTemplate": "semver",
+      "extractVersionTemplate": "^v(?<version>.*)$"
     }
   ]
 }
