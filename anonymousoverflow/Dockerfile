@@ -2,7 +2,7 @@
 ARG BUILD_ARCH
 ARG BUILD_VERSION
 
-FROM golang:1.22.1-alpine3.19 AS build
+FROM golang:1.23.4-alpine3.19 AS build
 
 WORKDIR /app
 
