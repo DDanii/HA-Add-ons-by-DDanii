@@ -12,7 +12,7 @@
       "registryUrlTemplate": "https://git.private.coffee",
       "versioningTemplate": "semver",
       "extractVersionTemplate": "^v(?<version>.*)$",
-      "autoReplaceStringTemplate": "\"version\": \"1{{{replace '^(\\d{4}).*' '$1' releaseTimestamp}}}.{{{newValue}}}\""
+      "autoReplaceStringTemplate": "\"version\": \"1{{{replace '^([0-9]{4}).*' '$1' releaseTimestamp}}}.{{{newValue}}}\""
     }
   ]
 }
