@@ -1,0 +1,18 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "description": "Update Structables from Forgejo tags",
+      "managerFilePatterns": ["/^structables\\/config\\.json$/"],
+      "matchStrings": ["\"version\"\\s*:\\s*\"1\\d{4}\\.(?<currentValue>\\d+\\.\\d+\\.\\d+)\""],
+      "datasourceTemplate": "forgejo-tags",
+      "packageNameTemplate": "privatecoffee/structables",
+      "registryUrlTemplate": "https://git.private.coffee",
+      "versioningTemplate": "semver",
+      "extractVersionTemplate": "^v(?<version>.*)$",
+      "autoReplaceStringTemplate": "\"version\": \"1{{{replace '^(\\d{4}).*' '$1' releaseTimestamp}}}.{{{newValue}}}\""
+    }
+  ]
+}

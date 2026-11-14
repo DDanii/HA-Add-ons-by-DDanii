@@ -28,7 +28,7 @@ name=$( echo "$slug" | sed -e "s/\b\(.\)/\u\1/g")
 get_input "name" 1
 
 
-version=$(date +%Y.%W)
+version="0.0.1"
 get_input "version"
 
 short_description=""
