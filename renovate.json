@@ -35,6 +35,24 @@
       "registryUrlTemplate": "https://git.private.coffee",
       "versioningTemplate": "semver",
       "extractVersionTemplate": "^v(?<version>.*)$"
+    },
+    {
+      "customType": "regex",
+      "description": "Update Phantom from Codeberg package dates",
+      "managerFilePatterns": ["/^phantom\\/config\\.json$/"],
+      "matchStrings": ["\"version\"\\s*:\\s*\"(?:(?:\\d+\\.){3})?(?<currentValue>\\d+(?:\\.\\d+\\.\\d+)?)\""],
+      "depNameTemplate": "phantom",
+      "datasourceTemplate": "custom.phantom-package",
+      "versioningTemplate": "regex:^(?<major>\\d+)(?:\\.(?<minor>\\d+))?(?:\\.(?<patch>\\d+))?$",
+      "autoReplaceStringTemplate": "\"version\": \"{{{newValue}}}\""
     }
-  ]
+  ],
+  "customDatasources": {
+    "phantom-package": {
+      "defaultRegistryUrlTemplate": "https://codeberg.org/api/v1/packages/phantom-org?limit=100",
+      "transformTemplates": [
+        "{\"releases\": $map($filter($, function($v) { $v.type = 'container' and $v.name = 'phantom' and $contains($v.version, /^\\d{4}\\.\\d{2}\\.\\d{2}-/) }), function($v) { {\"version\": $replace($v.created_at, /^(\\d{4})-0?(\\d{1,2})-0?(\\d{1,2}).*/, \"$1.$2.$3\")} })}"
+      ]
+    }
+  }
 }
