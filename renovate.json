@@ -1,7 +1,24 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:recommended"],
+  "packageRules": [
+    {
+      "description": "Schedule Kittygram updates for Monday mornings",
+      "matchPackageNames": ["kittygram"],
+      "schedule": ["* 4-11 * * 1"]
+    }
+  ],
   "customManagers": [
+    {
+      "customType": "regex",
+      "description": "Update Kittygram from Codeberg package dates",
+      "managerFilePatterns": ["/^kittygram\\/config\\.json$/"],
+      "matchStrings": ["\"version\"\\s*:\\s*\"(?<currentValue>(?:\\d+\\.){0,3}\\d+)\""],
+      "depNameTemplate": "kittygram",
+      "datasourceTemplate": "custom.kittygram-package",
+      "versioningTemplate": "regex:^(?<major>\\d+)(?:\\.(?<minor>\\d+))?(?:\\.(?<patch>\\d+))?(?:\\.(?<build>\\d+))?$",
+      "autoReplaceStringTemplate": "\"version\": \"{{{newValue}}}\""
+    },
     {
       "customType": "regex",
       "description": "Update Structables from Forgejo tags",
@@ -58,6 +75,12 @@
     }
   ],
   "customDatasources": {
+    "kittygram-package": {
+      "defaultRegistryUrlTemplate": "https://codeberg.org/api/v1/packages/irelephant?limit=100",
+      "transformTemplates": [
+        "{\"releases\": $map($filter($, function($v) { $v.type = 'container' and $v.name = 'kittygram' and $v.version = 'latest' }), function($v) { {\"version\": $replace($v.created_at, /^(\\d{4})-0?(\\d{1,2})-0?(\\d{1,2}).*/, \"$1.$2.$3\")} })}"
+      ]
+    },
     "phantom-package": {
       "defaultRegistryUrlTemplate": "https://codeberg.org/api/v1/packages/phantom-org?limit=100",
       "transformTemplates": [

@@ -1,8 +1,8 @@
 ---
-name: config_generator
+name: config-generator
 description: generating config options from lists
+disable-model-invocation: true
 ---
-
 <!-- Tip: Use /create-prompt in chat to generate content with agent assistance -->
 
 Add these config options and schemas these are case sensiteive
@@ -24,9 +24,9 @@ In the same folder the config.json exists create an en.yml file in a folder name
 
 ```
 configuration:
-ssl:
-name: Enable SSL
-description: Enable usage of SSL on the webserver inside the app
+  ssl:
+    name: Enable SSL
+    description: Enable usage of SSL on the webserver inside the app
 ```
 
 Use question marks for optional options schema and don't generate options field for them even if there is a default value.
