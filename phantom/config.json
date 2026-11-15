@@ -33,9 +33,7 @@
    "ports_description": {
       "8080/tcp": "Web interface http"
    },
-   "ingress": true,
-   "ingress_port": 8080,
-   "ingress_stream": true,
+  "webui": "http://[HOST]:[PORT:8080]/",
    "arch": [
       "amd64"
    ]
