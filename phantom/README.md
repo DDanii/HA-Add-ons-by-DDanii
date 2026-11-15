@@ -1,6 +1,5 @@
 # Home assistant app (add-on): Phantom
 
-This add-on is under development not recommended for usage, expect nonfuctionality and datalosses.
 
 ![Version](https://img.shields.io/badge/dynamic/json?label=Version&query=%24.version&url=https%3A%2F%2Fraw.githubusercontent.com%2FDDanii%2FHA-Add-ons-by-DDanii%2Fmaster%2Fphantom%2Fconfig.json)
 ![Ingress](https://img.shields.io/badge/dynamic/json?label=Ingress&query=%24.ingress&url=https%3A%2F%2Fraw.githubusercontent.com%2FDDanii%2FHA-Add-ons-by-DDanii%2Fmaster%2Fphantom%2Fconfig.json)
@@ -11,7 +10,9 @@ This add-on is under development not recommended for usage, expect nonfuctionali
 
 ## About
 
-TODO
+[Phantom](https://codeberg.org/phantom-org/phantom) is a privacy frontend for fandom.com
+
+It looks like there are errors in the logs but it seems working fine.
 
 ## Customization
 
