@@ -1,13 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:recommended"],
-  "packageRules": [
-    {
-      "description": "Schedule Kittygram updates for Monday mornings",
-      "matchPackageNames": ["kittygram"],
-      "schedule": ["* 4-11 * * 1"]
-    }
-  ],
   "customManagers": [
     {
       "customType": "regex",
@@ -78,13 +71,13 @@
     "kittygram-package": {
       "defaultRegistryUrlTemplate": "https://codeberg.org/api/v1/packages/irelephant?limit=100",
       "transformTemplates": [
-        "{\"releases\": $map($filter($, function($v) { $v.type = 'container' and $v.name = 'kittygram' and $v.version = 'latest' }), function($v) { {\"version\": $replace($v.created_at, /^(\\d{4})-0?(\\d{1,2})-0?(\\d{1,2}).*/, \"$1.$2.$3\")} })}"
+        "{\"releases\": [$map($filter($, function($v) { $v.type = 'container' and $v.name = 'kittygram' and $v.version = 'latest' }), function($v) { {\"version\": $replace($v.created_at, /^(\\d{4})-0?(\\d{1,2})-0?(\\d{1,2}).*/, \"$1.$2.$3\")} })]}"
       ]
     },
     "phantom-package": {
       "defaultRegistryUrlTemplate": "https://codeberg.org/api/v1/packages/phantom-org?limit=100",
       "transformTemplates": [
-        "{\"releases\": $map($filter($, function($v) { $v.type = 'container' and $v.name = 'phantom' and $contains($v.version, /^\\d{4}\\.\\d{2}\\.\\d{2}-/) }), function($v) { {\"version\": $replace($v.created_at, /^(\\d{4})-0?(\\d{1,2})-0?(\\d{1,2}).*/, \"$1.$2.$3\")} })}"
+        "{\"releases\": [$map($filter($, function($v) { $v.type = 'container' and $v.name = 'phantom' and $contains($v.version, /^\\d{4}\\.\\d{2}\\.\\d{2}-/) }), function($v) { {\"version\": $replace($v.created_at, /^(\\d{4})-0?(\\d{1,2})-0?(\\d{1,2}).*/, \"$1.$2.$3\")} })]}"
       ]
     },
     "binternet-commit-date": {
