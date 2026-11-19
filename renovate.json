@@ -1,6 +1,13 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:recommended"],
+  "packageRules": [
+    {
+      "description": "Schedule Kittygram updates for Monday mornings",
+      "matchPackageNames": ["kittygram"],
+      "schedule": ["* 4-11 * * 1"]
+    }
+  ],
   "customManagers": [
     {
       "customType": "regex",
