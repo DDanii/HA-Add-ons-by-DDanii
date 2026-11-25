@@ -4,6 +4,6 @@
   "source": "github",
   "upstream_repo": "pelican-dev/panel",
   "github_beta": "true",
-  "upstream_version": "1.0.0rc2",
-  "last_update": "2026-10-26"
+  "upstream_version": "1.0.0rc4",
+  "last_update": "2026-11-25"
 }
