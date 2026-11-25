@@ -1,6 +1,7 @@
 {
   "name": "TubeSync - untested",
   "version": "0.19.3",
+  "stage": "deprecated",
   "slug": "tubesync",
   "image": "ghcr.io/ddanii/ha-app-tubesync",
   "description": "TubeSync is a PVR (personal video recorder) for YouTube",
